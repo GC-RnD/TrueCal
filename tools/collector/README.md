@@ -23,6 +23,10 @@ copy seeds.example.json seeds.json
 ```
 Edit `seeds.json`: set `contact` (email or URL, sent in the User-Agent) and list real public OEM / industry pages. Each seed has a `make`, a start `url`, `depth` (links to follow), `max_pages`, and `follow` keywords.
 
+## Hand-entered rules
+
+[curated_rules.json](curated_rules.json) holds rules entered by hand from the manufacturer's own wording (exact quote and source link). `export-app` merges them into `data/rules.json`. Add a rule there when a document has a clear table or sentence.
+
 ## Optional: review in Excel instead
 `export-csv` → edit `out/review.csv` (status = approved / rejected) → `import-csv` → `export-app`.
 

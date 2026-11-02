@@ -1,5 +1,7 @@
 # TrueCal — Wireframes (text only)
 
+> Early design sketch. The built app differs in places (review screen, I-CAR lookup, own records). See [docs/user-guide.html](./docs/user-guide.html) for how it works now.
+
 PWA for checking whether an ADAS calibration is **Required / Not required / Self-learning**, with the OEM source cited.
 Built from `ADAS-Calibration-Overview.md`; VIN scan, vPIC decode, photo capture and dictation patterns reused from `D:\Collision-Voice`.
 

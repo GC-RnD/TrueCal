@@ -1,5 +1,5 @@
 // TrueCal — app-shell cache so the app installs and starts offline.
-const CACHE_NAME = "truecal-shell-v5";
+const CACHE_NAME = "truecal-shell-v7";
 const APP_SHELL = [
   "./",
   "./index.html",
@@ -44,6 +44,7 @@ self.addEventListener("fetch", (event) => {
   if (event.request.method !== "GET") return;
   const url = new URL(event.request.url);
   if (url.origin !== self.location.origin) return; // VIN lookups go straight to the network
+  if (url.pathname.startsWith("/api/")) return; // live lookups are never cached
 
   if (event.request.mode === "navigate" || NETWORK_FIRST.test(url.pathname)) {
     event.respondWith(

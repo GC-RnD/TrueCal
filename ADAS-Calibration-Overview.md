@@ -38,7 +38,7 @@ Add fields for confidence, conditions/notes (for example, "only if sensor bracke
 ## Findings: Free Public Sources (checked 2026-11-02)
 Hub sites that link to or host OEM statements, no login needed:
 - **OEM1Stop** (oem1stop.com, run by the OEM Collision Repair Roundtable): best single index of OEM position statements. robots.txt only blocks /wp-admin/. Some automated fetchers get HTTP 400 from it; the files are public.
-- **I-CAR RTS** (rts.i-car.com): hosts many OEM PDFs and news articles that quote OEM statements. Its "OEM Calibration Requirements Search" page describes a searchable requirements matrix (check what membership it needs).
+- **I-CAR RTS** (rts.i-car.com): hosts many OEM PDFs and news articles that quote OEM statements. Its "OEM Calibration Requirements Search" is a **public matrix** (no login needed to view): about 2,555 vehicle pages are listed in its sitemap, 2016 and newer, built from OEM service manuals and ADAS documents, with the OEM's wording quoted. I-CAR says it is not complete. See "I-CAR matrix lookup" below.
 
 Verified OEM statements (each fetched and read):
 
@@ -69,7 +69,7 @@ Scope: only sensor calibration requirements (which sensor, which repair, static/
 | Rank | Provider | Why | Per-VIN | OEM citations | Price | Contact / URL |
 |---|---|---|---|---|---|---|
 | 1 | **Opus IVS** (ADAS MAP / ADAS MAP PRO) and sister product **asTech adasThink** (Repairify) | VIN-specific list of required calibrations and scans, built from OEM requirements, I-CAR RTS, ALLDATA and OEM1Stop; already feeds CCC ONE and Mitchell as structured data, which suggests a usable data interface | Yes | Yes | Not public | https://opusivs.com/adas-map-pro/ , https://www.astech.com/pages/adasthink , https://opusivs.com/about/contact-form/ |
-| 2 | **I-CAR RTS** "OEM Calibration Requirements Search" | Best citation quality: matrix built from OEM documents with direct quotes. Looks like a lookup portal, not a feed; best for spot-checking | Vehicle lookup (full VIN decode not confirmed) | Yes, direct OEM quotes | Not public | https://rts.i-car.com/oem-calibration-requirements-search.html , https://rts.i-car.com/contact-us.html |
+| 2 | **I-CAR RTS** "OEM Calibration Requirements Search" | Best citation quality and the broadest free coverage. The matrix pages are public and list, per vehicle and sensor, the events that call for calibration. TrueCal has a live per-vehicle lookup built (local testing only). Terms not yet reviewed and permission not yet requested | Vehicle lookup by year, make and model (VIN decode not offered on the web page; an I-CAR mobile app accepts a VIN) | Yes, direct OEM quotes | Not public | https://rts.i-car.com/oem-calibration-requirements-search.html , https://rts.i-car.com/contact-us.html |
 | 3 | **Mitchell (Enlyte)** Predictive ADAS / Mitchell Diagnostics | Per-vehicle calibration reports, single subscription for unlimited vehicles; built for Mitchell's own estimating workflow; you already use Mitchell | Yes | Says OEM-recommended; citation format not shown publicly | Not public | https://www.mitchell.com/solutions/collision-repairers/diagnostic-solutions , 800.448.4401 |
 | 4 | **ALLDATA Collision** "ADAS Quick Reference" | Real OEM data but a reference and component locator, not a yes/no calibration engine; no API | No | General OEM data | $249/month (public); add-ons $129 and $59/month | https://www.alldata.com/us/en/collision |
 | 5 | **CCC ONE Diagnostics Network** | Workflow software that passes through partners' calibration reports (Opus IVS, asTech, AirPro, Autel, Revv and others); not a data owner | Depends on partner | Partner's | Not public | https://www.cccis.com/collision-repairers/repair-solutions/diagnostics |
@@ -104,6 +104,21 @@ The 183 findings are raw sentences, not a count of vehicles. A rule applies to e
 By repair trigger: windshield replacement and wheel alignment are the best covered; front and rear bumper R&I (the most common adjuster question) is mostly missing from free sources. That gap is the main reason to license data from Opus IVS, I-CAR or Mitchell.
 
 Review workflow in the app (menu, Review findings): each finding shows the sentence, a link to the source, and guessed make, sensors, repair and result. Yes keeps it as a rule (with the sentence and link shown on every ruling that uses it); No hides it (kept in the Hidden tab, can be restored). Decisions live on the device and can be exported from the menu, then recorded in the collector database with `import-decisions` so hidden findings do not come back on the next crawl.
+
+## I-CAR matrix lookup (built 2026-11-02, local testing)
+When a sensor has no reviewed rule, the app asks a small relay (`relay/server.js`) for I-CAR's matrix entry for that one vehicle (year, make, model). If I-CAR lists the selected repair for that sensor, the ruling is "Calibration required" with I-CAR's wording and a link to its page, labelled as from I-CAR's matrix. Otherwise the sensor stays Unverified and the card shows what I-CAR does list.
+
+What we learned from I-CAR's own guide (rts.i-car.com/crn-483.html):
+- The matrix covers 2016 and newer vehicles and "does not contain all production vehicles".
+- "No calibration/initialization requirements" means the manufacturer's manual does not specify one. It does not mean none is needed.
+- "If DTC indicates" means a trouble code may call for calibration that I-CAR could not list.
+- Manuals use other words for calibration (initialization, relearn, alignment, adjustment; Mercedes says normalization and coding), and events can differ by model year.
+- Some vehicles have only "Refer To OEM Scan Tool For Camera/Sensor Identification And Requirements" (for example the 2022 Mercedes-Benz E-Class), with no sensor list.
+- When nothing is found, I-CAR's page for the make (`rts.i-car.com/oem-information/<make>.html`) and its ADAS article list are the next places to look.
+
+Tested working: Acura, Toyota, Kia, Chevrolet, Dodge Durango. Terms of use are not yet reviewed and permission has not been requested; do that before anything beyond testing. The relay is host-neutral (plain Node); no hosting provider has been chosen.
+
+End user input (2026-11-02): he uses Mitchell Connect, and Mitchell gives no guidance on whether to calibrate, which he attributes to liability. His company has pressed Mitchell for about two years. He wants adjusters to see the answer before the shop's quote.
 
 ## Plan
 1. Define the schema and a VIN decode step using NHTSA vPIC.

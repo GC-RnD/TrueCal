@@ -439,7 +439,7 @@ def approved_rules(conn):
         rule = {
             "id": f"c{row['id']}", "make": MAKE_ALIAS.get(row["make"], row["make"]), "system": row["system"], "trigger": row["trigger"], "result": row["result"],
             "method": row["method"] or ("none" if row["result"] != "required" else ""),
-            "notes": row["notes"] or "", "quote": clean_text(row["excerpt"]),
+            "notes": row["notes"] or "", "quote": clean_text(row["excerpt"]), "origin": "user-reviewed",
             "confidence": row["confidence"] if row["confidence"] in VALID_CONFIDENCE else "medium",
             "verified": today,
             "source": {"title": clean_title(row["source_title"] or row["page_title"], url), "url": url, "published": row["published"] or "", "retrieved": (row["fetched_at"] or "")[:10]},
@@ -493,7 +493,9 @@ def export_app(args):
             }
         )
     rules, problems, today = approved_rules(conn)
-    APP_DATA.mkdir(exist_ok=True)
+    curated_path = HERE / "curated_rules.json"
+    if curated_path.exists():
+        rules = json.loads(curated_path.read_text(encoding="utf-8"))["rules"] + rules  # hand-entered from the OEM wording
     (APP_DATA / "candidates.json").write_text(json.dumps({"generated": today, "candidates": candidates}, indent=1, ensure_ascii=False), encoding="utf-8")
     (APP_DATA / "rules.json").write_text(json.dumps({"version": f"collected-{today}", "updated": today, "rules": rules}, indent=1, ensure_ascii=False), encoding="utf-8")
     print(f"Wrote {len(candidates)} candidates and {len(rules)} approved rules to {APP_DATA}")

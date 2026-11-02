@@ -87,7 +87,11 @@ Questions for Opus IVS and I-CAR:
 3. What is the U.S. coverage by year/make/model, and may we show the underlying OEM text and citation inside our own app?
 
 ## Coverage: which makes the free sources support (as of 2026-11-02)
-The 183 findings are raw sentences, not a count of vehicles. A reviewed rule applies to every model and year of a make unless the reviewer limits the years or models.
+**Rules in the app today: 51**, entered from the manufacturer's own wording with the quote and source link kept (tools/collector/curated_rules.json): Honda 17, Acura 17, Nissan 12, GM 2, Volvo 2, Subaru 1. They were wording-checked by the assistant against the documents; a person can still confirm or hide the 183 remaining findings in the app's Review screen. Records a team adds on its own are stored separately and always labelled "not OEM-verified".
+
+Examples of what is covered: Honda/Acura radar, camera and blind-spot aiming after sensor removal, windshield replacement, structural repair, airbag deployment and front bumper fascia repair near the radar; "not required after wheel alignment"; Acura/Honda multi-view camera aiming after front bumper and grille removal; GM, Subaru and Volvo windshield; Nissan any ADAS component removal and alignment.
+
+The 183 findings are raw sentences, not a count of vehicles. A rule applies to every model and year of a make unless the document or reviewer limits the years or models.
 
 | Tier | Makes | What can be supported |
 |---|---|---|

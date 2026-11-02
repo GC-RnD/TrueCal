@@ -1,0 +1,978 @@
+{
+ "note": "Rules entered from the manufacturer's own wording. Quote and source link are shown with every ruling.",
+ "rules": [
+  {
+   "id": "honda-radar-ri",
+   "make": "Honda",
+   "system": "front-radar",
+   "trigger": "sensor-ri",
+   "result": "required",
+   "method": "static",
+   "notes": "Job aid table 'When to Aim', millimeter wave radar (p.6). Radar aiming uses a stationary target and the i-HDS. Applies to models with this equipment; check the model's service information.",
+   "quote": "Millimeter wave radar unit was removed and installed. Millimeter wave radar unit was replaced.",
+   "confidence": "high",
+   "verified": "2026-11-02",
+   "origin": "assistant-wording-check",
+   "source": {
+    "title": "Honda job aid: Aiming Driving Support Systems (v12, Aug 2025)",
+    "url": "https://rts.i-car.com/images/pdf/oem-info/honda/position-statements/30193.pdf",
+    "published": "2025-08",
+    "retrieved": "2026-11-02"
+   }
+  },
+  {
+   "id": "honda-radar-bumper",
+   "make": "Honda",
+   "system": "front-radar",
+   "trigger": "bumper-front-repair",
+   "result": "required",
+   "method": "static",
+   "notes": "Applies to a fascia REPAIR near the radar, not a plain bumper removal and installation (p.6). Applies to models with this equipment; check the model's service information.",
+   "quote": "After a collision repair that would require at least a front bumper fascia repair within 300 mm of the millimeter wave radar unit.",
+   "confidence": "high",
+   "verified": "2026-11-02",
+   "origin": "assistant-wording-check",
+   "source": {
+    "title": "Honda job aid: Aiming Driving Support Systems (v12, Aug 2025)",
+    "url": "https://rts.i-car.com/images/pdf/oem-info/honda/position-statements/30193.pdf",
+    "published": "2025-08",
+    "retrieved": "2026-11-02"
+   }
+  },
+  {
+   "id": "honda-radar-structural",
+   "make": "Honda",
+   "system": "front-radar",
+   "trigger": "collision-structural",
+   "result": "required",
+   "method": "static",
+   "notes": "Millimeter wave radar (p.6). Structural damage means more than minor cosmetic abrasions to welded, riveted or bonded unibody parts, bumper reinforcements, door intrusion beams or bolt-on front bulkheads.",
+   "quote": "After a collision repair requiring a structural body repair.",
+   "confidence": "high",
+   "verified": "2026-11-02",
+   "origin": "assistant-wording-check",
+   "source": {
+    "title": "Honda job aid: Aiming Driving Support Systems (v12, Aug 2025)",
+    "url": "https://rts.i-car.com/images/pdf/oem-info/honda/position-statements/30193.pdf",
+    "published": "2025-08",
+    "retrieved": "2026-11-02"
+   }
+  },
+  {
+   "id": "honda-radar-srs",
+   "make": "Honda",
+   "system": "front-radar",
+   "trigger": "collision-structural",
+   "result": "required",
+   "method": "static",
+   "notes": "Tick 'Airbag deployed' on the check (p.6).",
+   "quote": "After a Supplemental Restraint System (SRS) deployment.",
+   "confidence": "high",
+   "verified": "2026-11-02",
+   "origin": "assistant-wording-check",
+   "source": {
+    "title": "Honda job aid: Aiming Driving Support Systems (v12, Aug 2025)",
+    "url": "https://rts.i-car.com/images/pdf/oem-info/honda/position-statements/30193.pdf",
+    "published": "2025-08",
+    "retrieved": "2026-11-02"
+   },
+   "conditionKey": "airbagDeployed"
+  },
+  {
+   "id": "honda-radar-alignment",
+   "make": "Honda",
+   "system": "front-radar",
+   "trigger": "alignment",
+   "result": "not-required",
+   "method": "none",
+   "notes": "Job aid page on when aiming is required. After a collision, a four-wheel alignment must be done BEFORE aiming.",
+   "quote": "Unless instructed by the service manual or available service information, camera and radar systems calibrations are NOT required after a wheel alignment.",
+   "confidence": "high",
+   "verified": "2026-11-02",
+   "origin": "assistant-wording-check",
+   "source": {
+    "title": "Honda job aid: Aiming Driving Support Systems (v12, Aug 2025)",
+    "url": "https://rts.i-car.com/images/pdf/oem-info/honda/position-statements/30193.pdf",
+    "published": "2025-08",
+    "retrieved": "2026-11-02"
+   }
+  },
+  {
+   "id": "honda-camera-windshield",
+   "make": "Honda",
+   "system": "forward-camera",
+   "trigger": "windshield",
+   "result": "required",
+   "method": "",
+   "notes": "Multipurpose camera / FCW-LDW camera (p.8). Method varies by model: the multipurpose camera needs static and dynamic aiming; some FCW/LDW cameras need dynamic only. The replacement windshield must be a genuine Honda windshield.",
+   "quote": "Windshield was removed and installed. Windshield was replaced.",
+   "confidence": "high",
+   "verified": "2026-11-02",
+   "origin": "assistant-wording-check",
+   "source": {
+    "title": "Honda job aid: Aiming Driving Support Systems (v12, Aug 2025)",
+    "url": "https://rts.i-car.com/images/pdf/oem-info/honda/position-statements/30193.pdf",
+    "published": "2025-08",
+    "retrieved": "2026-11-02"
+   }
+  },
+  {
+   "id": "honda-camera-ri",
+   "make": "Honda",
+   "system": "forward-camera",
+   "trigger": "sensor-ri",
+   "result": "required",
+   "method": "",
+   "notes": "(p.8) Method varies by model. Always order a replacement camera using the VIN.",
+   "quote": "Multipurpose camera unit or FCW/LDW camera unit was removed and installed. Multipurpose camera unit or FCW/LDW camera unit was replaced.",
+   "confidence": "high",
+   "verified": "2026-11-02",
+   "origin": "assistant-wording-check",
+   "source": {
+    "title": "Honda job aid: Aiming Driving Support Systems (v12, Aug 2025)",
+    "url": "https://rts.i-car.com/images/pdf/oem-info/honda/position-statements/30193.pdf",
+    "published": "2025-08",
+    "retrieved": "2026-11-02"
+   }
+  },
+  {
+   "id": "honda-camera-structural",
+   "make": "Honda",
+   "system": "forward-camera",
+   "trigger": "collision-structural",
+   "result": "required",
+   "method": "",
+   "notes": "Multipurpose camera / FCW-LDW camera (p.8). Method varies by model.",
+   "quote": "After a collision repair requiring a structural body repair.",
+   "confidence": "high",
+   "verified": "2026-11-02",
+   "origin": "assistant-wording-check",
+   "source": {
+    "title": "Honda job aid: Aiming Driving Support Systems (v12, Aug 2025)",
+    "url": "https://rts.i-car.com/images/pdf/oem-info/honda/position-statements/30193.pdf",
+    "published": "2025-08",
+    "retrieved": "2026-11-02"
+   }
+  },
+  {
+   "id": "honda-camera-srs",
+   "make": "Honda",
+   "system": "forward-camera",
+   "trigger": "collision-structural",
+   "result": "required",
+   "method": "",
+   "notes": "Tick 'Airbag deployed' on the check (p.8).",
+   "quote": "After a Supplemental Restraint System (SRS) deployment.",
+   "confidence": "high",
+   "verified": "2026-11-02",
+   "origin": "assistant-wording-check",
+   "source": {
+    "title": "Honda job aid: Aiming Driving Support Systems (v12, Aug 2025)",
+    "url": "https://rts.i-car.com/images/pdf/oem-info/honda/position-statements/30193.pdf",
+    "published": "2025-08",
+    "retrieved": "2026-11-02"
+   },
+   "conditionKey": "airbagDeployed"
+  },
+  {
+   "id": "honda-camera-alignment",
+   "make": "Honda",
+   "system": "forward-camera",
+   "trigger": "alignment",
+   "result": "not-required",
+   "method": "none",
+   "notes": "After a collision, a four-wheel alignment must be done BEFORE aiming.",
+   "quote": "Unless instructed by the service manual or available service information, camera and radar systems calibrations are NOT required after a wheel alignment.",
+   "confidence": "high",
+   "verified": "2026-11-02",
+   "origin": "assistant-wording-check",
+   "source": {
+    "title": "Honda job aid: Aiming Driving Support Systems (v12, Aug 2025)",
+    "url": "https://rts.i-car.com/images/pdf/oem-info/honda/position-statements/30193.pdf",
+    "published": "2025-08",
+    "retrieved": "2026-11-02"
+   }
+  },
+  {
+   "id": "honda-bsi-ri",
+   "make": "Honda",
+   "system": "blind-spot",
+   "trigger": "sensor-ri",
+   "result": "required",
+   "method": "",
+   "notes": "Blind Spot Information radar (p.7). If the unit was replaced due to damage, do the BSI Radar Unit Mounting Area Check before installing the new unit.",
+   "quote": "BSI radar unit was removed and installed. BSI radar unit was replaced.",
+   "confidence": "high",
+   "verified": "2026-11-02",
+   "origin": "assistant-wording-check",
+   "source": {
+    "title": "Honda job aid: Aiming Driving Support Systems (v12, Aug 2025)",
+    "url": "https://rts.i-car.com/images/pdf/oem-info/honda/position-statements/30193.pdf",
+    "published": "2025-08",
+    "retrieved": "2026-11-02"
+   }
+  },
+  {
+   "id": "honda-bsi-structural",
+   "make": "Honda",
+   "system": "blind-spot",
+   "trigger": "collision-structural",
+   "result": "required",
+   "method": "",
+   "notes": "Blind Spot Information radar (p.7). Rear structural repair only. Do the BSI Radar Unit Mounting Area Check after the repair.",
+   "quote": "After a collision repair requiring a structural body repair at the rear of the vehicle.",
+   "confidence": "high",
+   "verified": "2026-11-02",
+   "origin": "assistant-wording-check",
+   "source": {
+    "title": "Honda job aid: Aiming Driving Support Systems (v12, Aug 2025)",
+    "url": "https://rts.i-car.com/images/pdf/oem-info/honda/position-statements/30193.pdf",
+    "published": "2025-08",
+    "retrieved": "2026-11-02"
+   }
+  },
+  {
+   "id": "honda-bsi-alignment",
+   "make": "Honda",
+   "system": "blind-spot",
+   "trigger": "alignment",
+   "result": "not-required",
+   "method": "none",
+   "notes": "General statement for camera and radar systems.",
+   "quote": "Unless instructed by the service manual or available service information, camera and radar systems calibrations are NOT required after a wheel alignment.",
+   "confidence": "medium",
+   "verified": "2026-11-02",
+   "origin": "assistant-wording-check",
+   "source": {
+    "title": "Honda job aid: Aiming Driving Support Systems (v12, Aug 2025)",
+    "url": "https://rts.i-car.com/images/pdf/oem-info/honda/position-statements/30193.pdf",
+    "published": "2025-08",
+    "retrieved": "2026-11-02"
+   }
+  },
+  {
+   "id": "honda-mvc-bumper",
+   "make": "Honda",
+   "system": "surround-camera",
+   "trigger": "bumper-front-ri",
+   "result": "required",
+   "method": "",
+   "notes": "Multi View Camera (p.9). The listed parts include the FRONT bumper and front grille. Refer to the model's service information for details.",
+   "quote": "After replacing or removing/reinstalling the following: Front camera, Rearview camera, Left or right side camera, Power mirror assembly, Mirror housing lower cover, Front bumper, Front grille, Driver's or front passenger's door, Tailgate",
+   "confidence": "high",
+   "verified": "2026-11-02",
+   "origin": "assistant-wording-check",
+   "source": {
+    "title": "Honda job aid: Aiming Driving Support Systems (v12, Aug 2025)",
+    "url": "https://rts.i-car.com/images/pdf/oem-info/honda/position-statements/30193.pdf",
+    "published": "2025-08",
+    "retrieved": "2026-11-02"
+   }
+  },
+  {
+   "id": "honda-mvc-ri",
+   "make": "Honda",
+   "system": "surround-camera",
+   "trigger": "sensor-ri",
+   "result": "required",
+   "method": "",
+   "notes": "Multi View Camera (p.9). Only the camera(s) that were removed, adjusted or required re-aiming need aiming.",
+   "quote": "After replacing or removing/reinstalling the following: Front camera, Rearview camera, Left or right side camera, Power mirror assembly...",
+   "confidence": "high",
+   "verified": "2026-11-02",
+   "origin": "assistant-wording-check",
+   "source": {
+    "title": "Honda job aid: Aiming Driving Support Systems (v12, Aug 2025)",
+    "url": "https://rts.i-car.com/images/pdf/oem-info/honda/position-statements/30193.pdf",
+    "published": "2025-08",
+    "retrieved": "2026-11-02"
+   }
+  },
+  {
+   "id": "honda-mvc-doors",
+   "make": "Honda",
+   "system": "surround-camera",
+   "trigger": "mirror-door-liftgate",
+   "result": "required",
+   "method": "",
+   "notes": "Multi View Camera (p.9). Also after any collision repair to the driver's or front passenger's door.",
+   "quote": "After replacing or removing/reinstalling the following: ... Power mirror assembly, Mirror housing lower cover, ... Driver's or front passenger's door, Tailgate",
+   "confidence": "high",
+   "verified": "2026-11-02",
+   "origin": "assistant-wording-check",
+   "source": {
+    "title": "Honda job aid: Aiming Driving Support Systems (v12, Aug 2025)",
+    "url": "https://rts.i-car.com/images/pdf/oem-info/honda/position-statements/30193.pdf",
+    "published": "2025-08",
+    "retrieved": "2026-11-02"
+   }
+  },
+  {
+   "id": "honda-rearcam-ri",
+   "make": "Honda",
+   "system": "rear-camera",
+   "trigger": "sensor-ri",
+   "result": "not-required",
+   "method": "none",
+   "notes": "If the vehicle has the Multi-View Camera System, see the surround-view rules.",
+   "quote": "Rearview (backup) cameras do not require any aiming procedures after removal or replacement unless the vehicle also is equipped with the Multi-View Camera System (MVCS).",
+   "confidence": "high",
+   "verified": "2026-11-02",
+   "origin": "assistant-wording-check",
+   "source": {
+    "title": "Honda/Acura post-collision diagnostic scan and calibration requirements (v6, July 2025)",
+    "url": "https://oem1stop.com/wp-content/uploads/2026/10/Honda-Acura_Pos_Diag-Scans-Calib_Revised_FINAL7-25-1.pdf",
+    "published": "2025-07",
+    "retrieved": "2026-11-02"
+   }
+  },
+  {
+   "id": "acura-radar-ri",
+   "make": "Acura",
+   "system": "front-radar",
+   "trigger": "sensor-ri",
+   "result": "required",
+   "method": "static",
+   "notes": "Job aid table 'When to Aim', millimeter wave radar (p.5). Radar aiming uses a stationary target and the i-HDS. Applies to models with this equipment; check the model's service information.",
+   "quote": "Millimeter wave radar unit was removed and installed. Millimeter wave radar unit was replaced.",
+   "confidence": "high",
+   "verified": "2026-11-02",
+   "origin": "assistant-wording-check",
+   "source": {
+    "title": "Acura job aid: Aiming Driving Support Systems (v7, Aug 2025)",
+    "url": "https://rts.i-car.com/images/pdf/oem-info/acura/position-statements/43998x.pdf",
+    "published": "2025-08",
+    "retrieved": "2026-11-02"
+   }
+  },
+  {
+   "id": "acura-radar-bumper",
+   "make": "Acura",
+   "system": "front-radar",
+   "trigger": "bumper-front-repair",
+   "result": "required",
+   "method": "static",
+   "notes": "Applies to a fascia REPAIR near the radar, not a plain bumper removal and installation (p.5). Applies to models with this equipment; check the model's service information.",
+   "quote": "After a collision repair that would require at least a front bumper fascia repair within 300 mm of the millimeter wave radar unit.",
+   "confidence": "high",
+   "verified": "2026-11-02",
+   "origin": "assistant-wording-check",
+   "source": {
+    "title": "Acura job aid: Aiming Driving Support Systems (v7, Aug 2025)",
+    "url": "https://rts.i-car.com/images/pdf/oem-info/acura/position-statements/43998x.pdf",
+    "published": "2025-08",
+    "retrieved": "2026-11-02"
+   }
+  },
+  {
+   "id": "acura-radar-structural",
+   "make": "Acura",
+   "system": "front-radar",
+   "trigger": "collision-structural",
+   "result": "required",
+   "method": "static",
+   "notes": "Millimeter wave radar (p.5). Structural damage means more than minor cosmetic abrasions to welded, riveted or bonded unibody parts, bumper reinforcements, door intrusion beams or bolt-on front bulkheads.",
+   "quote": "After a collision repair requiring a structural body repair.",
+   "confidence": "high",
+   "verified": "2026-11-02",
+   "origin": "assistant-wording-check",
+   "source": {
+    "title": "Acura job aid: Aiming Driving Support Systems (v7, Aug 2025)",
+    "url": "https://rts.i-car.com/images/pdf/oem-info/acura/position-statements/43998x.pdf",
+    "published": "2025-08",
+    "retrieved": "2026-11-02"
+   }
+  },
+  {
+   "id": "acura-radar-srs",
+   "make": "Acura",
+   "system": "front-radar",
+   "trigger": "collision-structural",
+   "result": "required",
+   "method": "static",
+   "notes": "Tick 'Airbag deployed' on the check (p.5).",
+   "quote": "After a Supplemental Restraint System (SRS) deployment.",
+   "confidence": "high",
+   "verified": "2026-11-02",
+   "origin": "assistant-wording-check",
+   "source": {
+    "title": "Acura job aid: Aiming Driving Support Systems (v7, Aug 2025)",
+    "url": "https://rts.i-car.com/images/pdf/oem-info/acura/position-statements/43998x.pdf",
+    "published": "2025-08",
+    "retrieved": "2026-11-02"
+   },
+   "conditionKey": "airbagDeployed"
+  },
+  {
+   "id": "acura-radar-alignment",
+   "make": "Acura",
+   "system": "front-radar",
+   "trigger": "alignment",
+   "result": "not-required",
+   "method": "none",
+   "notes": "Job aid page on when aiming is required. After a collision, a four-wheel alignment must be done BEFORE aiming.",
+   "quote": "Unless instructed by the service manual or available service information, camera and radar systems calibrations are NOT required after a wheel alignment.",
+   "confidence": "high",
+   "verified": "2026-11-02",
+   "origin": "assistant-wording-check",
+   "source": {
+    "title": "Acura job aid: Aiming Driving Support Systems (v7, Aug 2025)",
+    "url": "https://rts.i-car.com/images/pdf/oem-info/acura/position-statements/43998x.pdf",
+    "published": "2025-08",
+    "retrieved": "2026-11-02"
+   }
+  },
+  {
+   "id": "acura-camera-windshield",
+   "make": "Acura",
+   "system": "forward-camera",
+   "trigger": "windshield",
+   "result": "required",
+   "method": "",
+   "notes": "Multipurpose camera / FCW-LDW camera (p.7). Method varies by model: the multipurpose camera needs static and dynamic aiming; some FCW/LDW cameras need dynamic only. The replacement windshield must be a genuine Acura windshield.",
+   "quote": "Windshield was removed and installed. Windshield was replaced.",
+   "confidence": "high",
+   "verified": "2026-11-02",
+   "origin": "assistant-wording-check",
+   "source": {
+    "title": "Acura job aid: Aiming Driving Support Systems (v7, Aug 2025)",
+    "url": "https://rts.i-car.com/images/pdf/oem-info/acura/position-statements/43998x.pdf",
+    "published": "2025-08",
+    "retrieved": "2026-11-02"
+   }
+  },
+  {
+   "id": "acura-camera-ri",
+   "make": "Acura",
+   "system": "forward-camera",
+   "trigger": "sensor-ri",
+   "result": "required",
+   "method": "",
+   "notes": "(p.7) Method varies by model. Always order a replacement camera using the VIN.",
+   "quote": "Multipurpose camera unit or FCW/LDW camera unit was removed and installed. Multipurpose camera unit or FCW/LDW camera unit was replaced.",
+   "confidence": "high",
+   "verified": "2026-11-02",
+   "origin": "assistant-wording-check",
+   "source": {
+    "title": "Acura job aid: Aiming Driving Support Systems (v7, Aug 2025)",
+    "url": "https://rts.i-car.com/images/pdf/oem-info/acura/position-statements/43998x.pdf",
+    "published": "2025-08",
+    "retrieved": "2026-11-02"
+   }
+  },
+  {
+   "id": "acura-camera-structural",
+   "make": "Acura",
+   "system": "forward-camera",
+   "trigger": "collision-structural",
+   "result": "required",
+   "method": "",
+   "notes": "Multipurpose camera / FCW-LDW camera (p.7). Method varies by model.",
+   "quote": "After a collision repair requiring a structural body repair.",
+   "confidence": "high",
+   "verified": "2026-11-02",
+   "origin": "assistant-wording-check",
+   "source": {
+    "title": "Acura job aid: Aiming Driving Support Systems (v7, Aug 2025)",
+    "url": "https://rts.i-car.com/images/pdf/oem-info/acura/position-statements/43998x.pdf",
+    "published": "2025-08",
+    "retrieved": "2026-11-02"
+   }
+  },
+  {
+   "id": "acura-camera-srs",
+   "make": "Acura",
+   "system": "forward-camera",
+   "trigger": "collision-structural",
+   "result": "required",
+   "method": "",
+   "notes": "Tick 'Airbag deployed' on the check (p.7).",
+   "quote": "After a Supplemental Restraint System (SRS) deployment.",
+   "confidence": "high",
+   "verified": "2026-11-02",
+   "origin": "assistant-wording-check",
+   "source": {
+    "title": "Acura job aid: Aiming Driving Support Systems (v7, Aug 2025)",
+    "url": "https://rts.i-car.com/images/pdf/oem-info/acura/position-statements/43998x.pdf",
+    "published": "2025-08",
+    "retrieved": "2026-11-02"
+   },
+   "conditionKey": "airbagDeployed"
+  },
+  {
+   "id": "acura-camera-alignment",
+   "make": "Acura",
+   "system": "forward-camera",
+   "trigger": "alignment",
+   "result": "not-required",
+   "method": "none",
+   "notes": "After a collision, a four-wheel alignment must be done BEFORE aiming.",
+   "quote": "Unless instructed by the service manual or available service information, camera and radar systems calibrations are NOT required after a wheel alignment.",
+   "confidence": "high",
+   "verified": "2026-11-02",
+   "origin": "assistant-wording-check",
+   "source": {
+    "title": "Acura job aid: Aiming Driving Support Systems (v7, Aug 2025)",
+    "url": "https://rts.i-car.com/images/pdf/oem-info/acura/position-statements/43998x.pdf",
+    "published": "2025-08",
+    "retrieved": "2026-11-02"
+   }
+  },
+  {
+   "id": "acura-bsi-ri",
+   "make": "Acura",
+   "system": "blind-spot",
+   "trigger": "sensor-ri",
+   "result": "required",
+   "method": "",
+   "notes": "Blind Spot Information radar (p.6). If the unit was replaced due to damage, do the BSI Radar Unit Mounting Area Check before installing the new unit.",
+   "quote": "BSI radar unit was removed and installed. BSI radar unit was replaced.",
+   "confidence": "high",
+   "verified": "2026-11-02",
+   "origin": "assistant-wording-check",
+   "source": {
+    "title": "Acura job aid: Aiming Driving Support Systems (v7, Aug 2025)",
+    "url": "https://rts.i-car.com/images/pdf/oem-info/acura/position-statements/43998x.pdf",
+    "published": "2025-08",
+    "retrieved": "2026-11-02"
+   }
+  },
+  {
+   "id": "acura-bsi-structural",
+   "make": "Acura",
+   "system": "blind-spot",
+   "trigger": "collision-structural",
+   "result": "required",
+   "method": "",
+   "notes": "Blind Spot Information radar (p.6). Rear structural repair only. Do the BSI Radar Unit Mounting Area Check after the repair.",
+   "quote": "After a collision repair requiring a structural body repair at the rear of the vehicle.",
+   "confidence": "high",
+   "verified": "2026-11-02",
+   "origin": "assistant-wording-check",
+   "source": {
+    "title": "Acura job aid: Aiming Driving Support Systems (v7, Aug 2025)",
+    "url": "https://rts.i-car.com/images/pdf/oem-info/acura/position-statements/43998x.pdf",
+    "published": "2025-08",
+    "retrieved": "2026-11-02"
+   }
+  },
+  {
+   "id": "acura-bsi-alignment",
+   "make": "Acura",
+   "system": "blind-spot",
+   "trigger": "alignment",
+   "result": "not-required",
+   "method": "none",
+   "notes": "General statement for camera and radar systems.",
+   "quote": "Unless instructed by the service manual or available service information, camera and radar systems calibrations are NOT required after a wheel alignment.",
+   "confidence": "medium",
+   "verified": "2026-11-02",
+   "origin": "assistant-wording-check",
+   "source": {
+    "title": "Acura job aid: Aiming Driving Support Systems (v7, Aug 2025)",
+    "url": "https://rts.i-car.com/images/pdf/oem-info/acura/position-statements/43998x.pdf",
+    "published": "2025-08",
+    "retrieved": "2026-11-02"
+   }
+  },
+  {
+   "id": "acura-mvc-bumper",
+   "make": "Acura",
+   "system": "surround-camera",
+   "trigger": "bumper-front-ri",
+   "result": "required",
+   "method": "",
+   "notes": "Multi View Camera (p.8). The listed parts include the FRONT bumper and front grille. Refer to the model's service information for details.",
+   "quote": "After replacing or removing/reinstalling the following: Front camera, Rearview camera, Left or right side camera, Power mirror assembly, Mirror housing lower cover, Front bumper, Front grille, Driver's or front passenger's door, Tailgate, Trunk",
+   "confidence": "high",
+   "verified": "2026-11-02",
+   "origin": "assistant-wording-check",
+   "source": {
+    "title": "Acura job aid: Aiming Driving Support Systems (v7, Aug 2025)",
+    "url": "https://rts.i-car.com/images/pdf/oem-info/acura/position-statements/43998x.pdf",
+    "published": "2025-08",
+    "retrieved": "2026-11-02"
+   }
+  },
+  {
+   "id": "acura-mvc-ri",
+   "make": "Acura",
+   "system": "surround-camera",
+   "trigger": "sensor-ri",
+   "result": "required",
+   "method": "",
+   "notes": "Multi View Camera (p.8). Only the camera(s) that were removed, adjusted or required re-aiming need aiming.",
+   "quote": "After replacing or removing/reinstalling the following: Front camera, Rearview camera, Left or right side camera, Power mirror assembly...",
+   "confidence": "high",
+   "verified": "2026-11-02",
+   "origin": "assistant-wording-check",
+   "source": {
+    "title": "Acura job aid: Aiming Driving Support Systems (v7, Aug 2025)",
+    "url": "https://rts.i-car.com/images/pdf/oem-info/acura/position-statements/43998x.pdf",
+    "published": "2025-08",
+    "retrieved": "2026-11-02"
+   }
+  },
+  {
+   "id": "acura-mvc-doors",
+   "make": "Acura",
+   "system": "surround-camera",
+   "trigger": "mirror-door-liftgate",
+   "result": "required",
+   "method": "",
+   "notes": "Multi View Camera (p.8). Also after any collision repair to the driver's or front passenger's door.",
+   "quote": "After replacing or removing/reinstalling the following: ... Power mirror assembly, Mirror housing lower cover, ... Driver's or front passenger's door, Tailgate, Trunk",
+   "confidence": "high",
+   "verified": "2026-11-02",
+   "origin": "assistant-wording-check",
+   "source": {
+    "title": "Acura job aid: Aiming Driving Support Systems (v7, Aug 2025)",
+    "url": "https://rts.i-car.com/images/pdf/oem-info/acura/position-statements/43998x.pdf",
+    "published": "2025-08",
+    "retrieved": "2026-11-02"
+   }
+  },
+  {
+   "id": "acura-rearcam-ri",
+   "make": "Acura",
+   "system": "rear-camera",
+   "trigger": "sensor-ri",
+   "result": "not-required",
+   "method": "none",
+   "notes": "If the vehicle has the Multi-View Camera System, see the surround-view rules.",
+   "quote": "Rearview (backup) cameras do not require any aiming procedures after removal or replacement unless the vehicle also is equipped with the Multi-View Camera System (MVCS).",
+   "confidence": "high",
+   "verified": "2026-11-02",
+   "origin": "assistant-wording-check",
+   "source": {
+    "title": "Honda/Acura post-collision diagnostic scan and calibration requirements (v6, July 2025)",
+    "url": "https://oem1stop.com/wp-content/uploads/2026/10/Honda-Acura_Pos_Diag-Scans-Calib_Revised_FINAL7-25-1.pdf",
+    "published": "2025-07",
+    "retrieved": "2026-11-02"
+   }
+  },
+  {
+   "id": "gm-camera-windshield",
+   "make": "GM",
+   "system": "forward-camera",
+   "trigger": "windshield",
+   "result": "required",
+   "method": "",
+   "notes": "Applies to Chevrolet, GMC, Cadillac and Buick. The statement also requires GM original-equipment glass.",
+   "quote": "It is critical that a service point calibration/learn procedure is performed whenever a front view windshield camera or sensor is removed, reinstalled, or replaced, or when the windshield itself is removed and replaced.",
+   "confidence": "high",
+   "verified": "2026-11-02",
+   "origin": "assistant-wording-check",
+   "source": {
+    "title": "GM Collision Position Statement: Windshield Replacement (Sept 2026)",
+    "url": "https://www.gmparts.com/content/dam/gmparts/na/us/en/index/trade-professionals/position-statements/02-pdfs/windshield-replacement.pdf",
+    "published": "2026-09-18",
+    "retrieved": "2026-11-02"
+   }
+  },
+  {
+   "id": "gm-camera-ri",
+   "make": "GM",
+   "system": "forward-camera",
+   "trigger": "sensor-ri",
+   "result": "required",
+   "method": "",
+   "notes": "Applies to Chevrolet, GMC, Cadillac and Buick.",
+   "quote": "It is critical that a service point calibration/learn procedure is performed whenever a front view windshield camera or sensor is removed, reinstalled, or replaced, or when the windshield itself is removed and replaced.",
+   "confidence": "high",
+   "verified": "2026-11-02",
+   "origin": "assistant-wording-check",
+   "source": {
+    "title": "GM Collision Position Statement: Windshield Replacement (Sept 2026)",
+    "url": "https://www.gmparts.com/content/dam/gmparts/na/us/en/index/trade-professionals/position-statements/02-pdfs/windshield-replacement.pdf",
+    "published": "2026-09-18",
+    "retrieved": "2026-11-02"
+   }
+  },
+  {
+   "id": "subaru-camera-windshield",
+   "make": "Subaru",
+   "system": "forward-camera",
+   "trigger": "windshield",
+   "result": "required",
+   "method": "",
+   "notes": "Only vehicles equipped with EyeSight. Subaru genuine glass is required.",
+   "quote": "If windshield glass replacement is performed on a Subaru vehicle equipped with EyeSight, calibration is required after the windshield is replaced.",
+   "confidence": "high",
+   "verified": "2026-11-02",
+   "origin": "assistant-wording-check",
+   "source": {
+    "title": "Subaru Position Statement: Aftermarket Windshield Glass for Vehicles Equipped with EyeSight (April 2020)",
+    "url": "https://oem1stop.com/wp-content/uploads/2026/10/Subaru_Pos_Eyesight_FINAL4-16-20.pdf",
+    "published": "2020-04",
+    "retrieved": "2026-11-02"
+   }
+  },
+  {
+   "id": "volvo-camera-windshield",
+   "make": "Volvo",
+   "system": "forward-camera",
+   "trigger": "windshield",
+   "result": "required",
+   "method": "",
+   "notes": "Volvo requires genuine Volvo glass.",
+   "quote": "Calibration of the camera and radar unit (ASDM) is required after windshield replacement.",
+   "confidence": "high",
+   "verified": "2026-11-02",
+   "origin": "assistant-wording-check",
+   "source": {
+    "title": "Volvo Car USA Statement on ADAS",
+    "url": "https://oem1stop.com/wp-content/uploads/2026/10/Volvo_Position_ADAS2-22.pdf",
+    "published": "",
+    "retrieved": "2026-11-02"
+   }
+  },
+  {
+   "id": "volvo-radar-windshield",
+   "make": "Volvo",
+   "system": "front-radar",
+   "trigger": "windshield",
+   "result": "required",
+   "method": "",
+   "notes": "Volvo requires genuine Volvo glass.",
+   "quote": "Calibration of the camera and radar unit (ASDM) is required after windshield replacement.",
+   "confidence": "medium",
+   "verified": "2026-11-02",
+   "origin": "assistant-wording-check",
+   "source": {
+    "title": "Volvo Car USA Statement on ADAS",
+    "url": "https://oem1stop.com/wp-content/uploads/2026/10/Volvo_Position_ADAS2-22.pdf",
+    "published": "",
+    "retrieved": "2026-11-02"
+   }
+  },
+  {
+   "id": "nissan-forward-camera-ri",
+   "make": "Nissan",
+   "system": "forward-camera",
+   "trigger": "sensor-ri",
+   "result": "required",
+   "method": "",
+   "notes": "Nissan brand only (Infiniti has its own statement).",
+   "quote": "After any ADAS component removal, replacement, and even vehicle alignment, the proper calibration procedure must be performed using the Nissan CONSULT diagnostic software and following the Electronic Service Manual (ESM) instructions.",
+   "confidence": "high",
+   "verified": "2026-11-02",
+   "origin": "assistant-wording-check",
+   "source": {
+    "title": "Nissan Collision Position Statement: ADAS Components (NPSB/26-971)",
+    "url": "https://oem1stop.com/wp-content/uploads/2026/10/Nissan_Pos_ADAS_NPSB26-971_Revised1-1-26.pdf",
+    "published": "2026-01-01",
+    "retrieved": "2026-11-02"
+   }
+  },
+  {
+   "id": "nissan-forward-camera-alignment",
+   "make": "Nissan",
+   "system": "forward-camera",
+   "trigger": "alignment",
+   "result": "required",
+   "method": "",
+   "notes": "Nissan says calibration is needed even after a vehicle alignment. Nissan brand only.",
+   "quote": "After any ADAS component removal, replacement, and even vehicle alignment, the proper calibration procedure must be performed using the Nissan CONSULT diagnostic software and following the Electronic Service Manual (ESM) instructions.",
+   "confidence": "high",
+   "verified": "2026-11-02",
+   "origin": "assistant-wording-check",
+   "source": {
+    "title": "Nissan Collision Position Statement: ADAS Components (NPSB/26-971)",
+    "url": "https://oem1stop.com/wp-content/uploads/2026/10/Nissan_Pos_ADAS_NPSB26-971_Revised1-1-26.pdf",
+    "published": "2026-01-01",
+    "retrieved": "2026-11-02"
+   }
+  },
+  {
+   "id": "nissan-front-radar-ri",
+   "make": "Nissan",
+   "system": "front-radar",
+   "trigger": "sensor-ri",
+   "result": "required",
+   "method": "",
+   "notes": "Nissan brand only (Infiniti has its own statement).",
+   "quote": "After any ADAS component removal, replacement, and even vehicle alignment, the proper calibration procedure must be performed using the Nissan CONSULT diagnostic software and following the Electronic Service Manual (ESM) instructions.",
+   "confidence": "high",
+   "verified": "2026-11-02",
+   "origin": "assistant-wording-check",
+   "source": {
+    "title": "Nissan Collision Position Statement: ADAS Components (NPSB/26-971)",
+    "url": "https://oem1stop.com/wp-content/uploads/2026/10/Nissan_Pos_ADAS_NPSB26-971_Revised1-1-26.pdf",
+    "published": "2026-01-01",
+    "retrieved": "2026-11-02"
+   }
+  },
+  {
+   "id": "nissan-front-radar-alignment",
+   "make": "Nissan",
+   "system": "front-radar",
+   "trigger": "alignment",
+   "result": "required",
+   "method": "",
+   "notes": "Nissan says calibration is needed even after a vehicle alignment. Nissan brand only.",
+   "quote": "After any ADAS component removal, replacement, and even vehicle alignment, the proper calibration procedure must be performed using the Nissan CONSULT diagnostic software and following the Electronic Service Manual (ESM) instructions.",
+   "confidence": "high",
+   "verified": "2026-11-02",
+   "origin": "assistant-wording-check",
+   "source": {
+    "title": "Nissan Collision Position Statement: ADAS Components (NPSB/26-971)",
+    "url": "https://oem1stop.com/wp-content/uploads/2026/10/Nissan_Pos_ADAS_NPSB26-971_Revised1-1-26.pdf",
+    "published": "2026-01-01",
+    "retrieved": "2026-11-02"
+   }
+  },
+  {
+   "id": "nissan-blind-spot-ri",
+   "make": "Nissan",
+   "system": "blind-spot",
+   "trigger": "sensor-ri",
+   "result": "required",
+   "method": "",
+   "notes": "Nissan brand only (Infiniti has its own statement).",
+   "quote": "After any ADAS component removal, replacement, and even vehicle alignment, the proper calibration procedure must be performed using the Nissan CONSULT diagnostic software and following the Electronic Service Manual (ESM) instructions.",
+   "confidence": "high",
+   "verified": "2026-11-02",
+   "origin": "assistant-wording-check",
+   "source": {
+    "title": "Nissan Collision Position Statement: ADAS Components (NPSB/26-971)",
+    "url": "https://oem1stop.com/wp-content/uploads/2026/10/Nissan_Pos_ADAS_NPSB26-971_Revised1-1-26.pdf",
+    "published": "2026-01-01",
+    "retrieved": "2026-11-02"
+   }
+  },
+  {
+   "id": "nissan-blind-spot-alignment",
+   "make": "Nissan",
+   "system": "blind-spot",
+   "trigger": "alignment",
+   "result": "required",
+   "method": "",
+   "notes": "Nissan says calibration is needed even after a vehicle alignment. Nissan brand only.",
+   "quote": "After any ADAS component removal, replacement, and even vehicle alignment, the proper calibration procedure must be performed using the Nissan CONSULT diagnostic software and following the Electronic Service Manual (ESM) instructions.",
+   "confidence": "high",
+   "verified": "2026-11-02",
+   "origin": "assistant-wording-check",
+   "source": {
+    "title": "Nissan Collision Position Statement: ADAS Components (NPSB/26-971)",
+    "url": "https://oem1stop.com/wp-content/uploads/2026/10/Nissan_Pos_ADAS_NPSB26-971_Revised1-1-26.pdf",
+    "published": "2026-01-01",
+    "retrieved": "2026-11-02"
+   }
+  },
+  {
+   "id": "nissan-lane-keeping-ri",
+   "make": "Nissan",
+   "system": "lane-keeping",
+   "trigger": "sensor-ri",
+   "result": "required",
+   "method": "",
+   "notes": "Nissan brand only (Infiniti has its own statement).",
+   "quote": "After any ADAS component removal, replacement, and even vehicle alignment, the proper calibration procedure must be performed using the Nissan CONSULT diagnostic software and following the Electronic Service Manual (ESM) instructions.",
+   "confidence": "high",
+   "verified": "2026-11-02",
+   "origin": "assistant-wording-check",
+   "source": {
+    "title": "Nissan Collision Position Statement: ADAS Components (NPSB/26-971)",
+    "url": "https://oem1stop.com/wp-content/uploads/2026/10/Nissan_Pos_ADAS_NPSB26-971_Revised1-1-26.pdf",
+    "published": "2026-01-01",
+    "retrieved": "2026-11-02"
+   }
+  },
+  {
+   "id": "nissan-lane-keeping-alignment",
+   "make": "Nissan",
+   "system": "lane-keeping",
+   "trigger": "alignment",
+   "result": "required",
+   "method": "",
+   "notes": "Nissan says calibration is needed even after a vehicle alignment. Nissan brand only.",
+   "quote": "After any ADAS component removal, replacement, and even vehicle alignment, the proper calibration procedure must be performed using the Nissan CONSULT diagnostic software and following the Electronic Service Manual (ESM) instructions.",
+   "confidence": "high",
+   "verified": "2026-11-02",
+   "origin": "assistant-wording-check",
+   "source": {
+    "title": "Nissan Collision Position Statement: ADAS Components (NPSB/26-971)",
+    "url": "https://oem1stop.com/wp-content/uploads/2026/10/Nissan_Pos_ADAS_NPSB26-971_Revised1-1-26.pdf",
+    "published": "2026-01-01",
+    "retrieved": "2026-11-02"
+   }
+  },
+  {
+   "id": "nissan-adaptive-cruise-ri",
+   "make": "Nissan",
+   "system": "adaptive-cruise",
+   "trigger": "sensor-ri",
+   "result": "required",
+   "method": "",
+   "notes": "Nissan brand only (Infiniti has its own statement).",
+   "quote": "After any ADAS component removal, replacement, and even vehicle alignment, the proper calibration procedure must be performed using the Nissan CONSULT diagnostic software and following the Electronic Service Manual (ESM) instructions.",
+   "confidence": "high",
+   "verified": "2026-11-02",
+   "origin": "assistant-wording-check",
+   "source": {
+    "title": "Nissan Collision Position Statement: ADAS Components (NPSB/26-971)",
+    "url": "https://oem1stop.com/wp-content/uploads/2026/10/Nissan_Pos_ADAS_NPSB26-971_Revised1-1-26.pdf",
+    "published": "2026-01-01",
+    "retrieved": "2026-11-02"
+   }
+  },
+  {
+   "id": "nissan-adaptive-cruise-alignment",
+   "make": "Nissan",
+   "system": "adaptive-cruise",
+   "trigger": "alignment",
+   "result": "required",
+   "method": "",
+   "notes": "Nissan says calibration is needed even after a vehicle alignment. Nissan brand only.",
+   "quote": "After any ADAS component removal, replacement, and even vehicle alignment, the proper calibration procedure must be performed using the Nissan CONSULT diagnostic software and following the Electronic Service Manual (ESM) instructions.",
+   "confidence": "high",
+   "verified": "2026-11-02",
+   "origin": "assistant-wording-check",
+   "source": {
+    "title": "Nissan Collision Position Statement: ADAS Components (NPSB/26-971)",
+    "url": "https://oem1stop.com/wp-content/uploads/2026/10/Nissan_Pos_ADAS_NPSB26-971_Revised1-1-26.pdf",
+    "published": "2026-01-01",
+    "retrieved": "2026-11-02"
+   }
+  },
+  {
+   "id": "nissan-surround-camera-ri",
+   "make": "Nissan",
+   "system": "surround-camera",
+   "trigger": "sensor-ri",
+   "result": "required",
+   "method": "",
+   "notes": "Nissan brand only (Infiniti has its own statement).",
+   "quote": "After any ADAS component removal, replacement, and even vehicle alignment, the proper calibration procedure must be performed using the Nissan CONSULT diagnostic software and following the Electronic Service Manual (ESM) instructions.",
+   "confidence": "high",
+   "verified": "2026-11-02",
+   "origin": "assistant-wording-check",
+   "source": {
+    "title": "Nissan Collision Position Statement: ADAS Components (NPSB/26-971)",
+    "url": "https://oem1stop.com/wp-content/uploads/2026/10/Nissan_Pos_ADAS_NPSB26-971_Revised1-1-26.pdf",
+    "published": "2026-01-01",
+    "retrieved": "2026-11-02"
+   }
+  },
+  {
+   "id": "nissan-surround-camera-alignment",
+   "make": "Nissan",
+   "system": "surround-camera",
+   "trigger": "alignment",
+   "result": "required",
+   "method": "",
+   "notes": "Nissan says calibration is needed even after a vehicle alignment. Nissan brand only.",
+   "quote": "After any ADAS component removal, replacement, and even vehicle alignment, the proper calibration procedure must be performed using the Nissan CONSULT diagnostic software and following the Electronic Service Manual (ESM) instructions.",
+   "confidence": "high",
+   "verified": "2026-11-02",
+   "origin": "assistant-wording-check",
+   "source": {
+    "title": "Nissan Collision Position Statement: ADAS Components (NPSB/26-971)",
+    "url": "https://oem1stop.com/wp-content/uploads/2026/10/Nissan_Pos_ADAS_NPSB26-971_Revised1-1-26.pdf",
+    "published": "2026-01-01",
+    "retrieved": "2026-11-02"
+   }
+  }
+ ]
+}

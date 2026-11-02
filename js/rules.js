@@ -8,6 +8,7 @@
 //     "result": "required" | "not-required" | "self-learning",
 //     "method": "static" | "dynamic" | "both" | "none",
 //     "notes": "...", "quote": "exact sentence from the source", "confidence": "high" | "medium" | "low", "verified": "YYYY-MM-DD",
+//     "origin": "assistant-wording-check" | "user-reviewed" | "adjuster-added" (adjuster-added needs no URL but is never shown as OEM-verified),
 //     "source": { "title": "...", "url": "...", "published": "YYYY-MM-DD", "retrieved": "YYYY-MM-DD" } }
 // "make" may also be a parent company: "GM" or "Stellantis" (see MAKE_GROUPS below).
 // A rule with a conditionKey only applies when that condition is ticked on the check.
@@ -29,6 +30,8 @@ const SENSORS = [
 const TRIGGERS = [
   { id: "bumper-front-ri", label: "Front bumper R&I" },
   { id: "bumper-rear-ri", label: "Rear bumper R&I" },
+  { id: "bumper-front-repair", label: "Front bumper repair (fascia)" },
+  { id: "sensor-ri", label: "Sensor / camera / radar removed or replaced" },
   { id: "windshield", label: "Windshield replacement" },
   { id: "alignment", label: "Wheel alignment" },
   { id: "collision-structural", label: "Collision / structural repair" },
@@ -51,6 +54,11 @@ const RESULT_LABELS = {
   unverified: "Unverified",
 };
 const RESULT_ICONS = { required: "●", "not-required": "○", "self-learning": "◐", unverified: "?" };
+const ORIGIN_LABELS = {
+  "assistant-wording-check": "Manufacturer's own wording, entered from the document and wording-checked by the TrueCal assistant. Open the source to confirm.",
+  "user-reviewed": "Confirmed by a reviewer in this app.",
+  "adjuster-added": "Added by your team. NOT verified against a manufacturer source.",
+};
 const METHOD_LABELS = { static: "Static", dynamic: "Dynamic", both: "Static + dynamic", none: "None" };
 const CONFIDENCE_LABELS = { high: "High", medium: "Medium", low: "Low" };
 const VALID_RESULTS = ["required", "not-required", "self-learning"];
@@ -62,6 +70,7 @@ const IMPORTED_RULES_KEY = "truecal.importedRules";
 let bundledRules = { version: "", updated: "", rules: [] };
 let importedRules = null;
 let reviewedRules = []; // rules the user approved on the Review screen
+let ownRules = []; // records the team added themselves (never shown as manufacturer-verified)
 let candidates = []; // statements found by the collector, waiting for review
 
 // Statements written for a parent company apply to all of its brands.
@@ -105,10 +114,14 @@ function setReviewedRules(list) {
   reviewedRules = list;
 }
 
+function setOwnRules(list) {
+  ownRules = list;
+}
+
 /** All rules in force. A later copy of the same id wins, so a reviewed rule overrides a bundled one. */
 function allRules() {
   const byId = new Map();
-  [...(bundledRules.rules || []), ...((importedRules && importedRules.rules) || []), ...reviewedRules].forEach((rule, index) =>
+  [...(bundledRules.rules || []), ...((importedRules && importedRules.rules) || []), ...reviewedRules, ...ownRules].forEach((rule, index) =>
     byId.set(rule.id || `anon-${index}`, rule)
   );
   return [...byId.values()];
@@ -117,7 +130,7 @@ function allRules() {
 function rulesSummary() {
   const rules = allRules();
   const dates = [bundledRules.updated, importedRules && importedRules.updated].filter(Boolean).sort();
-  return { total: rules.length, reviewed: reviewedRules.length, updated: dates[dates.length - 1] || "" };
+  return { total: rules.length, reviewed: reviewedRules.length, own: ownRules.length, updated: dates[dates.length - 1] || "" };
 }
 
 /** Returns an error message, or null when the file is a usable rule set. */
@@ -128,7 +141,7 @@ function validateRuleset(data) {
     if (!TRIGGERS.some((t) => t.id === rule.trigger)) return `Rule ${index + 1}: unknown "trigger" (${rule.trigger}).`;
     if (!VALID_RESULTS.includes(rule.result)) return `Rule ${index + 1}: "result" must be required, not-required or self-learning.`;
     if (!rule.source || !rule.source.title) return `Rule ${index + 1}: every rule needs a "source" with a title.`;
-    if (!/^https?:\/\//i.test(rule.source.url || "")) return `Rule ${index + 1}: every rule needs a "source.url" (http or https) so it can be verified.`;
+    if (rule.origin !== "adjuster-added" && !/^https?:\/\//i.test(rule.source.url || "")) return `Rule ${index + 1}: every rule needs a "source.url" (http or https) so it can be verified.`;
   }
   return null;
 }
@@ -157,6 +170,7 @@ function findRule(vehicle, systemId, triggerId, conditions) {
     if (rule.yearTo && year > rule.yearTo) continue;
     if (rule.conditionKey && !conditions[rule.conditionKey]) continue;
     const score =
+      (rule.origin === "adjuster-added" ? 0 : 100) + // a manufacturer source always beats an adjuster's own record
       (rule.make && rule.make !== "*" ? 10 : 0) +
       (rule.models && rule.models.length ? 5 : 0) +
       (rule.yearFrom || rule.yearTo ? 2 : 0) +
@@ -199,6 +213,8 @@ function buildRulings(check) {
         method: rule ? rule.method || "" : "",
         notes: rule ? rule.notes || "" : "",
         quote: rule ? rule.quote || "" : "",
+        origin: rule ? rule.origin || "user-reviewed" : "",
+        reviewer: rule ? rule.reviewer || "" : "",
         confidence: rule ? rule.confidence || "" : "",
         verified: rule ? rule.verified || "" : "",
         source: rule ? rule.source : null,

@@ -200,6 +200,7 @@
         <button type="button" class="tab is-active" data-tab="queue">To review</button>
         <button type="button" class="tab" data-tab="kept">Kept</button>
         <button type="button" class="tab" data-tab="hidden">Hidden</button>
+        <button type="button" class="tab" data-tab="own">Ours</button>
       </div>
       <div id="reviewBody"></div>
     </section>
@@ -219,6 +220,32 @@
       <button type="button" class="btn btn--danger-solid" id="scannerCancel">Cancel</button>
     </div>
   </div>
+
+  <dialog id="ownDialog" class="dialog">
+    <h2>Add our own record</h2>
+    <p class="fine" id="ownContext"></p>
+    <p class="hint">Use this when the shop or a dealer gives you a requirement TrueCal has no manufacturer source for. It is saved on this device and always labelled <b>not OEM-verified</b>. A manufacturer-sourced rule will override it.</p>
+    <form id="ownForm" autocomplete="off">
+      <div class="field-grid">
+        <label class="field"><span>Result</span>
+          <select id="ownResult"><option value="">Choose…</option><option value="required">Calibration required</option><option value="not-required">Not required</option><option value="self-learning">Self-learning</option></select></label>
+        <label class="field"><span>Method</span>
+          <select id="ownMethod"><option value="">Not stated</option><option value="static">Static</option><option value="dynamic">Dynamic</option><option value="both">Static + dynamic</option></select></label>
+        <label class="field field--full"><span>Reference (required)</span>
+          <input type="text" id="ownReference" placeholder="Document name, procedure no., scan report, dealer bulletin" /></label>
+        <label class="field field--full"><span>Link to the reference (optional)</span>
+          <input type="text" id="ownUrl" inputmode="url" placeholder="https://…" /></label>
+        <label class="field field--full"><span>Note (optional)</span>
+          <input type="text" id="ownNote" /></label>
+        <label class="field field--full"><span><input type="checkbox" id="ownLimit" /> Only this exact vehicle (model and year)</span></label>
+      </div>
+      <p class="form-error" id="ownError" role="alert"></p>
+      <div class="btn-row">
+        <button type="button" class="btn btn--ghost" id="ownCancel">Cancel</button>
+        <button type="submit" class="btn btn--primary">Save our record</button>
+      </div>
+    </form>
+  </dialog>
 
   <dialog id="disclaimerDialog" class="dialog">
     <h2>Disclaimer</h2>

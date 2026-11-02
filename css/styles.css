@@ -178,6 +178,9 @@ input[type="checkbox"] { width: 22px; height: 22px; accent-color: var(--orange);
 .tab { flex: 1; min-height: 44px; border: 2px solid var(--navy); background: #fff; color: var(--navy); border-radius: 10px; font: inherit; font-weight: 700; cursor: pointer; }
 .tab.is-active { background: var(--navy); color: #fff; }
 .excerpt { margin: 6px 0 10px; padding: 10px 12px; border-left: 4px solid var(--orange); background: #fff8f3; font-size: 1.02rem; overflow-wrap: anywhere; }
+.basis { font-size: 0.82rem; }
+.basis--adjuster-added { color: #9a4a00; font-weight: 700; }
+.basis--assistant-wording-check { color: var(--muted); }
 .fine { color: var(--muted); font-size: 0.82rem; }
 .review-item p { margin: 4px 0; }
 .sensor-pick { border: 1px solid var(--line); border-radius: 10px; padding: 6px 10px; margin: 0; min-width: 0; }

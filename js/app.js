@@ -429,11 +429,13 @@ function renderRuling(check) {
         r.notes ? `<dt>Notes</dt><dd>${esc(r.notes)}</dd>` : "",
         r.quote ? `<dt>Quote</dt><dd>“${esc(r.quote)}”</dd>` : "",
         `<dt>Source</dt><dd>${sourceLine(r.source)}</dd>`,
+        r.origin ? `<dt>Basis</dt><dd class="basis basis--${esc(r.origin)}">${esc(ORIGIN_LABELS[r.origin] || "")}${r.reviewer ? ` (${esc(r.reviewer)})` : ""}</dd>` : "",
         r.verified ? `<dt>Reviewed</dt><dd>${esc(r.verified)}</dd>` : "",
       ].join("");
       const unverifiedNote =
         r.result === "unverified"
-          ? `<p class="hint">No reviewed source for this vehicle, sensor and repair. This is not a ruling that calibration is unnecessary — ask the shop or the OEM for the procedure.</p>`
+          ? `<p class="hint">No reviewed source for this vehicle, sensor and repair. This is not a ruling that calibration is unnecessary — ask the shop or the OEM for the procedure.</p>
+             <button type="button" class="btn btn--secondary no-print" data-own="${esc(r.system)}">Add our own record</button>`
           : "";
       return `<article class="ruling ruling--${r.result}">
         <h3>${esc(labelOf(SENSORS, r.system))}</h3>
@@ -459,7 +461,7 @@ function renderRuling(check) {
 function summaryText(check) {
   const lines = [`TrueCal — ${vehicleTitle(check)}`, check.vehicle.vin ? `VIN ${check.vehicle.vin}` : "", `Repair: ${labelOf(TRIGGERS, check.trigger)}`, ""];
   (check.rulings || []).forEach((r) => {
-    lines.push(`${labelOf(SENSORS, r.system)}: ${RESULT_LABELS[r.result]}${r.method && r.result === "required" ? ` (${METHOD_LABELS[r.method]})` : ""}`);
+    lines.push(`${labelOf(SENSORS, r.system)}: ${RESULT_LABELS[r.result]}${r.method && r.result === "required" ? ` (${METHOD_LABELS[r.method]})` : ""}${r.origin === "adjuster-added" ? " [added by our team, NOT OEM-verified]" : ""}`);
     if (hasQuote(check) && QUOTE_LABELS[r.quoteStatus]) lines.push(`  Quote: ${QUOTE_LABELS[r.quoteStatus]}`);
     if (r.quote) lines.push(`  "${r.quote}"`);
     lines.push(`  Source: ${r.source ? r.source.title + (r.source.url ? " " + r.source.url : "") : "none found"}`);
@@ -489,7 +491,7 @@ function renderReport(check) {
       <tbody>${(check.rulings || [])
         .map(
           (r) => `<tr><td>${esc(labelOf(SENSORS, r.system))}</td>
-        <td>${esc(RESULT_LABELS[r.result])}${r.method && r.result === "required" ? ` (${esc(METHOD_LABELS[r.method])})` : ""}${r.notes ? `<br /><span class="fine">${esc(r.notes)}</span>` : ""}${r.quote ? `<br /><span class="fine">“${esc(r.quote)}”</span>` : ""}</td>
+        <td>${esc(RESULT_LABELS[r.result])}${r.method && r.result === "required" ? ` (${esc(METHOD_LABELS[r.method])})` : ""}${r.origin === "adjuster-added" ? " <b>[added by our team, NOT OEM-verified]</b>" : ""}${r.notes ? `<br /><span class="fine">${esc(r.notes)}</span>` : ""}${r.quote ? `<br /><span class="fine">“${esc(r.quote)}”</span>` : ""}</td>
         ${quoteOn ? `<td>${r.quoted ? "Quoted" : "Not quoted"}<br /><span class="fine">${esc((QUOTE_LABELS[r.quoteStatus] || "").split(" — ")[0])}</span></td>` : ""}</tr>`
         )
         .join("")}</tbody>
@@ -526,8 +528,8 @@ async function renderHome() {
   const banner = el("demoBanner");
   banner.hidden = false;
   banner.innerHTML = rulesSummary().total
-    ? `<b>${rulesSummary().total} reviewed rules</b> in force. ${left} findings still waiting for your review. <a href="#review">Open Review</a>`
-    : `<b>No reviewed rules yet</b>, so every result will say Unverified. ${left} findings are waiting. <a href="#review">Start reviewing</a>`;
+    ? `<b>${rulesSummary().total} rules</b> in force, each with the manufacturer's wording and a source link. ${left} more findings are waiting for your review. <a href="#review">Open Review</a>`
+    : `<b>No rules yet</b>, so every result will say Unverified. ${left} findings are waiting. <a href="#review">Start reviewing</a>`;
 }
 
 async function renderHistory() {
@@ -632,7 +634,18 @@ function renderReview() {
   el("reviewCounts").textContent = `${left} to review · ${kept.length} kept · ${hidden.length} hidden`;
   document.querySelectorAll("[data-tab]").forEach((tab) => tab.classList.toggle("is-active", tab.dataset.tab === reviewTab));
   const body = el("reviewBody");
-  if (reviewTab === "kept") {
+  if (reviewTab === "own") {
+    body.innerHTML = ownRules.length
+      ? ownRules
+          .map(
+            (r) => `<div class="card review-item"><p>${esc(r.make)}${r.models ? ` ${esc(r.models.join(", "))}` : ""}${r.yearFrom ? ` ${r.yearFrom}` : ""} · ${esc(labelOf(SENSORS, r.system))} · ${esc(labelOf(TRIGGERS, r.trigger))} → <b>${esc(RESULT_LABELS[r.result])}</b></p>
+          <p class="fine">Reference: ${esc(r.source.title)}${r.notes ? ` · ${esc(r.notes)}` : ""} · added ${esc(r.verified)}</p>
+          <p class="fine"><b>Not OEM-verified.</b></p>
+          <div class="btn-row"><button type="button" class="btn btn--secondary" data-action="removeOwn" data-own-id="${esc(r.id)}">Remove</button></div></div>`
+          )
+          .join("")
+      : '<p class="hint">No records of our own yet. On a ruling that says Unverified, tap “Add our own record”.</p>';
+  } else if (reviewTab === "kept") {
     body.innerHTML = kept.length ? kept.map((d) => reviewListItem(d, "unkeep", "Hide it")).join("") : '<p class="hint">Nothing kept yet.</p>';
   } else if (reviewTab === "hidden") {
     body.innerHTML = hidden.length ? hidden.map((d) => reviewListItem(d, "restore", "Restore")).join("") : '<p class="hint">Nothing hidden.</p>';
@@ -661,6 +674,11 @@ async function reviewAction(event) {
   const button = event.target.closest("[data-action]");
   if (!button) return;
   const action = button.dataset.action;
+  if (action === "removeOwn") {
+    saveOwnRules(ownRules.filter((r) => r.id !== button.dataset.ownId));
+    renderReview();
+    return;
+  }
   const id = Number(button.dataset.id);
   const c = nextCandidate();
   if (action === "keep" && c) {
@@ -676,7 +694,7 @@ async function reviewAction(event) {
     const rules = systems.map((system) => {
       const rule = {
         id: `c${c.id}-${system}`, make, system, trigger, result, method: read("rvMethod") || (result === "required" ? "" : "none"),
-        notes: read("rvNotes"), quote: c.excerpt, confidence: "medium", verified: today(), reviewer: localStorage.getItem(ADJUSTER_KEY) || "",
+        notes: read("rvNotes"), quote: c.excerpt, confidence: "medium", verified: today(), origin: "user-reviewed", reviewer: localStorage.getItem(ADJUSTER_KEY) || "",
         source: { title: c.source.title, url: c.source.url, published: "", retrieved: c.source.retrieved },
       };
       if (yearFrom) rule.yearFrom = yearFrom;
@@ -712,15 +730,76 @@ async function reviewAction(event) {
   }
 }
 
+// ---------- Our own records (never shown as manufacturer-verified) ----------
+
+const OWN_KEY = "truecal.ownRules";
+let ownSystem = null;
+
+function loadOwnRules() {
+  try {
+    setOwnRules(JSON.parse(localStorage.getItem(OWN_KEY) || "[]"));
+  } catch (err) {
+    setOwnRules([]);
+  }
+}
+
+function saveOwnRules(list) {
+  localStorage.setItem(OWN_KEY, JSON.stringify(list));
+  setOwnRules(list);
+  updateRulesInfo();
+}
+
+function openOwnDialog(system) {
+  if (!currentCheck) return;
+  ownSystem = system;
+  el("ownForm").reset();
+  el("ownLimit").checked = true;
+  el("ownError").textContent = "";
+  el("ownContext").textContent = `${vehicleTitle(currentCheck)} · ${labelOf(SENSORS, system)} · ${labelOf(TRIGGERS, currentCheck.trigger)}`;
+  el("ownDialog").showModal();
+}
+
+async function saveOwn(event) {
+  event.preventDefault();
+  const result = el("ownResult").value;
+  const reference = el("ownReference").value.trim();
+  const url = el("ownUrl").value.trim();
+  if (!result || !reference) {
+    el("ownError").textContent = "Choose the result and give a reference (document name, procedure number or report).";
+    return;
+  }
+  if (url && !/^https?:\/\//i.test(url)) {
+    el("ownError").textContent = "A link must start with http:// or https://";
+    return;
+  }
+  const v = currentCheck.vehicle;
+  const rule = {
+    id: `own-${uid()}`, make: v.make, system: ownSystem, trigger: currentCheck.trigger, result,
+    method: el("ownMethod").value || (result === "required" ? "" : "none"), notes: el("ownNote").value.trim(), quote: "",
+    confidence: "low", verified: today(), origin: "adjuster-added", reviewer: localStorage.getItem(ADJUSTER_KEY) || "",
+    source: { title: reference, url, published: "", retrieved: today() },
+  };
+  if (el("ownLimit").checked) {
+    if (v.model) rule.models = [v.model];
+    if (Number(v.year)) rule.yearFrom = rule.yearTo = Number(v.year);
+  }
+  saveOwnRules([...ownRules, rule]);
+  currentCheck.rulings = buildRulings(currentCheck);
+  await saveCheck(currentCheck);
+  el("rulingBody").innerHTML = renderRuling(currentCheck);
+  el("ownDialog").close();
+  toast("Saved as our own record (not OEM-verified).");
+}
+
 function exportDecisions() {
   const decisions = [...decisionMap.values()];
-  const blob = new Blob([JSON.stringify({ exported: new Date().toISOString(), decisions }, null, 1)], { type: "application/json" });
+  const blob = new Blob([JSON.stringify({ exported: new Date().toISOString(), decisions, ownRules }, null, 1)], { type: "application/json" });
   const link = document.createElement("a");
   link.href = URL.createObjectURL(blob);
   link.download = `truecal-review-decisions-${today()}.json`;
   link.click();
   setTimeout(() => URL.revokeObjectURL(link.href), 2000);
-  toast(`Exported ${decisions.length} decisions.`);
+  toast(`Exported ${decisions.length} decisions and ${ownRules.length} of our own records.`);
 }
 
 // ---------- Routing ----------
@@ -861,6 +940,11 @@ function bindEvents() {
     location.hash = "#new";
   });
   el("rulingBody").addEventListener("click", async (event) => {
+    const own = event.target.closest("[data-own]");
+    if (own) {
+      openOwnDialog(own.dataset.own);
+      return;
+    }
     if (event.target.id !== "deleteCheckBtn" || !currentCheck) return;
     if (!confirm("Delete this check?")) return;
     await deleteCheck(currentCheck.id);
@@ -890,6 +974,8 @@ function bindEvents() {
     exportDecisions();
   });
   el("reviewBody").addEventListener("click", reviewAction);
+  el("ownForm").addEventListener("submit", saveOwn);
+  el("ownCancel").addEventListener("click", () => el("ownDialog").close());
   document.querySelectorAll("[data-tab]").forEach((tab) =>
     tab.addEventListener("click", () => {
       reviewTab = tab.dataset.tab;
@@ -936,6 +1022,7 @@ async function start() {
   buildForm();
   bindEvents();
   await loadRules();
+  loadOwnRules();
   try {
     await loadDecisions();
   } catch (err) {

@@ -1,0 +1,236 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover" />
+  <title>TrueCal</title>
+  <meta name="description" content="Check whether an ADAS calibration is required, not required or self-learning, with the OEM source cited." />
+  <meta name="theme-color" content="#10243E" />
+
+  <link rel="manifest" href="manifest.webmanifest" />
+  <link rel="icon" href="icons/favicon.ico" sizes="any" />
+  <link rel="icon" type="image/png" sizes="32x32" href="icons/favicon-32.png" />
+  <link rel="icon" type="image/png" sizes="16x16" href="icons/favicon-16.png" />
+  <link rel="apple-touch-icon" href="icons/apple-touch-icon.png" />
+  <link rel="stylesheet" href="css/styles.css" />
+</head>
+<body>
+  <header class="app-header no-print">
+    <div class="app-header__inner">
+      <button type="button" class="icon-btn" id="backBtn" aria-label="Back" hidden>
+        <svg viewBox="0 0 24 24" aria-hidden="true"><path d="m15 5-7 7 7 7"/></svg>
+      </button>
+      <a class="brand" href="#home" aria-label="TrueCal home">
+        <img src="icons/icon-192.png" alt="" width="32" height="32" />
+        <span class="brand__name">True<b>Cal</b></span>
+      </a>
+      <span class="status-inline" id="netStatus" role="status" aria-live="polite"></span>
+      <button type="button" class="icon-btn" id="menuBtn" aria-label="Menu" aria-expanded="false" aria-controls="menu">
+        <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M4 6h16"/><path d="M4 12h16"/><path d="M4 18h16"/></svg>
+      </button>
+      <div class="menu" id="menu" hidden>
+        <a class="menu__item" href="docs/user-guide.html">How to use this app<small>Quick Start Guide</small></a>
+        <a class="menu__item" href="#review">Review findings<small>Confirm or hide what the collector found</small></a>
+        <button type="button" class="menu__item" id="exportDecisionsBtn">Export review decisions<small>Save your yes / no answers to a file</small></button>
+        <button type="button" class="menu__item" id="importRulesBtn">Import rules file<small>JSON from OEM or licensed data</small></button>
+        <button type="button" class="menu__item" id="clearRulesBtn">Remove imported rules</button>
+        <button type="button" class="menu__item" id="disclaimerBtn">Disclaimer</button>
+        <button type="button" class="menu__item" id="updateBtn">Check for updates</button>
+        <p class="menu__about" id="rulesInfo"></p>
+        <p class="menu__about">TrueCal v0.1</p>
+        <input type="file" id="importRulesInput" accept="application/json,.json" hidden />
+      </div>
+    </div>
+  </header>
+
+  <main class="app-main">
+
+    <!-- 1. Home -->
+    <section class="screen" id="screen-home" hidden>
+      <div class="hero">
+        <h1>Is that calibration really needed?</h1>
+        <p>Enter the VIN and the repair. Get a ruling with its source.</p>
+        <a class="btn btn--primary btn--big" href="#new" id="newCheckBtn">+ New check</a>
+      </div>
+      <div id="demoBanner" class="banner banner--warn" hidden></div>
+      <h2 class="section-title">Recent checks</h2>
+      <div id="recentList" class="check-list"></div>
+      <p class="hint" id="recentEmpty" hidden>No checks yet. Start one above.</p>
+      <a class="btn btn--ghost" href="#history" id="seeAllBtn" hidden>See all</a>
+    </section>
+
+    <!-- 2. New check -->
+    <section class="screen" id="screen-new" hidden>
+      <h1 class="screen-title">New check</h1>
+
+      <form id="checkForm" autocomplete="off" novalidate>
+        <section class="card" aria-labelledby="vehicle-heading">
+          <h2 id="vehicle-heading"><span class="step">1</span> Vehicle</h2>
+          <div class="field-grid">
+            <label class="field">
+              <span>Claim / RO #</span>
+              <input type="text" id="claimId" placeholder="e.g. 24-001234" />
+            </label>
+            <label class="field">
+              <span>Adjuster</span>
+              <input type="text" id="adjusterName" placeholder="Your name" />
+            </label>
+            <div class="field field--full">
+              <label for="vehicleVin">VIN</label>
+              <div class="input-with-action">
+                <input type="text" id="vehicleVin" placeholder="17-character VIN" maxlength="17" autocapitalize="characters" autocomplete="off" />
+                <button type="button" class="scan-btn" id="scanVinBtn" title="Scan the VIN barcode" aria-label="Scan the VIN barcode">
+                  <svg viewBox="0 0 24 24" width="22" height="22" aria-hidden="true" fill="currentColor"><path d="M2 5h2v14H2zM6 5h1v14H6zM9 5h3v14H9zM14 5h1v14h-1zM17 5h2v14h-2zM21 5h1v14h-1z"/></svg>
+                </button>
+              </div>
+              <small class="field-hint" id="vinHint" aria-live="polite"></small>
+              <small class="field-hint" id="vinDecodeHint" aria-live="polite"></small>
+            </div>
+            <label class="field">
+              <span>Year</span>
+              <select id="vehicleYear"></select>
+            </label>
+            <label class="field">
+              <span>Make</span>
+              <select id="vehicleMake"></select>
+            </label>
+            <label class="field">
+              <span>Model</span>
+              <input type="text" id="vehicleModel" placeholder="Civic" />
+            </label>
+            <label class="field">
+              <span>Trim</span>
+              <input type="text" id="vehicleTrim" placeholder="EX" />
+            </label>
+          </div>
+        </section>
+
+        <section class="card" aria-labelledby="repair-heading">
+          <h2 id="repair-heading"><span class="step">2</span> What was done</h2>
+          <label class="field">
+            <span>Repair / trigger</span>
+            <select id="trigger"></select>
+          </label>
+
+          <h3>Sensors</h3>
+          <p class="hint">Tick what is on the vehicle, and what the shop is charging for.</p>
+          <p class="field-hint" id="sensorSuggestHint" aria-live="polite"></p>
+          <table class="sensor-table">
+            <thead>
+              <tr><th scope="col">Sensor</th><th scope="col">On vehicle</th><th scope="col">On shop quote</th></tr>
+            </thead>
+            <tbody id="sensorRows"></tbody>
+          </table>
+
+          <h3>Conditions</h3>
+          <div id="conditionRows" class="check-grid"></div>
+        </section>
+
+        <section class="card" aria-labelledby="evidence-heading">
+          <h2 id="evidence-heading"><span class="step">3</span> Evidence <small>(optional)</small></h2>
+          <div class="photo-thumbs" id="photoThumbs"></div>
+          <div class="btn-row">
+            <label class="btn btn--secondary">
+              📷 Add photo
+              <input type="file" accept="image/*" capture="environment" multiple id="photoInput" hidden />
+            </label>
+            <button type="button" class="btn btn--record" id="dictateBtn" hidden>
+              <span class="record-dot"></span><span id="dictateLabel">Dictate note</span>
+            </button>
+          </div>
+          <label class="field">
+            <span>Notes</span>
+            <textarea id="notes" rows="3" placeholder="Type here, or tap Dictate and talk"></textarea>
+          </label>
+        </section>
+
+        <button type="submit" class="btn btn--primary btn--big btn--block" id="getRulingBtn">Get ruling</button>
+        <p class="form-error" id="formError" role="alert"></p>
+      </form>
+    </section>
+
+    <!-- 3. Ruling -->
+    <section class="screen" id="screen-ruling" hidden>
+      <h1 class="screen-title">Ruling</h1>
+      <div id="rulingBody"></div>
+      <div class="btn-row btn-row--sticky no-print">
+        <a class="btn btn--secondary" id="reportBtn" href="#report">Report</a>
+        <button type="button" class="btn btn--secondary" id="editBtn">Edit</button>
+        <a class="btn btn--primary" href="#new" id="againBtn">New check</a>
+      </div>
+    </section>
+
+    <!-- 4. Report -->
+    <section class="screen" id="screen-report" hidden>
+      <article class="report" id="reportBody"></article>
+      <div class="btn-row btn-row--sticky no-print">
+        <button type="button" class="btn btn--secondary" id="shareBtn">Share</button>
+        <button type="button" class="btn btn--secondary" id="printBtn">Print / PDF</button>
+        <a class="btn btn--primary" href="#home">Done</a>
+      </div>
+    </section>
+
+    <!-- 5. Past checks -->
+    <section class="screen" id="screen-history" hidden>
+      <h1 class="screen-title">Past checks</h1>
+      <div class="field-grid">
+        <label class="field field--full">
+          <span>Search VIN, claim, make or model</span>
+          <input type="search" id="historySearch" placeholder="Search" />
+        </label>
+        <label class="field field--full">
+          <span>Show</span>
+          <select id="historyFilter">
+            <option value="all">All results</option>
+            <option value="challenge">Has a challenge</option>
+            <option value="missing">Has a missing calibration</option>
+            <option value="unverified">Has an unverified item</option>
+          </select>
+        </label>
+      </div>
+      <div id="historyList" class="check-list"></div>
+      <p class="hint" id="historyEmpty" hidden>Nothing found.</p>
+    </section>
+    <!-- 6. Review -->
+    <section class="screen" id="screen-review" hidden>
+      <h1 class="screen-title">Review findings</h1>
+      <p class="hint">Each finding is a sentence found in a manufacturer document. Say <b>Yes</b> only if the source really says it. <b>No</b> hides it; nothing is deleted.</p>
+      <p class="review-counts" id="reviewCounts"></p>
+      <div class="tabs" role="tablist">
+        <button type="button" class="tab is-active" data-tab="queue">To review</button>
+        <button type="button" class="tab" data-tab="kept">Kept</button>
+        <button type="button" class="tab" data-tab="hidden">Hidden</button>
+      </div>
+      <div id="reviewBody"></div>
+    </section>
+  </main>
+
+  <!-- Full-screen VIN scanner -->
+  <div class="scanner" id="scanner" hidden role="dialog" aria-modal="true" aria-label="Scan the VIN barcode">
+    <video class="scanner__video" id="scannerVideo" playsinline muted></video>
+    <div class="scanner__frame" aria-hidden="true"></div>
+    <p class="scanner__hint" id="scannerHint">Starting the camera…</p>
+    <div class="scanner__actions">
+      <label class="btn btn--secondary">
+        Use a photo
+        <input type="file" accept="image/*" capture="environment" id="scannerPhoto" hidden />
+      </label>
+      <button type="button" class="btn btn--secondary" id="scannerManual">Type VIN</button>
+      <button type="button" class="btn btn--danger-solid" id="scannerCancel">Cancel</button>
+    </div>
+  </div>
+
+  <dialog id="disclaimerDialog" class="dialog">
+    <h2>Disclaimer</h2>
+    <p>TrueCal is informational. Rulings come from the rule data loaded on this device and are only as good as their cited source. Always confirm against current OEM service information before approving or denying a calibration.</p>
+    <p>Items marked <b>DEMO</b> are placeholders, not OEM rulings. <b>Unverified</b> means no source was found; it does not mean a calibration is unnecessary.</p>
+    <form method="dialog"><button class="btn btn--primary">OK</button></form>
+  </dialog>
+
+  <div class="toast" id="toast" role="status" aria-live="polite" hidden></div>
+
+  <script src="js/rules.js"></script>
+  <script src="js/scanner.js"></script>
+  <script src="js/app.js"></script>
+</body>
+</html>

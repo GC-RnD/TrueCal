@@ -1,0 +1,4 @@
+tools/collector/*.db
+tools/collector/out/
+tools/collector/seeds.json
+__pycache__/

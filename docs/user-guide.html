@@ -1,0 +1,214 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="UTF-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1" />
+<title>TrueCal — Quick Start Guide</title>
+<style>
+  @page { size: Letter; margin: 0.6in 0.7in 0.7in; }
+  :root { --navy: #10243e; --orange: #e8601c; --muted: #5b6b7a; --line: #dde3ea; --soft: #f4f6f8; }
+  * { box-sizing: border-box; }
+  body { font-family: "Segoe UI", -apple-system, Roboto, Arial, sans-serif; color: #1c2733; font-size: 10.5pt; line-height: 1.45; margin: 0; }
+  h1 { font-size: 24pt; color: var(--navy); margin: 0.1in 0 0.05in; }
+  h2 { font-size: 14pt; color: var(--navy); margin: 0 0 0.08in; padding-bottom: 0.04in; border-bottom: 2px solid var(--orange); break-after: avoid; }
+  h3 { font-size: 11.5pt; color: var(--navy); margin: 0.12in 0 0.03in; break-after: avoid; }
+  p { margin: 0 0 0.08in; }
+  ul, ol { margin: 0.03in 0 0.1in; padding-left: 0.25in; }
+  li { margin-bottom: 0.03in; }
+  .cover { display: flex; align-items: center; gap: 0.25in; }
+  .cover img { height: 0.9in; }
+  .tagline { color: var(--muted); font-size: 12pt; margin: 0 0 0.15in; }
+  .box { background: var(--soft); border: 1px solid var(--line); border-radius: 8px; padding: 0.1in 0.15in; margin: 0.1in 0 0.15in; }
+  .box--tip { border-left: 4px solid var(--orange); }
+  .box p:last-child, .box ul:last-child, .box ol:last-child { margin-bottom: 0; }
+  .strip { display: flex; gap: 0.1in; margin: 0.1in 0 0.2in; }
+  .strip div { flex: 1; background: var(--navy); color: #fff; border-radius: 8px; padding: 0.09in 0.1in; font-size: 9.5pt; text-align: center; }
+  .strip b { display: block; font-size: 15pt; color: #ffb48a; }
+  .step { display: flex; gap: 0.25in; align-items: flex-start; margin-bottom: 0.2in; break-inside: avoid; }
+  .step__text { flex: 1; min-width: 0; }
+  .step__img { width: 2.35in; flex: none; text-align: center; }
+  .step__img img { width: 100%; border: 1px solid var(--line); border-radius: 10px; }
+  .step__img figcaption { font-size: 8.5pt; color: var(--muted); margin-top: 0.04in; }
+  figure { margin: 0; }
+  .num { display: inline-block; width: 0.28in; height: 0.28in; line-height: 0.28in; text-align: center; border-radius: 50%; background: var(--orange); color: #fff; font-weight: 700; margin-right: 0.08in; font-size: 11pt; }
+  .btn { display: inline-block; border: 1px solid #b8c4d0; border-radius: 6px; padding: 0 0.07in; background: #fff; font-weight: 600; font-size: 9.5pt; white-space: nowrap; }
+  table { border-collapse: collapse; width: 100%; font-size: 9.5pt; margin-bottom: 0.1in; }
+  th, td { border: 1px solid var(--line); padding: 0.05in 0.09in; text-align: left; vertical-align: top; }
+  th { background: var(--soft); color: var(--navy); }
+  tr { break-inside: avoid; }
+  .pagebreak { break-before: page; }
+  .small { font-size: 9pt; color: var(--muted); }
+
+  .appbar { display: none; }
+  @media screen {
+    body { max-width: 860px; margin: 0 auto; padding: 0 1rem 2rem; font-size: 16px; }
+    .appbar { display: flex; position: sticky; top: 0; z-index: 5; background: #fff; border-bottom: 3px solid var(--orange); margin: 0 -1rem 1rem; padding: 0.4rem 1rem; }
+    .appbar a { display: inline-block; font-size: 0.85rem; font-weight: 600; color: var(--navy); background: #fff; border: 1px solid #b8c4d0; border-radius: 8px; padding: 0.3rem 0.7rem; text-decoration: none; }
+    .pagebreak { break-before: auto; }
+  }
+  @media screen and (max-width: 640px) {
+    .step { flex-direction: column; }
+    .step__img { width: 70%; align-self: center; }
+    .strip { flex-wrap: wrap; }
+    .strip div { flex: 1 1 30%; }
+    td, th { padding: 0.4rem; }
+    h1 { font-size: 1.7rem; }
+  }
+  @media print { .appbar { display: none; } }
+</style>
+</head>
+<body>
+
+<nav class="appbar"><a href="../index.html">← Back to the app</a></nav>
+
+<div class="cover">
+  <img src="../icons/logo-full.png" alt="TrueCal" />
+</div>
+<h1>Quick Start Guide</h1>
+<p class="tagline">Is that calibration really needed? Get an answer with its source.</p>
+
+<p><b>TrueCal</b> runs on your phone like any other app. Enter the vehicle and the repair that was done, say which sensors are on the car and which ones the shop is charging for, and TrueCal tells you whether each calibration is <b>required</b>, <b>not required</b> or <b>self-learning</b>. Every answer shows the manufacturer's own sentence and a link to the document, so you can check it yourself.</p>
+
+<div class="strip">
+  <div><b>1</b>Build the knowledge base</div>
+  <div><b>2</b>New check</div>
+  <div><b>3</b>Read the ruling</div>
+  <div><b>4</b>Report</div>
+</div>
+
+<h2>Set up (once)</h2>
+<ol>
+  <li>On your phone, open <b>Chrome</b> or <b>Safari</b> and go to the TrueCal address you were given.</li>
+  <li>Tap the <b>Share</b> button (or the browser menu) and choose <b>Add to Home Screen</b>. TrueCal now opens like an app.</li>
+  <li>When asked, tap <b>Allow</b> for the <b>camera</b> (scanning VINs and taking photos) and the <b>microphone</b> (dictating notes).</li>
+</ol>
+<div class="box box--tip"><p><b>Everything stays on your phone.</b> Your checks, photos and review answers are saved on the device as you go. Only the VIN is sent out, to the free US government VIN lookup, and that needs internet.</p></div>
+
+<h2 class="pagebreak">Step 1 — Build the knowledge base</h2>
+<p>TrueCal only gives answers that a person has checked. Before the first check, review the findings it has collected from manufacturer documents. You can do a few now and more later.</p>
+
+<div class="step">
+  <div class="step__text">
+    <p>Open the menu <b>☰</b> and tap <b>Review findings</b>. Each card shows one sentence found in a manufacturer document.</p>
+    <ol>
+      <li>Tap <b>Open the source ↗</b> and find that sentence in the document.</li>
+      <li>Check the boxes under it: the <b>make</b>, the <b>repair</b>, the <b>sensors</b> it applies to, and the <b>result</b>. Fix any that are wrong. Add <b>years</b> if the document limits them.</li>
+      <li>Tap <span class="btn">✓ Yes — factual, keep</span> to make it a rule, or <span class="btn">✗ No — hide it</span> if it isn't.</li>
+    </ol>
+    <p><b>Skip for now</b> moves on without deciding. <b>Undo last</b> takes back your last answer. The <b>Kept</b> and <b>Hidden</b> tabs list your answers; you can hide a kept one or restore a hidden one at any time. Nothing is ever deleted.</p>
+    <h3>Say Yes only if all four are true</h3>
+    <ul>
+      <li><b>The source is the manufacturer</b> (or an industry body quoting it), not a blog or forum.</li>
+      <li><b>The exact sentence says it.</b> If you have to guess, say No.</li>
+      <li><b>The vehicle matches:</b> the make, and the model years if the document names them.</li>
+      <li><b>There is a date</b> or version on the document. If not, you can still keep it, but be cautious.</li>
+    </ul>
+  </div>
+  <figure class="step__img">
+    <img src="guide-img/03-review-card.png" alt="A review card showing a quote, source link and the boxes to check" />
+    <figcaption>A finding to review: the sentence, a link to the source, and the boxes to check.</figcaption>
+  </figure>
+</div>
+
+<div class="box box--tip"><p><b>When in doubt, say No.</b> A hidden finding only means TrueCal says <i>Unverified</i> for that case. It never gives a wrong answer from something you rejected.</p></div>
+
+<h2 class="pagebreak">Step 2 — Check a claim</h2>
+<p>From the home screen tap <span class="btn">+ New check</span>.</p>
+
+<div class="step">
+  <div class="step__text">
+    <h3><span class="num">1</span>Describe the vehicle</h3>
+    <p>Enter the <b>Claim / RO #</b> and your name. For the <b>VIN</b>, tap the <b>barcode icon</b> inside the VIN box and point the camera at the barcode (usually on the sticker inside the driver's door). TrueCal reads it, checks it, and fills in the year, make, model and trim. If the scan won't work, tap <span class="btn">Use a photo</span> or <span class="btn">Type VIN</span>.</p>
+    <div class="box box--tip"><p><b>Compare with the car.</b> The VIN lookup is very good but not perfect, and it never overwrites what you typed without asking.</p></div>
+  </div>
+  <figure class="step__img">
+    <img src="guide-img/02-vehicle.png" alt="The vehicle card with the VIN scan icon inside the VIN box" />
+    <figcaption>The icon inside the VIN box starts the scanner.</figcaption>
+  </figure>
+</div>
+
+<div class="step">
+  <div class="step__text">
+    <h3><span class="num">2</span>Say what was done</h3>
+    <p>Choose the <b>repair</b> (for example Front bumper R&amp;I, Windshield replacement or Wheel alignment).</p>
+    <p>In the sensor list, tick <b>On vehicle</b> for each sensor the car has. Tick <b>On shop quote</b> for each calibration the shop is charging for. The VIN lookup may pre-tick sensors that are standard equipment; confirm them on the car.</p>
+    <p>Under <b>Conditions</b>, tick anything that applies, such as <i>Sensor or bracket disturbed</i>.</p>
+    <h3><span class="num">3</span>Add evidence (optional)</h3>
+    <p>Tap <span class="btn">📷 Add photo</span> to attach pictures, and <span class="btn">Dictate note</span> or type in the Notes box.</p>
+    <h3><span class="num">4</span>Get the ruling</h3>
+    <p>Tap <span class="btn">Get ruling</span>.</p>
+  </div>
+  <figure class="step__img">
+    <img src="guide-img/04-sensors.png" alt="The repair, sensors and conditions card" />
+    <figcaption>Tick what is on the vehicle and what the shop quoted.</figcaption>
+  </figure>
+</div>
+
+<h2 class="pagebreak">Step 3 — Read the ruling</h2>
+
+<div class="step">
+  <div class="step__text">
+    <p>Each sensor gets one card. It shows the result, the <b>exact quote</b> from the manufacturer, and a <b>link to the source</b> with the date. Tap the link to read the original.</p>
+    <table>
+      <tr><th>Result</th><th>Meaning</th></tr>
+      <tr><td><b>● Calibration required</b></td><td>The manufacturer says to calibrate. The method (static, dynamic or both) is shown when the source states it.</td></tr>
+      <tr><td><b>○ Not required</b></td><td>The manufacturer says no calibration is needed for this repair, often "unless the sensor or bracket was disturbed".</td></tr>
+      <tr><td><b>◐ Self-learning</b></td><td>The system recalibrates itself in normal driving.</td></tr>
+      <tr><td><b>? Unverified</b></td><td>No reviewed source covers this vehicle, sensor and repair. <b>This does not mean calibration is unnecessary.</b> Ask the shop or the manufacturer.</td></tr>
+    </table>
+    <p>If you ticked <b>On shop quote</b>, each card also compares the quote with the ruling:</p>
+    <table>
+      <tr><th>Label</th><th>Meaning</th></tr>
+      <tr><td><b>MATCH</b></td><td>Required, and the shop quoted it.</td></tr>
+      <tr><td><b>CHALLENGE</b></td><td>The shop quoted it, but the ruling says it is not required. Ask the shop to justify it.</td></tr>
+      <tr><td><b>MISSING</b></td><td>Required, but not on the quote.</td></tr>
+      <tr><td><b>ASK FOR PROOF</b></td><td>Quoted, but there is no source either way.</td></tr>
+    </table>
+  </div>
+  <figure class="step__img">
+    <img src="guide-img/05-ruling.png" alt="A ruling card with the manufacturer's quote and source link" />
+    <figcaption>A ruling: result, the manufacturer's sentence, the source link and the quote comparison.</figcaption>
+  </figure>
+</div>
+
+<h2>Step 4 — Report and share</h2>
+<div class="step">
+  <div class="step__text">
+    <p>On the ruling screen tap <span class="btn">Report</span>. The report lists the vehicle, each ruling with its quote, the sources with dates, your notes and photos, and a disclaimer.</p>
+    <ul>
+      <li><span class="btn">Share</span> sends a text summary (or copies it, on a computer).</li>
+      <li><span class="btn">Print / PDF</span> makes a printable page you can save as a PDF to challenge or confirm a shop's quote.</li>
+      <li><span class="btn">Edit</span> on the ruling screen lets you change the check and get a new ruling.</li>
+    </ul>
+    <p>Past checks are on the home screen under <b>Recent checks</b>, and <b>See all</b> lets you search by VIN, claim, make or model.</p>
+  </div>
+  <figure class="step__img">
+    <img src="guide-img/06-report.png" alt="The printable report" />
+    <figcaption>The report you can share or print.</figcaption>
+  </figure>
+</div>
+
+<h2 class="pagebreak">Good to know</h2>
+<ul>
+  <li><b>TrueCal is only as good as what has been reviewed.</b> Until you keep findings, most answers say Unverified. That is the app being honest, not broken.</li>
+  <li><b>Coverage today comes from free public sources.</b> Honda and Acura are the most detailed. GM, Subaru, Volvo and Nissan cover mainly windshield and camera/radar replacement. Bumper removal and installation is mostly not covered yet; it needs licensed data.</li>
+  <li><b>A rule applies to every model and year of its make</b> unless the document names years or models and you entered them in the review.</li>
+  <li><b>Always confirm against current manufacturer service information</b> before approving or denying a calibration. TrueCal is informational.</li>
+  <li><b>Works offline</b> for saved rules and past checks. The VIN lookup needs internet.</li>
+</ul>
+
+<h2 style="margin-top:0.2in">If something doesn't work</h2>
+<table>
+  <tr><th>Problem</th><th>Try this</th></tr>
+  <tr><td>Everything says Unverified</td><td>No rules have been kept yet, or none match that make, sensor and repair. Open <b>Review findings</b> and keep some, or check that the make and repair match the rule.</td></tr>
+  <tr><td>VIN scan won't read</td><td>Hold steady with the barcode filling the frame, try <b>Use a photo</b>, or type the VIN. Not every VIN has a barcode (the dashboard plate usually doesn't).</td></tr>
+  <tr><td>Year, make and model didn't fill in</td><td>The lookup needs internet and doesn't know every VIN. Enter them by hand.</td></tr>
+  <tr><td>Camera or microphone doesn't start</td><td>Check the browser's permission for TrueCal in your phone's settings.</td></tr>
+  <tr><td>App looks out of date</td><td>Menu ☰ → <b>Check for updates</b>.</td></tr>
+</table>
+
+<h2 style="margin-top:0.2in">Privacy</h2>
+<p>Checks, photos and your review answers are stored only on your phone. TrueCal sends the VIN (not your name, claim number or photos) to the free US government VIN decoder to fill in the vehicle. <b>Export review decisions</b> in the menu saves your yes / no answers to a file you can keep or share.</p>
+
+</body>
+</html>

@@ -1,0 +1,2933 @@
+{
+ "generated": "2026-11-02",
+ "candidates": [
+  {
+   "id": 81,
+   "make": "Acura",
+   "system": "front-radar",
+   "trigger": "alignment",
+   "result": "required",
+   "method": "",
+   "yearFrom": null,
+   "yearTo": null,
+   "excerpt": "Page 5 of 33 WHEN AIMING IS REQUIRED Proper wheel alignment, body structural alignment, and camera/radar alignment are critical to the performance of driving support system functions on Acura vehicles.",
+   "source": {
+    "title": "Job Aid (Acura) Aiming Driving Support System v6",
+    "url": "https://rts.i-car.com/images/pdf/oem-info/acura/position-statements/43998x.pdf",
+    "retrieved": "2026-11-02"
+   }
+  },
+  {
+   "id": 84,
+   "make": "Acura",
+   "system": "front-radar",
+   "trigger": "alignment",
+   "result": "required",
+   "method": "",
+   "yearFrom": null,
+   "yearTo": null,
+   "excerpt": "• If aiming a radar or camera is necessary due to a collision, then a four-wheel alignment check must be performed.",
+   "source": {
+    "title": "Job Aid (Acura) Aiming Driving Support System v6",
+    "url": "https://rts.i-car.com/images/pdf/oem-info/acura/position-statements/43998x.pdf",
+    "retrieved": "2026-11-02"
+   }
+  },
+  {
+   "id": 85,
+   "make": "Acura",
+   "system": "front-radar",
+   "trigger": "alignment",
+   "result": "required",
+   "method": "",
+   "yearFrom": null,
+   "yearTo": null,
+   "excerpt": "If the wheel alignment is not within specifications, it must be corrected before aiming/calibrating any camera or radar.",
+   "source": {
+    "title": "Job Aid (Acura) Aiming Driving Support System v6",
+    "url": "https://rts.i-car.com/images/pdf/oem-info/acura/position-statements/43998x.pdf",
+    "retrieved": "2026-11-02"
+   }
+  },
+  {
+   "id": 86,
+   "make": "Acura",
+   "system": "front-radar",
+   "trigger": "alignment",
+   "result": "not-required",
+   "method": "",
+   "yearFrom": null,
+   "yearTo": null,
+   "excerpt": "• Unless instructed by the service manual or available service information, camera and radar systems calibrations are NOT required after a wheel alignment.",
+   "source": {
+    "title": "Job Aid (Acura) Aiming Driving Support System v6",
+    "url": "https://rts.i-car.com/images/pdf/oem-info/acura/position-statements/43998x.pdf",
+    "retrieved": "2026-11-02"
+   }
+  },
+  {
+   "id": 318,
+   "make": "GM",
+   "system": "forward-camera",
+   "trigger": "windshield",
+   "result": "required",
+   "method": "",
+   "yearFrom": null,
+   "yearTo": null,
+   "excerpt": "If the windshield was replaced or R&I, the Frontview camera module must be calibrated.\"",
+   "source": {
+    "title": "GM Glass Replacement Requirements: UPDATE",
+    "url": "https://rts.i-car.com/crn-2456.html",
+    "retrieved": "2026-11-02"
+   }
+  },
+  {
+   "id": 4,
+   "make": "Honda",
+   "system": "front-radar",
+   "trigger": "alignment",
+   "result": "required",
+   "method": "",
+   "yearFrom": null,
+   "yearTo": null,
+   "excerpt": "Page 6 of 38 WHEN AIMING IS REQUIRED Proper wheel alignment, body structural alignment, and camera/radar alignment are critical to the performance of driving support system functions on Honda vehicles.",
+   "source": {
+    "title": "30193.pdf",
+    "url": "https://rts.i-car.com/images/pdf/oem-info/honda/position-statements/30193.pdf",
+    "retrieved": "2026-11-02"
+   }
+  },
+  {
+   "id": 372,
+   "make": "Subaru",
+   "system": "forward-camera",
+   "trigger": "windshield",
+   "result": "required",
+   "method": "",
+   "yearFrom": null,
+   "yearTo": null,
+   "excerpt": "Additionally, if windshield glass replacement is performed on a Subaru vehicle equipped with EyeSight, calibration is required after the windshield is replaced.",
+   "source": {
+    "title": "Subaru_Pos_Eyesight_FINAL4-16-20.pdf",
+    "url": "https://oem1stop.com/wp-content/uploads/2026/10/Subaru_Pos_Eyesight_FINAL4-16-20.pdf",
+    "retrieved": "2026-11-02"
+   }
+  },
+  {
+   "id": 157,
+   "make": "Toyota",
+   "system": "lane-keeping",
+   "trigger": "collision-structural",
+   "result": "required",
+   "method": "",
+   "yearFrom": null,
+   "yearTo": null,
+   "excerpt": "This includes systems such as adaptive cruise control, lane keep assist, and collision braking. It does not include occupant classification systems (OCS), steering angle sensors, battery disconnects, or other calibrations/initializations required, when not related directly to ADAS.",
+   "source": {
+    "title": "Additional Calibration Requirements: Toyota/Lexus",
+    "url": "https://rts.i-car.com/crn-561.html",
+    "retrieved": "2026-11-02"
+   }
+  },
+  {
+   "id": 375,
+   "make": "Volvo",
+   "system": "front-radar",
+   "trigger": "windshield",
+   "result": "required",
+   "method": "",
+   "yearFrom": null,
+   "yearTo": null,
+   "excerpt": "When windshield replacement is required, Volvo requires using only Volvo Genuine Windshield and installation materials, so as not to compromise any structural integrity, nor any Volvo safety systems that are dependent on the windshield, such as optical, distance and radar based systems. Proper installation of a Volvo Genuine Windshield through a Volvo Facility ensures proper re-calibration, as well as, operations of the windshield dependent safety systems and provides the correct structural inte",
+   "source": {
+    "title": "ADAS",
+    "url": "https://oem1stop.com/wp-content/uploads/2026/10/Volvo_Position_ADAS2-22.pdf",
+    "retrieved": "2026-11-02"
+   }
+  },
+  {
+   "id": 376,
+   "make": "Volvo",
+   "system": "front-radar",
+   "trigger": "windshield",
+   "result": "required",
+   "method": "",
+   "yearFrom": null,
+   "yearTo": null,
+   "excerpt": "Using aftermarket variants that don’t meet Volvo Car’s stringent specifications may compromise the function of said systems Calibration of the camera and radar unit (ASDM) is required after windshield replacement.",
+   "source": {
+    "title": "ADAS",
+    "url": "https://oem1stop.com/wp-content/uploads/2026/10/Volvo_Position_ADAS2-22.pdf",
+    "retrieved": "2026-11-02"
+   }
+  },
+  {
+   "id": 79,
+   "make": "Acura",
+   "system": "front-radar",
+   "trigger": "",
+   "result": "required",
+   "method": "",
+   "yearFrom": 2021,
+   "yearTo": 2025,
+   "excerpt": "— All Rights Reserved Page 1 of 33 Job Aid August 2025 Version 7 Aiming Driving Support Systems Supersedes version 6, dated March 2021, to revise the information highlighted in yellow APPLIES TO All models with the millimeter wave radar, FCW/LDW camera, multipurpose camera, multi-view camera, and blind spot information radar. REVISION SUMMARY Under WHEN AIMING IS REQUIRED, information was updated.",
+   "source": {
+    "title": "Job Aid (Acura) Aiming Driving Support System v6",
+    "url": "https://rts.i-car.com/images/pdf/oem-info/acura/position-statements/43998x.pdf",
+    "retrieved": "2026-11-02"
+   }
+  },
+  {
+   "id": 88,
+   "make": "Acura",
+   "system": "front-radar",
+   "trigger": "",
+   "result": "required",
+   "method": "",
+   "yearFrom": null,
+   "yearTo": null,
+   "excerpt": "If the following DTCs are set: • P2583-54 (millimeter wave radar aiming incomplete) • P2583-64 (millimeter wave radar aiming error) • P2583-97 (dust or dirt on the millimeter wave radar) • You must follow the DTC troubleshooting procedure first, and only do the aiming procedure when instructed. • Other DTCs indicated must be corrected prior to aiming; otherwise, the aiming may fail.",
+   "source": {
+    "title": "Job Aid (Acura) Aiming Driving Support System v6",
+    "url": "https://rts.i-car.com/images/pdf/oem-info/acura/position-statements/43998x.pdf",
+    "retrieved": "2026-11-02"
+   }
+  },
+  {
+   "id": 92,
+   "make": "Acura",
+   "system": "lane-keeping",
+   "trigger": "",
+   "result": "required",
+   "method": "both",
+   "yearFrom": null,
+   "yearTo": null,
+   "excerpt": "If the following DTCs are set: Multipurpose Camera Unit • B2A60-52 (dynamic camera aiming incomplete) • B2A60-54 (static camera aiming incomplete) FCW/LDW Camera Unit • B2A60-54 (FCW/LDW camera unit aiming incomplete) • B2A60-54 (FCW/LDW camera unit aiming incomplete) • You must follow the DTC troubleshooting procedure first and only do the aiming procedure when instructed. • Other DTCs indicated must be corrected prior to aiming; otherwise, the aiming may fail.",
+   "source": {
+    "title": "Job Aid (Acura) Aiming Driving Support System v6",
+    "url": "https://rts.i-car.com/images/pdf/oem-info/acura/position-statements/43998x.pdf",
+    "retrieved": "2026-11-02"
+   }
+  },
+  {
+   "id": 314,
+   "make": "Ford",
+   "system": "front-radar",
+   "trigger": "",
+   "result": "required",
+   "method": "",
+   "yearFrom": null,
+   "yearTo": null,
+   "excerpt": "Nissan Position Statement: Required Radar Recalibration Post-Repair",
+   "source": {
+    "title": "Bumper Cover Repair With ADAS: Ford/Lincoln - UPDATE",
+    "url": "https://rts.i-car.com/crn-2346.html",
+    "retrieved": "2026-11-02"
+   }
+  },
+  {
+   "id": 2,
+   "make": "Honda",
+   "system": "front-radar",
+   "trigger": "",
+   "result": "required",
+   "method": "",
+   "yearFrom": null,
+   "yearTo": null,
+   "excerpt": "APPLIES TO All models with the millimeter wave radar, FCW/LDW camera, multipurpose camera, multi view camera, and blind spot information radar. REVISION SUMMARY Under WHEN AIMING IS REQUIRED, information was updated INTRODUCTION Many Honda vehicles have advanced safety driving support systems to help warn drivers and mitigate hazards.",
+   "source": {
+    "title": "30193.pdf",
+    "url": "https://rts.i-car.com/images/pdf/oem-info/honda/position-statements/30193.pdf",
+    "retrieved": "2026-11-02"
+   }
+  },
+  {
+   "id": 15,
+   "make": "Honda",
+   "system": "lane-keeping",
+   "trigger": "",
+   "result": "required",
+   "method": "both",
+   "yearFrom": null,
+   "yearTo": null,
+   "excerpt": "If the following DTCs are set: Multipurpose Camera Unit • B2A60-52 (dynamic camera aiming incomplete) • B2A60-54 (static camera aiming incomplete) FCW/LDW Camera Unit • B2A60-54 (FCW/LDW camera unit aiming incomplete) • You must follow the DTC troubleshooting procedure first, and only do the aiming procedure when instructed. • Other DTCs indicated must be corrected prior to aiming; otherwise, the aiming may fail.",
+   "source": {
+    "title": "30193.pdf",
+    "url": "https://rts.i-car.com/images/pdf/oem-info/honda/position-statements/30193.pdf",
+    "retrieved": "2026-11-02"
+   }
+  },
+  {
+   "id": 80,
+   "make": "Acura",
+   "system": "front-radar",
+   "trigger": "",
+   "result": "",
+   "method": "",
+   "yearFrom": null,
+   "yearTo": null,
+   "excerpt": "This job aid covers the function of each driving support system, the tools needed to properly aim the camera or radar unit, general requirements for aiming, and troubleshooting tips.",
+   "source": {
+    "title": "Job Aid (Acura) Aiming Driving Support System v6",
+    "url": "https://rts.i-car.com/images/pdf/oem-info/acura/position-statements/43998x.pdf",
+    "retrieved": "2026-11-02"
+   }
+  },
+  {
+   "id": 82,
+   "make": "Acura",
+   "system": "front-radar",
+   "trigger": "collision-structural",
+   "result": "",
+   "method": "",
+   "yearFrom": null,
+   "yearTo": null,
+   "excerpt": "The table below may not list every type of collision repair that would require aiming a radar or camera.",
+   "source": {
+    "title": "Job Aid (Acura) Aiming Driving Support System v6",
+    "url": "https://rts.i-car.com/images/pdf/oem-info/acura/position-statements/43998x.pdf",
+    "retrieved": "2026-11-02"
+   }
+  },
+  {
+   "id": 83,
+   "make": "Acura",
+   "system": "front-radar",
+   "trigger": "",
+   "result": "",
+   "method": "",
+   "yearFrom": null,
+   "yearTo": null,
+   "excerpt": "The necessity of aiming a radar or camera should be determined by the extent of the damage or repair made to the vehicle.",
+   "source": {
+    "title": "Job Aid (Acura) Aiming Driving Support System v6",
+    "url": "https://rts.i-car.com/images/pdf/oem-info/acura/position-statements/43998x.pdf",
+    "retrieved": "2026-11-02"
+   }
+  },
+  {
+   "id": 89,
+   "make": "Acura",
+   "system": "front-radar",
+   "trigger": "alignment",
+   "result": "",
+   "method": "",
+   "yearFrom": null,
+   "yearTo": null,
+   "excerpt": "If the following DTCs are set: • B18B8 (left side BSI radar unit azimuth off alignment) • B1E68 (right side BSI radar unit azimuth off alignment) You must follow the DTC troubleshooting procedure first and only do the aiming inspection when instructed.",
+   "source": {
+    "title": "Job Aid (Acura) Aiming Driving Support System v6",
+    "url": "https://rts.i-car.com/images/pdf/oem-info/acura/position-statements/43998x.pdf",
+    "retrieved": "2026-11-02"
+   }
+  },
+  {
+   "id": 90,
+   "make": "Acura",
+   "system": "",
+   "trigger": "windshield",
+   "result": "required",
+   "method": "",
+   "yearFrom": null,
+   "yearTo": null,
+   "excerpt": "The replacement windshield must be a Acura genuine replacement windshield. Installing an aftermarket windshield will cause the aiming to fail or abnormal operation of the driving support system.",
+   "source": {
+    "title": "Job Aid (Acura) Aiming Driving Support System v6",
+    "url": "https://rts.i-car.com/images/pdf/oem-info/acura/position-statements/43998x.pdf",
+    "retrieved": "2026-11-02"
+   }
+  },
+  {
+   "id": 93,
+   "make": "Acura",
+   "system": "",
+   "trigger": "collision-structural",
+   "result": "",
+   "method": "",
+   "yearFrom": null,
+   "yearTo": null,
+   "excerpt": "After adjusting the following: • Driver's or front passenger's door • Tailgate • Trunk After doing any collision repairs to the driver's or front passenger's door. If DTC B14B3-54 (camera aiming incomplete) is set.",
+   "source": {
+    "title": "Job Aid (Acura) Aiming Driving Support System v6",
+    "url": "https://rts.i-car.com/images/pdf/oem-info/acura/position-statements/43998x.pdf",
+    "retrieved": "2026-11-02"
+   }
+  },
+  {
+   "id": 94,
+   "make": "Acura",
+   "system": "",
+   "trigger": "",
+   "result": "required",
+   "method": "",
+   "yearFrom": null,
+   "yearTo": null,
+   "excerpt": "If DTC B14B3-54 (camera aiming incomplete) is set. Page 9 of 33 TOOL INFORMATION Use the table below to ensure you have all the necessary tools to do an aiming procedure.",
+   "source": {
+    "title": "Job Aid (Acura) Aiming Driving Support System v6",
+    "url": "https://rts.i-car.com/images/pdf/oem-info/acura/position-statements/43998x.pdf",
+    "retrieved": "2026-11-02"
+   }
+  },
+  {
+   "id": 95,
+   "make": "Acura",
+   "system": "front-radar",
+   "trigger": "alignment",
+   "result": "",
+   "method": "",
+   "yearFrom": null,
+   "yearTo": null,
+   "excerpt": "Radar Aiming Radar System Tool Number Tool Description Remarks Millimeter Wave Radar 07AAJ-STKA210 Alignment Set 07AAJ-STKA220 Stand Set Not available and replaced by Stand Set (T/N: 07AAJ-TK8A100).",
+   "source": {
+    "title": "Job Aid (Acura) Aiming Driving Support System v6",
+    "url": "https://rts.i-car.com/images/pdf/oem-info/acura/position-statements/43998x.pdf",
+    "retrieved": "2026-11-02"
+   }
+  },
+  {
+   "id": 96,
+   "make": "Acura",
+   "system": "",
+   "trigger": "alignment",
+   "result": "",
+   "method": "",
+   "yearFrom": null,
+   "yearTo": null,
+   "excerpt": "A commercially available plumb bob can be used if a replacement is needed. Page 10 of 33 Camera Aiming Camera System Tool Number Tool Description Remarks Multipurpose Camera 07AAJ-STKA210 Alignment Set 07AAJ-STKA220 Stand Set Not available and replaced by Stand Set (T/N: 07AAJ- TK8A100).",
+   "source": {
+    "title": "Job Aid (Acura) Aiming Driving Support System v6",
+    "url": "https://rts.i-car.com/images/pdf/oem-info/acura/position-statements/43998x.pdf",
+    "retrieved": "2026-11-02"
+   }
+  },
+  {
+   "id": 97,
+   "make": "Acura",
+   "system": "",
+   "trigger": "",
+   "result": "",
+   "method": "",
+   "yearFrom": null,
+   "yearTo": null,
+   "excerpt": "07AAK-5K0A110 Attachment Bracket 07AAK-5K0A120 Stand pole 07AAB-TYPA020 Target Holder Set Application varies by model. Refer to the appropriate service information aiming procedure.",
+   "source": {
+    "title": "Job Aid (Acura) Aiming Driving Support System v6",
+    "url": "https://rts.i-car.com/images/pdf/oem-info/acura/position-statements/43998x.pdf",
+    "retrieved": "2026-11-02"
+   }
+  },
+  {
+   "id": 98,
+   "make": "Acura",
+   "system": "",
+   "trigger": "",
+   "result": "",
+   "method": "",
+   "yearFrom": null,
+   "yearTo": null,
+   "excerpt": "070AK-TYPA030 Target Set Application varies by model. Refer to the appropriate service information aiming procedure.",
+   "source": {
+    "title": "Job Aid (Acura) Aiming Driving Support System v6",
+    "url": "https://rts.i-car.com/images/pdf/oem-info/acura/position-statements/43998x.pdf",
+    "retrieved": "2026-11-02"
+   }
+  },
+  {
+   "id": 99,
+   "make": "Acura",
+   "system": "",
+   "trigger": "alignment",
+   "result": "",
+   "method": "",
+   "yearFrom": null,
+   "yearTo": null,
+   "excerpt": "Page 11 of 33 Camera System Tool Number Tool Description Remarks Multi View Camera System 07AAJ-STKA210 Alignment Set 070AK-SLEA110 8 Dot Target Sheet Contains one target sheet. Aiming requires two.",
+   "source": {
+    "title": "Job Aid (Acura) Aiming Driving Support System v6",
+    "url": "https://rts.i-car.com/images/pdf/oem-info/acura/position-statements/43998x.pdf",
+    "retrieved": "2026-11-02"
+   }
+  },
+  {
+   "id": 100,
+   "make": "Acura",
+   "system": "front-radar",
+   "trigger": "",
+   "result": "",
+   "method": "",
+   "yearFrom": null,
+   "yearTo": null,
+   "excerpt": "8 Dot Target Sheet (T/N 070AK-SLEA110) Mask Sheet (T/N 070AK-SLEA120) Page 17 of 33 AIMING RADAR AND CAMERAS Millimeter Wave Radar Aiming To aim the millimeter wave radar, you will need a stationary metal triangle target placed in front of the vehicle and an i- HDS.",
+   "source": {
+    "title": "Job Aid (Acura) Aiming Driving Support System v6",
+    "url": "https://rts.i-car.com/images/pdf/oem-info/acura/position-statements/43998x.pdf",
+    "retrieved": "2026-11-02"
+   }
+  },
+  {
+   "id": 102,
+   "make": "Acura",
+   "system": "lane-keeping",
+   "trigger": "",
+   "result": "",
+   "method": "both",
+   "yearFrom": null,
+   "yearTo": null,
+   "excerpt": "FCW/LDW, Multipurpose Camera Aiming The multipurpose camera requires both static and dynamic aiming using the i -HDS.",
+   "source": {
+    "title": "Job Aid (Acura) Aiming Driving Support System v6",
+    "url": "https://rts.i-car.com/images/pdf/oem-info/acura/position-statements/43998x.pdf",
+    "retrieved": "2026-11-02"
+   }
+  },
+  {
+   "id": 103,
+   "make": "Acura",
+   "system": "lane-keeping",
+   "trigger": "",
+   "result": "",
+   "method": "both",
+   "yearFrom": null,
+   "yearTo": null,
+   "excerpt": "FCW/LDW, Multipurpose Camera Aiming The multipurpose camera requires both static and dynamic aiming using the i -HDS. Static aiming is done with the vehicle stationary and aimed at a stationary target.",
+   "source": {
+    "title": "Job Aid (Acura) Aiming Driving Support System v6",
+    "url": "https://rts.i-car.com/images/pdf/oem-info/acura/position-statements/43998x.pdf",
+    "retrieved": "2026-11-02"
+   }
+  },
+  {
+   "id": 104,
+   "make": "Acura",
+   "system": "",
+   "trigger": "",
+   "result": "",
+   "method": "dynamic",
+   "yearFrom": null,
+   "yearTo": null,
+   "excerpt": "Vehicles will require either two or three targets depending on the model. Dynamic aiming is done with lane markers on the road while driving.",
+   "source": {
+    "title": "Job Aid (Acura) Aiming Driving Support System v6",
+    "url": "https://rts.i-car.com/images/pdf/oem-info/acura/position-statements/43998x.pdf",
+    "retrieved": "2026-11-02"
+   }
+  },
+  {
+   "id": 105,
+   "make": "Acura",
+   "system": "",
+   "trigger": "",
+   "result": "",
+   "method": "both",
+   "yearFrom": null,
+   "yearTo": null,
+   "excerpt": "Dynamic aiming is done with lane markers on the road while driving. NOTE: Some later Acura models only require static aiming.",
+   "source": {
+    "title": "Job Aid (Acura) Aiming Driving Support System v6",
+    "url": "https://rts.i-car.com/images/pdf/oem-info/acura/position-statements/43998x.pdf",
+    "retrieved": "2026-11-02"
+   }
+  },
+  {
+   "id": 106,
+   "make": "Acura",
+   "system": "lane-keeping",
+   "trigger": "",
+   "result": "",
+   "method": "both",
+   "yearFrom": null,
+   "yearTo": null,
+   "excerpt": "The FCW/LDW cameras are aimed two ways, depending on the model. Some require static and dynamic aiming.",
+   "source": {
+    "title": "Job Aid (Acura) Aiming Driving Support System v6",
+    "url": "https://rts.i-car.com/images/pdf/oem-info/acura/position-statements/43998x.pdf",
+    "retrieved": "2026-11-02"
+   }
+  },
+  {
+   "id": 107,
+   "make": "Acura",
+   "system": "",
+   "trigger": "",
+   "result": "",
+   "method": "both",
+   "yearFrom": null,
+   "yearTo": null,
+   "excerpt": "Some require static and dynamic aiming. Others require strictly dynamic aiming.",
+   "source": {
+    "title": "Job Aid (Acura) Aiming Driving Support System v6",
+    "url": "https://rts.i-car.com/images/pdf/oem-info/acura/position-statements/43998x.pdf",
+    "retrieved": "2026-11-02"
+   }
+  },
+  {
+   "id": 108,
+   "make": "Acura",
+   "system": "",
+   "trigger": "",
+   "result": "required",
+   "method": "both",
+   "yearFrom": null,
+   "yearTo": null,
+   "excerpt": "Others require strictly dynamic aiming. Camera System HDS or i-HDS Required  Static Aiming  Dynamic Aiming  Remarks Multipurpose Camera Yes Yes Varies by model.",
+   "source": {
+    "title": "Job Aid (Acura) Aiming Driving Support System v6",
+    "url": "https://rts.i-car.com/images/pdf/oem-info/acura/position-statements/43998x.pdf",
+    "retrieved": "2026-11-02"
+   }
+  },
+  {
+   "id": 109,
+   "make": "Acura",
+   "system": "",
+   "trigger": "",
+   "result": "",
+   "method": "",
+   "yearFrom": 2013,
+   "yearTo": 2013,
+   "excerpt": "Yes Yes Yes All models except 2013 ZDX. Multi View Camera Aiming and Picture Inspection The four cameras used on the multi view camera system are aimed using a stationary target laid on the floor in the front, rear, and sides of the parked vehicle.",
+   "source": {
+    "title": "Job Aid (Acura) Aiming Driving Support System v6",
+    "url": "https://rts.i-car.com/images/pdf/oem-info/acura/position-statements/43998x.pdf",
+    "retrieved": "2026-11-02"
+   }
+  },
+  {
+   "id": 110,
+   "make": "Acura",
+   "system": "",
+   "trigger": "",
+   "result": "",
+   "method": "",
+   "yearFrom": null,
+   "yearTo": null,
+   "excerpt": "Multi View Camera Aiming and Picture Inspection The four cameras used on the multi view camera system are aimed using a stationary target laid on the floor in the front, rear, and sides of the parked vehicle. The aiming procedure requires the i-HDS and the audio or audio-navigation display.",
+   "source": {
+    "title": "Job Aid (Acura) Aiming Driving Support System v6",
+    "url": "https://rts.i-car.com/images/pdf/oem-info/acura/position-statements/43998x.pdf",
+    "retrieved": "2026-11-02"
+   }
+  },
+  {
+   "id": 111,
+   "make": "Acura",
+   "system": "",
+   "trigger": "",
+   "result": "",
+   "method": "",
+   "yearFrom": null,
+   "yearTo": null,
+   "excerpt": "The aiming procedure requires the i-HDS and the audio or audio-navigation display. The aiming procedure is split into four aiming areas: front, rear, left side and right side.",
+   "source": {
+    "title": "Job Aid (Acura) Aiming Driving Support System v6",
+    "url": "https://rts.i-car.com/images/pdf/oem-info/acura/position-statements/43998x.pdf",
+    "retrieved": "2026-11-02"
+   }
+  },
+  {
+   "id": 112,
+   "make": "Acura",
+   "system": "",
+   "trigger": "",
+   "result": "not-required",
+   "method": "",
+   "yearFrom": null,
+   "yearTo": null,
+   "excerpt": "The aiming procedure is split into four aiming areas: front, rear, left side and right side. It is not necessary to do the aiming for all cameras at one time.",
+   "source": {
+    "title": "Job Aid (Acura) Aiming Driving Support System v6",
+    "url": "https://rts.i-car.com/images/pdf/oem-info/acura/position-statements/43998x.pdf",
+    "retrieved": "2026-11-02"
+   }
+  },
+  {
+   "id": 113,
+   "make": "Acura",
+   "system": "",
+   "trigger": "",
+   "result": "not-required",
+   "method": "",
+   "yearFrom": null,
+   "yearTo": null,
+   "excerpt": "It is not necessary to do the aiming for all cameras at one time. Do the camera aiming that is applicable to the component that was removed, adjusted, or required re-aiming.",
+   "source": {
+    "title": "Job Aid (Acura) Aiming Driving Support System v6",
+    "url": "https://rts.i-car.com/images/pdf/oem-info/acura/position-statements/43998x.pdf",
+    "retrieved": "2026-11-02"
+   }
+  },
+  {
+   "id": 114,
+   "make": "Acura",
+   "system": "",
+   "trigger": "",
+   "result": "",
+   "method": "",
+   "yearFrom": null,
+   "yearTo": null,
+   "excerpt": "Side camera, left side 4. Side camera, right side After any camera aiming, be sure to do the multi view camera picture inspection according to the service information.",
+   "source": {
+    "title": "Job Aid (Acura) Aiming Driving Support System v6",
+    "url": "https://rts.i-car.com/images/pdf/oem-info/acura/position-statements/43998x.pdf",
+    "retrieved": "2026-11-02"
+   }
+  },
+  {
+   "id": 115,
+   "make": "Acura",
+   "system": "front-radar",
+   "trigger": "",
+   "result": "",
+   "method": "",
+   "yearFrom": null,
+   "yearTo": null,
+   "excerpt": "GENERAL AIMING REQUIREMENTS Although the procedures for radar unit and camera aiming are different, the general aiming requirements are the same.",
+   "source": {
+    "title": "Job Aid (Acura) Aiming Driving Support System v6",
+    "url": "https://rts.i-car.com/images/pdf/oem-info/acura/position-statements/43998x.pdf",
+    "retrieved": "2026-11-02"
+   }
+  },
+  {
+   "id": 116,
+   "make": "Acura",
+   "system": "front-radar",
+   "trigger": "",
+   "result": "",
+   "method": "",
+   "yearFrom": null,
+   "yearTo": null,
+   "excerpt": "GENERAL AIMING REQUIREMENTS Although the procedures for radar unit and camera aiming are different, the general aiming requirements are the same. Here are the minimum requirements for both the vehicle and the aiming area.",
+   "source": {
+    "title": "Job Aid (Acura) Aiming Driving Support System v6",
+    "url": "https://rts.i-car.com/images/pdf/oem-info/acura/position-statements/43998x.pdf",
+    "retrieved": "2026-11-02"
+   }
+  },
+  {
+   "id": 117,
+   "make": "Acura",
+   "system": "front-radar",
+   "trigger": "",
+   "result": "",
+   "method": "",
+   "yearFrom": null,
+   "yearTo": null,
+   "excerpt": "• There is no dirt or debris around the radar unit or camera. Aiming Area Requirements • Do the aiming in a well-lit area such as inside the shop.",
+   "source": {
+    "title": "Job Aid (Acura) Aiming Driving Support System v6",
+    "url": "https://rts.i-car.com/images/pdf/oem-info/acura/position-statements/43998x.pdf",
+    "retrieved": "2026-11-02"
+   }
+  },
+  {
+   "id": 118,
+   "make": "Acura",
+   "system": "",
+   "trigger": "",
+   "result": "",
+   "method": "",
+   "yearFrom": null,
+   "yearTo": null,
+   "excerpt": "Aiming Area Requirements • Do the aiming in a well-lit area such as inside the shop. Avoid doing it outside; certain weather conditions may affect aiming results.",
+   "source": {
+    "title": "Job Aid (Acura) Aiming Driving Support System v6",
+    "url": "https://rts.i-car.com/images/pdf/oem-info/acura/position-statements/43998x.pdf",
+    "retrieved": "2026-11-02"
+   }
+  },
+  {
+   "id": 119,
+   "make": "Acura",
+   "system": "",
+   "trigger": "",
+   "result": "",
+   "method": "",
+   "yearFrom": null,
+   "yearTo": null,
+   "excerpt": "Avoid areas with poles and large tool boxes nearby. Also, avoid aiming in front of any metal garage doors, shutters, or steel grates in the ground.",
+   "source": {
+    "title": "Job Aid (Acura) Aiming Driving Support System v6",
+    "url": "https://rts.i-car.com/images/pdf/oem-info/acura/position-statements/43998x.pdf",
+    "retrieved": "2026-11-02"
+   }
+  },
+  {
+   "id": 120,
+   "make": "Acura",
+   "system": "front-radar",
+   "trigger": "",
+   "result": "",
+   "method": "",
+   "yearFrom": null,
+   "yearTo": null,
+   "excerpt": "Page 19 of 33 Radar, FCW/LDW Camera or Multipurpose Camera Aiming BSI Radar Aiming Page 20 of 33 Multi View Camera Aiming • There should be no bright objects (sunlight, windows, lights, or reflectors) behind or in front of the target or designs similar to the target pattern.",
+   "source": {
+    "title": "Job Aid (Acura) Aiming Driving Support System v6",
+    "url": "https://rts.i-car.com/images/pdf/oem-info/acura/position-statements/43998x.pdf",
+    "retrieved": "2026-11-02"
+   }
+  },
+  {
+   "id": 122,
+   "make": "Acura",
+   "system": "",
+   "trigger": "",
+   "result": "",
+   "method": "",
+   "yearFrom": null,
+   "yearTo": null,
+   "excerpt": "Determine the centerline at the rear of the vehicle, and position the gas shock with the cord or string attached. Refer to the procedure Before Aiming Setting in the service information.",
+   "source": {
+    "title": "Job Aid (Acura) Aiming Driving Support System v6",
+    "url": "https://rts.i-car.com/images/pdf/oem-info/acura/position-statements/43998x.pdf",
+    "retrieved": "2026-11-02"
+   }
+  },
+  {
+   "id": 123,
+   "make": "Acura",
+   "system": "",
+   "trigger": "",
+   "result": "",
+   "method": "",
+   "yearFrom": null,
+   "yearTo": null,
+   "excerpt": "5. The target set up you just completed should match the one in the aiming procedure.",
+   "source": {
+    "title": "Job Aid (Acura) Aiming Driving Support System v6",
+    "url": "https://rts.i-car.com/images/pdf/oem-info/acura/position-statements/43998x.pdf",
+    "retrieved": "2026-11-02"
+   }
+  },
+  {
+   "id": 124,
+   "make": "Acura",
+   "system": "front-radar",
+   "trigger": "",
+   "result": "",
+   "method": "",
+   "yearFrom": null,
+   "yearTo": null,
+   "excerpt": "NOTE: When doing the millimeter wave radar aiming, do not place the reflector target at mark Z1 until you are instructed by the i -HDS.",
+   "source": {
+    "title": "Job Aid (Acura) Aiming Driving Support System v6",
+    "url": "https://rts.i-car.com/images/pdf/oem-info/acura/position-statements/43998x.pdf",
+    "retrieved": "2026-11-02"
+   }
+  },
+  {
+   "id": 125,
+   "make": "Acura",
+   "system": "front-radar",
+   "trigger": "",
+   "result": "",
+   "method": "",
+   "yearFrom": null,
+   "yearTo": null,
+   "excerpt": "NOTE: When doing the millimeter wave radar aiming, do not place the reflector target at mark Z1 until you are instructed by the i -HDS. Failure to do so will result in an aiming failure with an i -HDS message Detected Some Obstacles.",
+   "source": {
+    "title": "Job Aid (Acura) Aiming Driving Support System v6",
+    "url": "https://rts.i-car.com/images/pdf/oem-info/acura/position-statements/43998x.pdf",
+    "retrieved": "2026-11-02"
+   }
+  },
+  {
+   "id": 126,
+   "make": "Acura",
+   "system": "front-radar",
+   "trigger": "",
+   "result": "",
+   "method": "",
+   "yearFrom": null,
+   "yearTo": null,
+   "excerpt": "Refer to Placing the Stand During Millimeter Wave Radar Aiming under TROUBLESHOOTING TIPS.",
+   "source": {
+    "title": "Job Aid (Acura) Aiming Driving Support System v6",
+    "url": "https://rts.i-car.com/images/pdf/oem-info/acura/position-statements/43998x.pdf",
+    "retrieved": "2026-11-02"
+   }
+  },
+  {
+   "id": 127,
+   "make": "Acura",
+   "system": "",
+   "trigger": "",
+   "result": "",
+   "method": "",
+   "yearFrom": null,
+   "yearTo": null,
+   "excerpt": "Determine the vehicle's centerline at the front and make a mark. Refer to the procedure Before Aiming Setting in the service information.",
+   "source": {
+    "title": "Job Aid (Acura) Aiming Driving Support System v6",
+    "url": "https://rts.i-car.com/images/pdf/oem-info/acura/position-statements/43998x.pdf",
+    "retrieved": "2026-11-02"
+   }
+  },
+  {
+   "id": 128,
+   "make": "Acura",
+   "system": "",
+   "trigger": "",
+   "result": "",
+   "method": "",
+   "yearFrom": null,
+   "yearTo": null,
+   "excerpt": "Page 26 of 33 14. The target set up you just completed should match the one in the aiming procedure.",
+   "source": {
+    "title": "Job Aid (Acura) Aiming Driving Support System v6",
+    "url": "https://rts.i-car.com/images/pdf/oem-info/acura/position-statements/43998x.pdf",
+    "retrieved": "2026-11-02"
+   }
+  },
+  {
+   "id": 129,
+   "make": "Acura",
+   "system": "front-radar",
+   "trigger": "",
+   "result": "",
+   "method": "",
+   "yearFrom": null,
+   "yearTo": null,
+   "excerpt": "Refer to Placing the Stand During Millimeter Wave Radar Aiming under TROUBLESHOOTING TIPS. This procedure can also be used when setting up the multi view camera aiming.",
+   "source": {
+    "title": "Job Aid (Acura) Aiming Driving Support System v6",
+    "url": "https://rts.i-car.com/images/pdf/oem-info/acura/position-statements/43998x.pdf",
+    "retrieved": "2026-11-02"
+   }
+  },
+  {
+   "id": 130,
+   "make": "Acura",
+   "system": "",
+   "trigger": "",
+   "result": "",
+   "method": "",
+   "yearFrom": null,
+   "yearTo": null,
+   "excerpt": "Use the procedure to set up the reference marks for placing the target sheets on the front, rear, and sides of the vehicle. Page 27 of 33 TIPS ON MULTI VIEW CAMERA AIMING Side Camera Aiming The service information shows four target sheets in the side camera aiming procedure diagram: one in the front, one in the back, and two on the side.",
+   "source": {
+    "title": "Job Aid (Acura) Aiming Driving Support System v6",
+    "url": "https://rts.i-car.com/images/pdf/oem-info/acura/position-statements/43998x.pdf",
+    "retrieved": "2026-11-02"
+   }
+  },
+  {
+   "id": 131,
+   "make": "Acura",
+   "system": "",
+   "trigger": "",
+   "result": "",
+   "method": "",
+   "yearFrom": null,
+   "yearTo": null,
+   "excerpt": "Move the targets from the front and rear to the side as shown. During Aiming When checking the center display unit during aiming, it is important to understand what you are checking.",
+   "source": {
+    "title": "Job Aid (Acura) Aiming Driving Support System v6",
+    "url": "https://rts.i-car.com/images/pdf/oem-info/acura/position-statements/43998x.pdf",
+    "retrieved": "2026-11-02"
+   }
+  },
+  {
+   "id": 132,
+   "make": "Acura",
+   "system": "",
+   "trigger": "",
+   "result": "",
+   "method": "",
+   "yearFrom": null,
+   "yearTo": null,
+   "excerpt": "Page 28 of 33 When you see the message Please confirm navigation monitor. Is marker in aiming area?",
+   "source": {
+    "title": "Job Aid (Acura) Aiming Driving Support System v6",
+    "url": "https://rts.i-car.com/images/pdf/oem-info/acura/position-statements/43998x.pdf",
+    "retrieved": "2026-11-02"
+   }
+  },
+  {
+   "id": 133,
+   "make": "Acura",
+   "system": "",
+   "trigger": "",
+   "result": "not-required",
+   "method": "",
+   "yearFrom": null,
+   "yearTo": null,
+   "excerpt": "The same applies for the side cameras. Lastly, it is not necessary to do all of the multi view camera aiming procedures listed in the service information.",
+   "source": {
+    "title": "Job Aid (Acura) Aiming Driving Support System v6",
+    "url": "https://rts.i-car.com/images/pdf/oem-info/acura/position-statements/43998x.pdf",
+    "retrieved": "2026-11-02"
+   }
+  },
+  {
+   "id": 134,
+   "make": "Acura",
+   "system": "front-radar",
+   "trigger": "",
+   "result": "",
+   "method": "",
+   "yearFrom": null,
+   "yearTo": null,
+   "excerpt": "Page 30 of 33 TROUBLESHOOTING TIPS Here are some general troubleshooting tips if the radar unit or camera aiming fails.",
+   "source": {
+    "title": "Job Aid (Acura) Aiming Driving Support System v6",
+    "url": "https://rts.i-car.com/images/pdf/oem-info/acura/position-statements/43998x.pdf",
+    "retrieved": "2026-11-02"
+   }
+  },
+  {
+   "id": 135,
+   "make": "Acura",
+   "system": "front-radar",
+   "trigger": "",
+   "result": "",
+   "method": "",
+   "yearFrom": null,
+   "yearTo": null,
+   "excerpt": "Page 30 of 33 TROUBLESHOOTING TIPS Here are some general troubleshooting tips if the radar unit or camera aiming fails. Before doing any troubleshooting, always make sure you have met the vehicle and aiming area requirements and the targets are set up correctly according to this job aid and the service information.",
+   "source": {
+    "title": "Job Aid (Acura) Aiming Driving Support System v6",
+    "url": "https://rts.i-car.com/images/pdf/oem-info/acura/position-statements/43998x.pdf",
+    "retrieved": "2026-11-02"
+   }
+  },
+  {
+   "id": 136,
+   "make": "Acura",
+   "system": "front-radar",
+   "trigger": "",
+   "result": "",
+   "method": "",
+   "yearFrom": null,
+   "yearTo": null,
+   "excerpt": "Obstructed Radar View Besides dirt and debris on the radar unit cover, front Acura emblem, or front grille, other factors can obstruct the radar unit view that will affect millimeter wave radar unit aiming.",
+   "source": {
+    "title": "Job Aid (Acura) Aiming Driving Support System v6",
+    "url": "https://rts.i-car.com/images/pdf/oem-info/acura/position-statements/43998x.pdf",
+    "retrieved": "2026-11-02"
+   }
+  },
+  {
+   "id": 137,
+   "make": "Acura",
+   "system": "front-radar",
+   "trigger": "",
+   "result": "",
+   "method": "",
+   "yearFrom": null,
+   "yearTo": null,
+   "excerpt": "Placing the Stand During Millimeter Wave Radar Aiming When aiming the millimeter wave radar, keep the stand away from the aiming area and do not place it on the specified mark until you are instructed by the i-HDS.",
+   "source": {
+    "title": "Job Aid (Acura) Aiming Driving Support System v6",
+    "url": "https://rts.i-car.com/images/pdf/oem-info/acura/position-statements/43998x.pdf",
+    "retrieved": "2026-11-02"
+   }
+  },
+  {
+   "id": 138,
+   "make": "Acura",
+   "system": "",
+   "trigger": "",
+   "result": "",
+   "method": "",
+   "yearFrom": null,
+   "yearTo": null,
+   "excerpt": "Other reflections may not be as obvious. Do one or all of the following, and do the camera aiming again: • Check the placement of the targets again, and make sure it is in the correct position.",
+   "source": {
+    "title": "Job Aid (Acura) Aiming Driving Support System v6",
+    "url": "https://rts.i-car.com/images/pdf/oem-info/acura/position-statements/43998x.pdf",
+    "retrieved": "2026-11-02"
+   }
+  },
+  {
+   "id": 139,
+   "make": "Acura",
+   "system": "",
+   "trigger": "",
+   "result": "",
+   "method": "",
+   "yearFrom": null,
+   "yearTo": null,
+   "excerpt": "• Close any shop windows or roll doors. If you still cannot do the camera aiming after trying all of the above, do the following: 1.",
+   "source": {
+    "title": "Job Aid (Acura) Aiming Driving Support System v6",
+    "url": "https://rts.i-car.com/images/pdf/oem-info/acura/position-statements/43998x.pdf",
+    "retrieved": "2026-11-02"
+   }
+  },
+  {
+   "id": 140,
+   "make": "Acura",
+   "system": "",
+   "trigger": "",
+   "result": "",
+   "method": "",
+   "yearFrom": null,
+   "yearTo": null,
+   "excerpt": "3. Do the camera aiming again.",
+   "source": {
+    "title": "Job Aid (Acura) Aiming Driving Support System v6",
+    "url": "https://rts.i-car.com/images/pdf/oem-info/acura/position-statements/43998x.pdf",
+    "retrieved": "2026-11-02"
+   }
+  },
+  {
+   "id": 141,
+   "make": "Acura",
+   "system": "",
+   "trigger": "alignment",
+   "result": "required",
+   "method": "",
+   "yearFrom": null,
+   "yearTo": null,
+   "excerpt": "NOTE: It may be necessary to turn the shops light on or off to further control the reflection or glare, even after placing the cardboard around the targets. Collision Repairs Any vehicle that was involved in a collision must have a wheel alignment completed before aiming.",
+   "source": {
+    "title": "Job Aid (Acura) Aiming Driving Support System v6",
+    "url": "https://rts.i-car.com/images/pdf/oem-info/acura/position-statements/43998x.pdf",
+    "retrieved": "2026-11-02"
+   }
+  },
+  {
+   "id": 142,
+   "make": "Acura",
+   "system": "front-radar",
+   "trigger": "collision-structural",
+   "result": "",
+   "method": "",
+   "yearFrom": null,
+   "yearTo": null,
+   "excerpt": "If you have trouble aiming the millimeter wave radar unit on a vehicle that recently had collision repair, check the following: • If the radar unit was replaced, you must check the distance from the radar unit to the bracket and adjust as needed using the adjusting bolts.",
+   "source": {
+    "title": "Job Aid (Acura) Aiming Driving Support System v6",
+    "url": "https://rts.i-car.com/images/pdf/oem-info/acura/position-statements/43998x.pdf",
+    "retrieved": "2026-11-02"
+   }
+  },
+  {
+   "id": 143,
+   "make": "Acura",
+   "system": "front-radar",
+   "trigger": "module-replacement",
+   "result": "",
+   "method": "",
+   "yearFrom": null,
+   "yearTo": null,
+   "excerpt": "• If the radar unit was not replaced, before you start radar unit aiming, you must still check the mounting position of the radar unit bracket to the vehicle frame.",
+   "source": {
+    "title": "Job Aid (Acura) Aiming Driving Support System v6",
+    "url": "https://rts.i-car.com/images/pdf/oem-info/acura/position-statements/43998x.pdf",
+    "retrieved": "2026-11-02"
+   }
+  },
+  {
+   "id": 144,
+   "make": "Acura",
+   "system": "front-radar",
+   "trigger": "collision-structural",
+   "result": "",
+   "method": "",
+   "yearFrom": null,
+   "yearTo": null,
+   "excerpt": "In certain light collisions, the radar unit bracket can get slightly bent where it goes unnoticed in a visual inspection, but is enough to cause the radar unit aiming to fail.",
+   "source": {
+    "title": "Job Aid (Acura) Aiming Driving Support System v6",
+    "url": "https://rts.i-car.com/images/pdf/oem-info/acura/position-statements/43998x.pdf",
+    "retrieved": "2026-11-02"
+   }
+  },
+  {
+   "id": 145,
+   "make": "Acura",
+   "system": "front-radar",
+   "trigger": "alignment",
+   "result": "",
+   "method": "",
+   "yearFrom": null,
+   "yearTo": null,
+   "excerpt": "In certain light collisions, the radar unit bracket can get slightly bent where it goes unnoticed in a visual inspection, but is enough to cause the radar unit aiming to fail. • Make sure the wheel alignment is done before aiming the driving support system after a collision repair.",
+   "source": {
+    "title": "Job Aid (Acura) Aiming Driving Support System v6",
+    "url": "https://rts.i-car.com/images/pdf/oem-info/acura/position-statements/43998x.pdf",
+    "retrieved": "2026-11-02"
+   }
+  },
+  {
+   "id": 146,
+   "make": "Acura",
+   "system": "front-radar",
+   "trigger": "",
+   "result": "",
+   "method": "dynamic",
+   "yearFrom": null,
+   "yearTo": null,
+   "excerpt": "Page 33 of 33 System Limitations Always remember that certain environmental and roadway conditions can affect normal operation of radar and camera systems during use or when doing dynamic aiming.",
+   "source": {
+    "title": "Job Aid (Acura) Aiming Driving Support System v6",
+    "url": "https://rts.i-car.com/images/pdf/oem-info/acura/position-statements/43998x.pdf",
+    "retrieved": "2026-11-02"
+   }
+  },
+  {
+   "id": 264,
+   "make": "Ford",
+   "system": "",
+   "trigger": "collision-structural",
+   "result": "",
+   "method": "",
+   "yearFrom": null,
+   "yearTo": null,
+   "excerpt": "Additional I-CAR Collision Repair News you may find helpful: ADAS, Calibration, And Scanning Article Hotspot",
+   "source": {
+    "title": "Bumper Cover Repair With ADAS: Ford/Lincoln - UPDATE",
+    "url": "https://rts.i-car.com/crn-2346.html",
+    "retrieved": "2026-11-02"
+   }
+  },
+  {
+   "id": 265,
+   "make": "Ford",
+   "system": "",
+   "trigger": "",
+   "result": "",
+   "method": "",
+   "yearFrom": null,
+   "yearTo": null,
+   "excerpt": "We have compiled a list of most of the statements on the subject, so you can... ADAS, Calibration, And Scanning Article Hotspot",
+   "source": {
+    "title": "Bumper Cover Repair With ADAS: Ford/Lincoln - UPDATE",
+    "url": "https://rts.i-car.com/crn-2346.html",
+    "retrieved": "2026-11-02"
+   }
+  },
+  {
+   "id": 266,
+   "make": "Ford",
+   "system": "",
+   "trigger": "collision-structural",
+   "result": "required",
+   "method": "",
+   "yearFrom": 2019,
+   "yearTo": 2019,
+   "excerpt": "Monday, 14 January 2019 Since advanced driver assistance systems (ADAS), scanning, and calibration first started becoming relevant, members of the collision repair industry have required as much knowledge as possible on...",
+   "source": {
+    "title": "Bumper Cover Repair With ADAS: Ford/Lincoln - UPDATE",
+    "url": "https://rts.i-car.com/crn-2346.html",
+    "retrieved": "2026-11-02"
+   }
+  },
+  {
+   "id": 267,
+   "make": "Ford",
+   "system": "front-radar",
+   "trigger": "",
+   "result": "",
+   "method": "",
+   "yearFrom": null,
+   "yearTo": null,
+   "excerpt": "Typical Calibration Requirements For Forward Radar Sensors",
+   "source": {
+    "title": "Bumper Cover Repair With ADAS: Ford/Lincoln - UPDATE",
+    "url": "https://rts.i-car.com/crn-2346.html",
+    "retrieved": "2026-11-02"
+   }
+  },
+  {
+   "id": 268,
+   "make": "Ford",
+   "system": "",
+   "trigger": "collision-structural",
+   "result": "required",
+   "method": "",
+   "yearFrom": null,
+   "yearTo": null,
+   "excerpt": "Technicians should be aware of what’s required to keep advanced driver assistance systems (ADAS) running safely after a collision. Whether that be aiming a camera, which can cause a system to not...",
+   "source": {
+    "title": "Bumper Cover Repair With ADAS: Ford/Lincoln - UPDATE",
+    "url": "https://rts.i-car.com/crn-2346.html",
+    "retrieved": "2026-11-02"
+   }
+  },
+  {
+   "id": 269,
+   "make": "Ford",
+   "system": "blind-spot",
+   "trigger": "mirror-door-liftgate",
+   "result": "",
+   "method": "",
+   "yearFrom": null,
+   "yearTo": null,
+   "excerpt": "Calibration Research Tips: Blind Spot Indicator In Side Mirrors",
+   "source": {
+    "title": "Bumper Cover Repair With ADAS: Ford/Lincoln - UPDATE",
+    "url": "https://rts.i-car.com/crn-2346.html",
+    "retrieved": "2026-11-02"
+   }
+  },
+  {
+   "id": 270,
+   "make": "Ford",
+   "system": "front-radar",
+   "trigger": "",
+   "result": "",
+   "method": "",
+   "yearFrom": null,
+   "yearTo": null,
+   "excerpt": "Calibration Research Tips: Mazda Simultaneous Front Radar Calibration",
+   "source": {
+    "title": "Bumper Cover Repair With ADAS: Ford/Lincoln - UPDATE",
+    "url": "https://rts.i-car.com/crn-2346.html",
+    "retrieved": "2026-11-02"
+   }
+  },
+  {
+   "id": 271,
+   "make": "Ford",
+   "system": "",
+   "trigger": "",
+   "result": "",
+   "method": "",
+   "yearFrom": null,
+   "yearTo": null,
+   "excerpt": "Bumper Cover Repair With ADAS: Hyundai - UPDATE Calibration Research Tips: Ford/Lincoln Park Assist Operation Check - UPDATE",
+   "source": {
+    "title": "Bumper Cover Repair With ADAS: Ford/Lincoln - UPDATE",
+    "url": "https://rts.i-car.com/crn-2346.html",
+    "retrieved": "2026-11-02"
+   }
+  },
+  {
+   "id": 272,
+   "make": "Ford",
+   "system": "",
+   "trigger": "",
+   "result": "",
+   "method": "",
+   "yearFrom": null,
+   "yearTo": null,
+   "excerpt": "UPDATE I-CAR Repairers Realm: ADAS Training And Tool Requirements For Calibration - Now Available",
+   "source": {
+    "title": "Bumper Cover Repair With ADAS: Ford/Lincoln - UPDATE",
+    "url": "https://rts.i-car.com/crn-2346.html",
+    "retrieved": "2026-11-02"
+   }
+  },
+  {
+   "id": 273,
+   "make": "Ford",
+   "system": "parking-sensors",
+   "trigger": "module-replacement",
+   "result": "",
+   "method": "",
+   "yearFrom": null,
+   "yearTo": null,
+   "excerpt": "Calibration Research Tips: Nissan/INFINITI - Bumper Cover Replaced With Sonar Sensor Holder",
+   "source": {
+    "title": "Bumper Cover Repair With ADAS: Ford/Lincoln - UPDATE",
+    "url": "https://rts.i-car.com/crn-2346.html",
+    "retrieved": "2026-11-02"
+   }
+  },
+  {
+   "id": 274,
+   "make": "Ford",
+   "system": "",
+   "trigger": "alignment",
+   "result": "",
+   "method": "",
+   "yearFrom": null,
+   "yearTo": null,
+   "excerpt": "I-CAR Just In Time: Remove Coatings During Sectioning I-CAR Repairers Realm: ADAS Calibrations After Wheel Alignment - Now Available",
+   "source": {
+    "title": "Bumper Cover Repair With ADAS: Ford/Lincoln - UPDATE",
+    "url": "https://rts.i-car.com/crn-2346.html",
+    "retrieved": "2026-11-02"
+   }
+  },
+  {
+   "id": 275,
+   "make": "Ford",
+   "system": "",
+   "trigger": "",
+   "result": "",
+   "method": "",
+   "yearFrom": null,
+   "yearTo": null,
+   "excerpt": "Locating OEM-Approved ADAS Tools: Honda/Acura - UPDATE Repairer Driven News: OEM Procedures And Scan Tool Types For ADAS Calibrations",
+   "source": {
+    "title": "Bumper Cover Repair With ADAS: Ford/Lincoln - UPDATE",
+    "url": "https://rts.i-car.com/crn-2346.html",
+    "retrieved": "2026-11-02"
+   }
+  },
+  {
+   "id": 276,
+   "make": "Ford",
+   "system": "front-radar",
+   "trigger": "",
+   "result": "",
+   "method": "",
+   "yearFrom": null,
+   "yearTo": null,
+   "excerpt": "Calibration Research Tips: Honda/Acura Millimeter Wave Radar Mounting Position Inspection",
+   "source": {
+    "title": "Bumper Cover Repair With ADAS: Ford/Lincoln - UPDATE",
+    "url": "https://rts.i-car.com/crn-2346.html",
+    "retrieved": "2026-11-02"
+   }
+  },
+  {
+   "id": 277,
+   "make": "Ford",
+   "system": "blind-spot",
+   "trigger": "",
+   "result": "",
+   "method": "",
+   "yearFrom": null,
+   "yearTo": null,
+   "excerpt": "Calibration Research Tips: Mazda Blind Spot Sensors In Pairs",
+   "source": {
+    "title": "Bumper Cover Repair With ADAS: Ford/Lincoln - UPDATE",
+    "url": "https://rts.i-car.com/crn-2346.html",
+    "retrieved": "2026-11-02"
+   }
+  },
+  {
+   "id": 278,
+   "make": "Ford",
+   "system": "",
+   "trigger": "",
+   "result": "",
+   "method": "static",
+   "yearFrom": null,
+   "yearTo": null,
+   "excerpt": "I-CAR Repairers Realm: Ford F-150 Outer Box Panel Replacement - Now Available I-CAR Static ADAS Calibration 3-Day Hands-On Skills Development Course",
+   "source": {
+    "title": "Bumper Cover Repair With ADAS: Ford/Lincoln - UPDATE",
+    "url": "https://rts.i-car.com/crn-2346.html",
+    "retrieved": "2026-11-02"
+   }
+  },
+  {
+   "id": 279,
+   "make": "Ford",
+   "system": "blind-spot",
+   "trigger": "",
+   "result": "",
+   "method": "",
+   "yearFrom": 2017,
+   "yearTo": 2023,
+   "excerpt": "Calibration Research Tips: 2017-2023 Buick Encore Blind Spot False Alerts",
+   "source": {
+    "title": "Bumper Cover Repair With ADAS: Ford/Lincoln - UPDATE",
+    "url": "https://rts.i-car.com/crn-2346.html",
+    "retrieved": "2026-11-02"
+   }
+  },
+  {
+   "id": 280,
+   "make": "Ford",
+   "system": "",
+   "trigger": "",
+   "result": "",
+   "method": "",
+   "yearFrom": 2022,
+   "yearTo": 2022,
+   "excerpt": "2022 SkillsUSA National Competition Results Calibration Research Tips: Ford/Lincoln ADAS Suites",
+   "source": {
+    "title": "Bumper Cover Repair With ADAS: Ford/Lincoln - UPDATE",
+    "url": "https://rts.i-car.com/crn-2346.html",
+    "retrieved": "2026-11-02"
+   }
+  },
+  {
+   "id": 281,
+   "make": "Ford",
+   "system": "",
+   "trigger": "",
+   "result": "",
+   "method": "",
+   "yearFrom": null,
+   "yearTo": null,
+   "excerpt": "Calibration Research Tips: Ford/Lincoln ADAS Suites Calibration Research Tips: Nissan/INFINITI Module Programming",
+   "source": {
+    "title": "Bumper Cover Repair With ADAS: Ford/Lincoln - UPDATE",
+    "url": "https://rts.i-car.com/crn-2346.html",
+    "retrieved": "2026-11-02"
+   }
+  },
+  {
+   "id": 282,
+   "make": "Ford",
+   "system": "parking-sensors",
+   "trigger": "",
+   "result": "",
+   "method": "",
+   "yearFrom": null,
+   "yearTo": null,
+   "excerpt": "Calibration Research Tips: Toyota/Lexus One-Time-Use Park Assist Sensor Retainers",
+   "source": {
+    "title": "Bumper Cover Repair With ADAS: Ford/Lincoln - UPDATE",
+    "url": "https://rts.i-car.com/crn-2346.html",
+    "retrieved": "2026-11-02"
+   }
+  },
+  {
+   "id": 283,
+   "make": "Ford",
+   "system": "forward-camera",
+   "trigger": "",
+   "result": "",
+   "method": "",
+   "yearFrom": null,
+   "yearTo": null,
+   "excerpt": "Calibration Research Tips: Subaru EyeSight - UPDATE",
+   "source": {
+    "title": "Bumper Cover Repair With ADAS: Ford/Lincoln - UPDATE",
+    "url": "https://rts.i-car.com/crn-2346.html",
+    "retrieved": "2026-11-02"
+   }
+  },
+  {
+   "id": 284,
+   "make": "Ford",
+   "system": "",
+   "trigger": "",
+   "result": "",
+   "method": "",
+   "yearFrom": null,
+   "yearTo": null,
+   "excerpt": "Bumper Cover Repair With ADAS: Kia Calibration Research Tips: Subaru Document Print Button",
+   "source": {
+    "title": "Bumper Cover Repair With ADAS: Ford/Lincoln - UPDATE",
+    "url": "https://rts.i-car.com/crn-2346.html",
+    "retrieved": "2026-11-02"
+   }
+  },
+  {
+   "id": 285,
+   "make": "Ford",
+   "system": "rear-camera",
+   "trigger": "",
+   "result": "",
+   "method": "",
+   "yearFrom": null,
+   "yearTo": null,
+   "excerpt": "Calibration Research Tips: Mitsubishi Rear View Camera Setting",
+   "source": {
+    "title": "Bumper Cover Repair With ADAS: Ford/Lincoln - UPDATE",
+    "url": "https://rts.i-car.com/crn-2346.html",
+    "retrieved": "2026-11-02"
+   }
+  },
+  {
+   "id": 286,
+   "make": "Ford",
+   "system": "",
+   "trigger": "",
+   "result": "",
+   "method": "",
+   "yearFrom": 2020,
+   "yearTo": 2020,
+   "excerpt": "Hybrid And Electric Vehicle Precautions: 2020 Honda Accord Hybrid I-CAR ADAS Diagnostics - When The Calibration Fails Course",
+   "source": {
+    "title": "Bumper Cover Repair With ADAS: Ford/Lincoln - UPDATE",
+    "url": "https://rts.i-car.com/crn-2346.html",
+    "retrieved": "2026-11-02"
+   }
+  },
+  {
+   "id": 287,
+   "make": "Ford",
+   "system": "",
+   "trigger": "",
+   "result": "",
+   "method": "",
+   "yearFrom": null,
+   "yearTo": null,
+   "excerpt": "Bumper Cover Repair With ADAS: Mitsubishi Calibration Research Tips: Mazda Park Assist System",
+   "source": {
+    "title": "Bumper Cover Repair With ADAS: Ford/Lincoln - UPDATE",
+    "url": "https://rts.i-car.com/crn-2346.html",
+    "retrieved": "2026-11-02"
+   }
+  },
+  {
+   "id": 288,
+   "make": "Ford",
+   "system": "front-radar",
+   "trigger": "",
+   "result": "",
+   "method": "",
+   "yearFrom": null,
+   "yearTo": null,
+   "excerpt": "Calibration Research Tips: Mitsubishi Radar Sensor",
+   "source": {
+    "title": "Bumper Cover Repair With ADAS: Ford/Lincoln - UPDATE",
+    "url": "https://rts.i-car.com/crn-2346.html",
+    "retrieved": "2026-11-02"
+   }
+  },
+  {
+   "id": 289,
+   "make": "Ford",
+   "system": "parking-sensors",
+   "trigger": "",
+   "result": "",
+   "method": "",
+   "yearFrom": null,
+   "yearTo": null,
+   "excerpt": "Calibration Research Tips: Toyota/Lexus Intelligent Clearance Sonar System",
+   "source": {
+    "title": "Bumper Cover Repair With ADAS: Ford/Lincoln - UPDATE",
+    "url": "https://rts.i-car.com/crn-2346.html",
+    "retrieved": "2026-11-02"
+   }
+  },
+  {
+   "id": 290,
+   "make": "Ford",
+   "system": "",
+   "trigger": "alignment",
+   "result": "",
+   "method": "",
+   "yearFrom": 2020,
+   "yearTo": 2020,
+   "excerpt": "SEMA 2020: I-CAR Electric Vehicles Safety - Where To Begin Presentation SEMA 2020: I-CAR How ADAS, Calibration, Structure, And Wheel Alignments Are Connected Presentation",
+   "source": {
+    "title": "Bumper Cover Repair With ADAS: Ford/Lincoln - UPDATE",
+    "url": "https://rts.i-car.com/crn-2346.html",
+    "retrieved": "2026-11-02"
+   }
+  },
+  {
+   "id": 291,
+   "make": "Ford",
+   "system": "",
+   "trigger": "",
+   "result": "",
+   "method": "",
+   "yearFrom": 2020,
+   "yearTo": 2020,
+   "excerpt": "Advanced Driver Assistance Systems: 2020 Hyundai Palisade Calibration Research Tips: BMW/Mini Calibration Information Table",
+   "source": {
+    "title": "Bumper Cover Repair With ADAS: Ford/Lincoln - UPDATE",
+    "url": "https://rts.i-car.com/crn-2346.html",
+    "retrieved": "2026-11-02"
+   }
+  },
+  {
+   "id": 292,
+   "make": "Ford",
+   "system": "",
+   "trigger": "",
+   "result": "",
+   "method": "",
+   "yearFrom": null,
+   "yearTo": null,
+   "excerpt": "Calibration Research Tips: BMW/Mini Calibration Information Table Calibration Research Tips: Hyundai Trim Level Specific ADAS Features",
+   "source": {
+    "title": "Bumper Cover Repair With ADAS: Ford/Lincoln - UPDATE",
+    "url": "https://rts.i-car.com/crn-2346.html",
+    "retrieved": "2026-11-02"
+   }
+  },
+  {
+   "id": 293,
+   "make": "Ford",
+   "system": "",
+   "trigger": "",
+   "result": "",
+   "method": "",
+   "yearFrom": null,
+   "yearTo": null,
+   "excerpt": "Calibration Research Tips: Hyundai Trim Level Specific ADAS Features Calibration Research Tips: RAM Drivers Assistance System Module",
+   "source": {
+    "title": "Bumper Cover Repair With ADAS: Ford/Lincoln - UPDATE",
+    "url": "https://rts.i-car.com/crn-2346.html",
+    "retrieved": "2026-11-02"
+   }
+  },
+  {
+   "id": 294,
+   "make": "Ford",
+   "system": "",
+   "trigger": "",
+   "result": "",
+   "method": "",
+   "yearFrom": null,
+   "yearTo": null,
+   "excerpt": "Bumper Cover Repair With ADAS: Subaru Calibration Research Tips: Hyundai Variant Coding",
+   "source": {
+    "title": "Bumper Cover Repair With ADAS: Ford/Lincoln - UPDATE",
+    "url": "https://rts.i-car.com/crn-2346.html",
+    "retrieved": "2026-11-02"
+   }
+  },
+  {
+   "id": 295,
+   "make": "Ford",
+   "system": "",
+   "trigger": "",
+   "result": "",
+   "method": "",
+   "yearFrom": null,
+   "yearTo": null,
+   "excerpt": "I-CAR/RTS ADAS Webinars I-CAR/RTS Webinar: Diagnostic Steps For A Failed ADAS Calibration",
+   "source": {
+    "title": "Bumper Cover Repair With ADAS: Ford/Lincoln - UPDATE",
+    "url": "https://rts.i-car.com/crn-2346.html",
+    "retrieved": "2026-11-02"
+   }
+  },
+  {
+   "id": 296,
+   "make": "Ford",
+   "system": "",
+   "trigger": "",
+   "result": "",
+   "method": "",
+   "yearFrom": null,
+   "yearTo": null,
+   "excerpt": "Back-To-Basics: Using The Correct Spot Welding Tips Even One Degree: ADAS Calibration",
+   "source": {
+    "title": "Bumper Cover Repair With ADAS: Ford/Lincoln - UPDATE",
+    "url": "https://rts.i-car.com/crn-2346.html",
+    "retrieved": "2026-11-02"
+   }
+  },
+  {
+   "id": 297,
+   "make": "Ford",
+   "system": "blind-spot",
+   "trigger": "",
+   "result": "",
+   "method": "",
+   "yearFrom": null,
+   "yearTo": null,
+   "excerpt": "Calibration Research Tips: Kia Blind Spot Systems",
+   "source": {
+    "title": "Bumper Cover Repair With ADAS: Ford/Lincoln - UPDATE",
+    "url": "https://rts.i-car.com/crn-2346.html",
+    "retrieved": "2026-11-02"
+   }
+  },
+  {
+   "id": 298,
+   "make": "Ford",
+   "system": "blind-spot",
+   "trigger": "",
+   "result": "",
+   "method": "",
+   "yearFrom": null,
+   "yearTo": null,
+   "excerpt": "Calibration Research Tips: Kia Blind Spot Systems Calibration Research Tips: Toyota Safety Sense",
+   "source": {
+    "title": "Bumper Cover Repair With ADAS: Ford/Lincoln - UPDATE",
+    "url": "https://rts.i-car.com/crn-2346.html",
+    "retrieved": "2026-11-02"
+   }
+  },
+  {
+   "id": 299,
+   "make": "Ford",
+   "system": "",
+   "trigger": "",
+   "result": "",
+   "method": "",
+   "yearFrom": 2019,
+   "yearTo": 2019,
+   "excerpt": "Advanced Driver Assistance Systems: 2019 INFINITI QX60 Calibration Research Tips: GM Manuals That Share A Common Platform",
+   "source": {
+    "title": "Bumper Cover Repair With ADAS: Ford/Lincoln - UPDATE",
+    "url": "https://rts.i-car.com/crn-2346.html",
+    "retrieved": "2026-11-02"
+   }
+  },
+  {
+   "id": 300,
+   "make": "Ford",
+   "system": "",
+   "trigger": "",
+   "result": "",
+   "method": "",
+   "yearFrom": 2019,
+   "yearTo": 2019,
+   "excerpt": "October 2019 ADAS Courses Added To The Calibration Hotspot Article",
+   "source": {
+    "title": "Bumper Cover Repair With ADAS: Ford/Lincoln - UPDATE",
+    "url": "https://rts.i-car.com/crn-2346.html",
+    "retrieved": "2026-11-02"
+   }
+  },
+  {
+   "id": 301,
+   "make": "Ford",
+   "system": "",
+   "trigger": "",
+   "result": "",
+   "method": "",
+   "yearFrom": null,
+   "yearTo": null,
+   "excerpt": "Repairer Driven News: Mazda MX-30 Electric Vehicle Requirements And Considerations For Achieving An Accurate Advanced Driver Assistance System (ADAS) Calibration",
+   "source": {
+    "title": "Bumper Cover Repair With ADAS: Ford/Lincoln - UPDATE",
+    "url": "https://rts.i-car.com/crn-2346.html",
+    "retrieved": "2026-11-02"
+   }
+  },
+  {
+   "id": 302,
+   "make": "Ford",
+   "system": "",
+   "trigger": "",
+   "result": "",
+   "method": "",
+   "yearFrom": null,
+   "yearTo": null,
+   "excerpt": "Audi Build Guide And Model Years Back-To-Basics: Headlamp Aiming",
+   "source": {
+    "title": "Bumper Cover Repair With ADAS: Ford/Lincoln - UPDATE",
+    "url": "https://rts.i-car.com/crn-2346.html",
+    "retrieved": "2026-11-02"
+   }
+  },
+  {
+   "id": 303,
+   "make": "Ford",
+   "system": "surround-camera",
+   "trigger": "",
+   "result": "",
+   "method": "",
+   "yearFrom": null,
+   "yearTo": null,
+   "excerpt": "How to Calibrate Toyota Bird’s Eye View Camera",
+   "source": {
+    "title": "Bumper Cover Repair With ADAS: Ford/Lincoln - UPDATE",
+    "url": "https://rts.i-car.com/crn-2346.html",
+    "retrieved": "2026-11-02"
+   }
+  },
+  {
+   "id": 304,
+   "make": "Ford",
+   "system": "",
+   "trigger": "",
+   "result": "",
+   "method": "",
+   "yearFrom": 2019,
+   "yearTo": 2019,
+   "excerpt": "2019 Mazda MAZDA3 Uses Industry First Steel ADAS, Calibration, And Scanning Article Hotspot",
+   "source": {
+    "title": "Bumper Cover Repair With ADAS: Ford/Lincoln - UPDATE",
+    "url": "https://rts.i-car.com/crn-2346.html",
+    "retrieved": "2026-11-02"
+   }
+  },
+  {
+   "id": 305,
+   "make": "Ford",
+   "system": "",
+   "trigger": "collision-structural",
+   "result": "",
+   "method": "",
+   "yearFrom": null,
+   "yearTo": null,
+   "excerpt": "Back-To-Basics: Solvent Popping Collision Repair New Video: ADAS Calibrations Require Precision",
+   "source": {
+    "title": "Bumper Cover Repair With ADAS: Ford/Lincoln - UPDATE",
+    "url": "https://rts.i-car.com/crn-2346.html",
+    "retrieved": "2026-11-02"
+   }
+  },
+  {
+   "id": 306,
+   "make": "Ford",
+   "system": "",
+   "trigger": "collision-structural",
+   "result": "",
+   "method": "",
+   "yearFrom": 2019,
+   "yearTo": 2019,
+   "excerpt": "Honda Released The 2019 Insight Model Series Body Repair News Bulletin Honda/Acura Keyword Search: Aiming",
+   "source": {
+    "title": "Bumper Cover Repair With ADAS: Ford/Lincoln - UPDATE",
+    "url": "https://rts.i-car.com/crn-2346.html",
+    "retrieved": "2026-11-02"
+   }
+  },
+  {
+   "id": 307,
+   "make": "Ford",
+   "system": "",
+   "trigger": "",
+   "result": "",
+   "method": "",
+   "yearFrom": null,
+   "yearTo": null,
+   "excerpt": "I-CAR 360: Lexus RC300 Video Now Available I-CAR Best Practice: Damage Analysis for ADAS Identification and Calibration Requirements",
+   "source": {
+    "title": "Bumper Cover Repair With ADAS: Ford/Lincoln - UPDATE",
+    "url": "https://rts.i-car.com/crn-2346.html",
+    "retrieved": "2026-11-02"
+   }
+  },
+  {
+   "id": 308,
+   "make": "Ford",
+   "system": "",
+   "trigger": "",
+   "result": "",
+   "method": "",
+   "yearFrom": null,
+   "yearTo": null,
+   "excerpt": "The Industry's First OEM Calibration Requirements Database Typical Calibration Requirements For 360° Camera View",
+   "source": {
+    "title": "Bumper Cover Repair With ADAS: Ford/Lincoln - UPDATE",
+    "url": "https://rts.i-car.com/crn-2346.html",
+    "retrieved": "2026-11-02"
+   }
+  },
+  {
+   "id": 309,
+   "make": "Ford",
+   "system": "",
+   "trigger": "",
+   "result": "",
+   "method": "",
+   "yearFrom": null,
+   "yearTo": null,
+   "excerpt": "Typical Calibration Requirements For 360° Camera View Typical Calibration Requirements For Adaptive Lighting",
+   "source": {
+    "title": "Bumper Cover Repair With ADAS: Ford/Lincoln - UPDATE",
+    "url": "https://rts.i-car.com/crn-2346.html",
+    "retrieved": "2026-11-02"
+   }
+  },
+  {
+   "id": 310,
+   "make": "Ford",
+   "system": "blind-spot",
+   "trigger": "",
+   "result": "",
+   "method": "",
+   "yearFrom": null,
+   "yearTo": null,
+   "excerpt": "Typical Calibration Requirements For Blind Spot Sensors",
+   "source": {
+    "title": "Bumper Cover Repair With ADAS: Ford/Lincoln - UPDATE",
+    "url": "https://rts.i-car.com/crn-2346.html",
+    "retrieved": "2026-11-02"
+   }
+  },
+  {
+   "id": 311,
+   "make": "Ford",
+   "system": "parking-sensors",
+   "trigger": "",
+   "result": "",
+   "method": "",
+   "yearFrom": null,
+   "yearTo": null,
+   "excerpt": "Typical Calibration Requirements For Park Assist Sensors",
+   "source": {
+    "title": "Bumper Cover Repair With ADAS: Ford/Lincoln - UPDATE",
+    "url": "https://rts.i-car.com/crn-2346.html",
+    "retrieved": "2026-11-02"
+   }
+  },
+  {
+   "id": 312,
+   "make": "Ford",
+   "system": "forward-camera",
+   "trigger": "",
+   "result": "",
+   "method": "",
+   "yearFrom": null,
+   "yearTo": null,
+   "excerpt": "Typical Calibration Requirements For Forward Facing Cameras",
+   "source": {
+    "title": "Bumper Cover Repair With ADAS: Ford/Lincoln - UPDATE",
+    "url": "https://rts.i-car.com/crn-2346.html",
+    "retrieved": "2026-11-02"
+   }
+  },
+  {
+   "id": 313,
+   "make": "Ford",
+   "system": "surround-camera",
+   "trigger": "",
+   "result": "",
+   "method": "",
+   "yearFrom": null,
+   "yearTo": null,
+   "excerpt": "Nissan Position Statement: Calibration of Around View Monitor",
+   "source": {
+    "title": "Bumper Cover Repair With ADAS: Ford/Lincoln - UPDATE",
+    "url": "https://rts.i-car.com/crn-2346.html",
+    "retrieved": "2026-11-02"
+   }
+  },
+  {
+   "id": 262,
+   "make": "Ford",
+   "system": "",
+   "trigger": "collision-structural",
+   "result": "",
+   "method": "",
+   "yearFrom": null,
+   "yearTo": null,
+   "excerpt": "Any substitution with salvaged, aftermarket or reconditioned components may constitute a breach of lease terms. Ford Motor Company Diagnostics & Calibrations ▪ Adherence to all Ford Motor Company original equipment collision-repair procedures is critical for a complete and safe repair, especially concerning ADAS system functionality.",
+   "source": {
+    "title": "44470.pdf",
+    "url": "https://rts.i-car.com/images/pdf/oem-info/ford/statements/44470.pdf",
+    "retrieved": "2026-11-02"
+   }
+  },
+  {
+   "id": 315,
+   "make": "GM",
+   "system": "lane-keeping",
+   "trigger": "",
+   "result": "",
+   "method": "",
+   "yearFrom": null,
+   "yearTo": null,
+   "excerpt": "ADAS and Calibration Considerations Many GM vehicles are equipped with advanced safety systems such as Super Cruise®, Adaptive Cruise Control, Automatic Emergency Braking, Lane Keep Assist, and other ADAS features.",
+   "source": {
+    "title": "Windshield Replacement Guidelines for GM Vehicles | GM Parts",
+    "url": "https://www.gmparts.com/content/dam/gmparts/na/us/en/index/trade-professionals/position-statements/02-pdfs/windshield-replacement.pdf",
+    "retrieved": "2026-11-02"
+   }
+  },
+  {
+   "id": 316,
+   "make": "GM",
+   "system": "lane-keeping",
+   "trigger": "windshield",
+   "result": "",
+   "method": "",
+   "yearFrom": null,
+   "yearTo": null,
+   "excerpt": "ADAS and Calibration Considerations Many GM vehicles are equipped with advanced safety systems such as Super Cruise®, Adaptive Cruise Control, Automatic Emergency Braking, Lane Keep Assist, and other ADAS features. These systems rely on precise calibration and integration with sensors and ca meras embedded in or mounted near the windshield.",
+   "source": {
+    "title": "Windshield Replacement Guidelines for GM Vehicles | GM Parts",
+    "url": "https://www.gmparts.com/content/dam/gmparts/na/us/en/index/trade-professionals/position-statements/02-pdfs/windshield-replacement.pdf",
+    "retrieved": "2026-11-02"
+   }
+  },
+  {
+   "id": 317,
+   "make": "GM",
+   "system": "forward-camera",
+   "trigger": "windshield",
+   "result": "",
+   "method": "",
+   "yearFrom": null,
+   "yearTo": null,
+   "excerpt": "It is critical that a service point calibration/learn procedure is performed whenever a front view windshield camera or sensor is removed, reinstalled, or replaced, or when the windshield itself is removed and replaced.",
+   "source": {
+    "title": "Windshield Replacement Guidelines for GM Vehicles | GM Parts",
+    "url": "https://www.gmparts.com/content/dam/gmparts/na/us/en/index/trade-professionals/position-statements/02-pdfs/windshield-replacement.pdf",
+    "retrieved": "2026-11-02"
+   }
+  },
+  {
+   "id": 147,
+   "make": "Honda",
+   "system": "",
+   "trigger": "collision-structural",
+   "result": "",
+   "method": "",
+   "yearFrom": null,
+   "yearTo": null,
+   "excerpt": "Damage that requires the replacement of body parts always will require a post-repair diagnostic scan. • Some safety and driver assistive systems will require inspections, calibration, and/or aiming after collision or other body repairs.",
+   "source": {
+    "title": "Honda-Acura_Pos_Diag-Scans-Calib_Revised_FINAL7-25-1.pdf",
+    "url": "https://oem1stop.com/wp-content/uploads/2026/10/Honda-Acura_Pos_Diag-Scans-Calib_Revised_FINAL7-25-1.pdf",
+    "retrieved": "2026-11-02"
+   }
+  },
+  {
+   "id": 148,
+   "make": "Honda",
+   "system": "",
+   "trigger": "collision-structural",
+   "result": "",
+   "method": "",
+   "yearFrom": null,
+   "yearTo": null,
+   "excerpt": "• Some safety and driver assistive systems will require inspections, calibration, and/or aiming after collision or other body repairs. (See “Inspection/Calibration/Aiming Requirements” on page 2 for additional information.) Background on Scan Requirements Honda and Acura vehicles include numerous electronic control systems, including those that operate safety and driver assistive systems.",
+   "source": {
+    "title": "Honda-Acura_Pos_Diag-Scans-Calib_Revised_FINAL7-25-1.pdf",
+    "url": "https://oem1stop.com/wp-content/uploads/2026/10/Honda-Acura_Pos_Diag-Scans-Calib_Revised_FINAL7-25-1.pdf",
+    "retrieved": "2026-11-02"
+   }
+  },
+  {
+   "id": 149,
+   "make": "Honda",
+   "system": "adaptive-cruise",
+   "trigger": "collision-structural",
+   "result": "",
+   "method": "",
+   "yearFrom": 2025,
+   "yearTo": 2025,
+   "excerpt": "– All Rights Reserved 28870 (2025) Version  6 Inspection/Calibration/Aiming Requirements Safety and driver assistive systems that require inspections, calibration, and/or aiming after collision or other body repairs include, but are not limited to, the following: System Abbreviation Description Adaptive Cruise Control ACC This system helps maintain a constant vehicle speed and a set following interval behind a vehicle detected ahead.",
+   "source": {
+    "title": "Honda-Acura_Pos_Diag-Scans-Calib_Revised_FINAL7-25-1.pdf",
+    "url": "https://oem1stop.com/wp-content/uploads/2026/10/Honda-Acura_Pos_Diag-Scans-Calib_Revised_FINAL7-25-1.pdf",
+    "retrieved": "2026-11-02"
+   }
+  },
+  {
+   "id": 150,
+   "make": "Honda",
+   "system": "",
+   "trigger": "",
+   "result": "",
+   "method": "",
+   "yearFrom": null,
+   "yearTo": null,
+   "excerpt": "Others may require scan tool software. Front Passenger’s Seat Weight Sensor - Inspections and Calibration: These sensors control passenger’s front airbag operation and the PASSENGER AIRBAG OFF indicator based on the occupant’s weight.",
+   "source": {
+    "title": "Honda-Acura_Pos_Diag-Scans-Calib_Revised_FINAL7-25-1.pdf",
+    "url": "https://oem1stop.com/wp-content/uploads/2026/10/Honda-Acura_Pos_Diag-Scans-Calib_Revised_FINAL7-25-1.pdf",
+    "retrieved": "2026-11-02"
+   }
+  },
+  {
+   "id": 151,
+   "make": "Honda",
+   "system": "",
+   "trigger": "collision-structural",
+   "result": "required",
+   "method": "",
+   "yearFrom": null,
+   "yearTo": null,
+   "excerpt": "• The service information may refer to these sensors as the seat weight sensor (SWS) system or occupant detection system (ODS), depending on model and year. • This inspection requires a scan tool to fully check the seat weight sensor's operation using the following criteria: o Empty front passenger seat weight to confirm the sensors can detect this condition o Seat weight with a known calibration weight amount if necessary − This check must be done after any collision, regardless of damage, even",
+   "source": {
+    "title": "Honda-Acura_Pos_Diag-Scans-Calib_Revised_FINAL7-25-1.pdf",
+    "url": "https://oem1stop.com/wp-content/uploads/2026/10/Honda-Acura_Pos_Diag-Scans-Calib_Revised_FINAL7-25-1.pdf",
+    "retrieved": "2026-11-02"
+   }
+  },
+  {
+   "id": 152,
+   "make": "Honda",
+   "system": "",
+   "trigger": "",
+   "result": "required",
+   "method": "",
+   "yearFrom": null,
+   "yearTo": null,
+   "excerpt": "− The check confirms sensor operation and that no binding or damage exists in the relationship between the seat frame, weight sensors, and floor pan. Weight sensor calibration also is required when front passenger seat components have been removed or replaced.",
+   "source": {
+    "title": "Honda-Acura_Pos_Diag-Scans-Calib_Revised_FINAL7-25-1.pdf",
+    "url": "https://oem1stop.com/wp-content/uploads/2026/10/Honda-Acura_Pos_Diag-Scans-Calib_Revised_FINAL7-25-1.pdf",
+    "retrieved": "2026-11-02"
+   }
+  },
+  {
+   "id": 153,
+   "make": "Honda",
+   "system": "front-radar",
+   "trigger": "collision-structural",
+   "result": "",
+   "method": "",
+   "yearFrom": null,
+   "yearTo": null,
+   "excerpt": "Advanced Driver Assistance System (ADAS) Aiming: Some models use one or more of the following camera and/or radar based driver support systems that require software-based aiming and/or calibration to ensure proper operation after certain components have been removed and/or replaced: • Adaptive Cruise Control (ACC) • Collision Mitigation Braking System™ (CMBS™) • Cross Traffic Monitor (CTM) • Forward Collision Warning (FCW) • Lane Departure Warning (LDW) • Lane Keeping Assist System (LKAS) • Road",
+   "source": {
+    "title": "Honda-Acura_Pos_Diag-Scans-Calib_Revised_FINAL7-25-1.pdf",
+    "url": "https://oem1stop.com/wp-content/uploads/2026/10/Honda-Acura_Pos_Diag-Scans-Calib_Revised_FINAL7-25-1.pdf",
+    "retrieved": "2026-11-02"
+   }
+  },
+  {
+   "id": 154,
+   "make": "Honda",
+   "system": "",
+   "trigger": "",
+   "result": "not-required",
+   "method": "",
+   "yearFrom": null,
+   "yearTo": null,
+   "excerpt": "Refer to the published procedures on aiming and calibration in the appropriate service information available on Service Information System by searching the keyword Aiming. NOTE: Rearview (backup) cameras do not require any aiming procedures after removal or replacement unless the vehicle also is equipped with the Multi-View Camera System (MVCS).",
+   "source": {
+    "title": "Honda-Acura_Pos_Diag-Scans-Calib_Revised_FINAL7-25-1.pdf",
+    "url": "https://oem1stop.com/wp-content/uploads/2026/10/Honda-Acura_Pos_Diag-Scans-Calib_Revised_FINAL7-25-1.pdf",
+    "retrieved": "2026-11-02"
+   }
+  },
+  {
+   "id": 155,
+   "make": "Honda",
+   "system": "",
+   "trigger": "collision-structural",
+   "result": "",
+   "method": "",
+   "yearFrom": 2025,
+   "yearTo": 2025,
+   "excerpt": "– All Rights Reserved 28870 (2025) Version  6 The chart below shows damage areas where driver assistive system components may be located in close proximity. Collision damage in these areas should be given particular attention because certain repairs and/or parts replacement may require aiming procedures to be done.",
+   "source": {
+    "title": "Honda-Acura_Pos_Diag-Scans-Calib_Revised_FINAL7-25-1.pdf",
+    "url": "https://oem1stop.com/wp-content/uploads/2026/10/Honda-Acura_Pos_Diag-Scans-Calib_Revised_FINAL7-25-1.pdf",
+    "retrieved": "2026-11-02"
+   }
+  },
+  {
+   "id": 1,
+   "make": "Honda",
+   "system": "",
+   "trigger": "",
+   "result": "",
+   "method": "",
+   "yearFrom": 2022,
+   "yearTo": 2025,
+   "excerpt": "© 2025 American Honda Motor Co., Inc. – All Rights Reserved  Page 1 of 38 Job Aid August 2025   Version 12 Aiming Driving Support Systems Supersedes version 11, dated November 2022, to revise the information highlighted in yellow.",
+   "source": {
+    "title": "30193.pdf",
+    "url": "https://rts.i-car.com/images/pdf/oem-info/honda/position-statements/30193.pdf",
+    "retrieved": "2026-11-02"
+   }
+  },
+  {
+   "id": 12,
+   "make": "Honda",
+   "system": "front-radar",
+   "trigger": "alignment",
+   "result": "",
+   "method": "",
+   "yearFrom": null,
+   "yearTo": null,
+   "excerpt": "If the following DTCs are set: • B18B8 (left side BSI radar unit azimuth off Alignment) • B1E68 (right side BSI radar unit azimuth off alignment) You must follow the DTC troubleshooting procedure first and do the aiming inspection when instructed.",
+   "source": {
+    "title": "30193.pdf",
+    "url": "https://rts.i-car.com/images/pdf/oem-info/honda/position-statements/30193.pdf",
+    "retrieved": "2026-11-02"
+   }
+  },
+  {
+   "id": 13,
+   "make": "Honda",
+   "system": "",
+   "trigger": "windshield",
+   "result": "required",
+   "method": "",
+   "yearFrom": null,
+   "yearTo": null,
+   "excerpt": "The replacement windshield must be a Honda genuine replacement windshield. Installing an aftermarket windshield will cause the aiming to fail or abnormal operation of the driving support system.",
+   "source": {
+    "title": "30193.pdf",
+    "url": "https://rts.i-car.com/images/pdf/oem-info/honda/position-statements/30193.pdf",
+    "retrieved": "2026-11-02"
+   }
+  },
+  {
+   "id": 16,
+   "make": "Honda",
+   "system": "",
+   "trigger": "collision-structural",
+   "result": "",
+   "method": "",
+   "yearFrom": null,
+   "yearTo": null,
+   "excerpt": "After adjusting the following: • Driver's or front passenger's door • Tailgate After doing any collision repairs to the driver's or front passenger's door. If DTC B14B3-54 (camera aiming incomplete) is set.",
+   "source": {
+    "title": "30193.pdf",
+    "url": "https://rts.i-car.com/images/pdf/oem-info/honda/position-statements/30193.pdf",
+    "retrieved": "2026-11-02"
+   }
+  },
+  {
+   "id": 17,
+   "make": "Honda",
+   "system": "",
+   "trigger": "",
+   "result": "required",
+   "method": "",
+   "yearFrom": null,
+   "yearTo": null,
+   "excerpt": "If DTC B14B3-54 (camera aiming incomplete) is set. Page 10 of 38 TOOL INFORMATION Use the table below to ensure you have all the necessary tools to do an aiming procedure.",
+   "source": {
+    "title": "30193.pdf",
+    "url": "https://rts.i-car.com/images/pdf/oem-info/honda/position-statements/30193.pdf",
+    "retrieved": "2026-11-02"
+   }
+  },
+  {
+   "id": 18,
+   "make": "Honda",
+   "system": "front-radar",
+   "trigger": "alignment",
+   "result": "",
+   "method": "",
+   "yearFrom": null,
+   "yearTo": null,
+   "excerpt": "Radar Aiming Radar System Tool Number Tool Description Remarks Millimeter Wave Radar 07AAJ-STKA210 Alignment Set 07AAJ-TK8A100 Stand The stand from T/N 07AAJ- STKA220 can also be used.",
+   "source": {
+    "title": "30193.pdf",
+    "url": "https://rts.i-car.com/images/pdf/oem-info/honda/position-statements/30193.pdf",
+    "retrieved": "2026-11-02"
+   }
+  },
+  {
+   "id": 19,
+   "make": "Honda",
+   "system": "",
+   "trigger": "alignment",
+   "result": "",
+   "method": "",
+   "yearFrom": null,
+   "yearTo": null,
+   "excerpt": "A commercially available plumb bob can be used if a replacement is needed. Page 11 of 38 Camera Aiming Camera System Tool Number Tool Description Remarks Multipurpose Camera 07AAJ-STKA210 Alignment Set 07AAJ-TK8A100 Stand The stand from T/N 07AAJ- STKA220 can also be used.",
+   "source": {
+    "title": "30193.pdf",
+    "url": "https://rts.i-car.com/images/pdf/oem-info/honda/position-statements/30193.pdf",
+    "retrieved": "2026-11-02"
+   }
+  },
+  {
+   "id": 22,
+   "make": "Honda",
+   "system": "",
+   "trigger": "alignment",
+   "result": "",
+   "method": "",
+   "yearFrom": null,
+   "yearTo": null,
+   "excerpt": "Application varies by model. Page 12 of 38 Camera System Tool Number Tool Description Remarks LaneWatch™ Camera 07AAJ-STKA210 Alignment Set 070AK-T2AA100 LaneWatch™ Aiming Stand Set 070AK-T2AA110 Aiming Marker 07AAG-5R0A100 Gas Strut Holder, Short Application varies by model.",
+   "source": {
+    "title": "30193.pdf",
+    "url": "https://rts.i-car.com/images/pdf/oem-info/honda/position-statements/30193.pdf",
+    "retrieved": "2026-11-02"
+   }
+  },
+  {
+   "id": 23,
+   "make": "Honda",
+   "system": "",
+   "trigger": "alignment",
+   "result": "",
+   "method": "",
+   "yearFrom": null,
+   "yearTo": null,
+   "excerpt": "Multi View Camera System 07AAJ-STKA210 Alignment Set 070AK-SLEA110 8 Dot Target Sheet Contains one target sheet. Aiming requires two.",
+   "source": {
+    "title": "30193.pdf",
+    "url": "https://rts.i-car.com/images/pdf/oem-info/honda/position-statements/30193.pdf",
+    "retrieved": "2026-11-02"
+   }
+  },
+  {
+   "id": 24,
+   "make": "Honda",
+   "system": "",
+   "trigger": "",
+   "result": "",
+   "method": "",
+   "yearFrom": null,
+   "yearTo": null,
+   "excerpt": "Application varies by model. NOTE: The plumb bob used for some models is included with Target Set (T/N 07AAK-5K0A100) or LaneWatch™ Aiming Stand Set (T/N 070AK-T2AA100) and is not sold separately.",
+   "source": {
+    "title": "30193.pdf",
+    "url": "https://rts.i-car.com/images/pdf/oem-info/honda/position-statements/30193.pdf",
+    "retrieved": "2026-11-02"
+   }
+  },
+  {
+   "id": 25,
+   "make": "Honda",
+   "system": "front-radar",
+   "trigger": "",
+   "result": "",
+   "method": "",
+   "yearFrom": null,
+   "yearTo": null,
+   "excerpt": "8 Dot Target Sheet (T/N 070AK-SLEA110) Mask Sheet (T/N 070AK-SLEA120) Page 20 of 38 AIMING RADARS AND CAMERA Millimeter Wave Radar Aiming To aim the millimeter wave radar, you will need a stationary metal triangle target placed in front of the vehicle and an i-HDS.",
+   "source": {
+    "title": "30193.pdf",
+    "url": "https://rts.i-car.com/images/pdf/oem-info/honda/position-statements/30193.pdf",
+    "retrieved": "2026-11-02"
+   }
+  },
+  {
+   "id": 27,
+   "make": "Honda",
+   "system": "lane-keeping",
+   "trigger": "",
+   "result": "",
+   "method": "both",
+   "yearFrom": null,
+   "yearTo": null,
+   "excerpt": "FCW/LDW, Multipurpose Camera Aiming Depending on the model, the multipurpose camera unit requires a static and/or dynamic aiming using the i-HDS.",
+   "source": {
+    "title": "30193.pdf",
+    "url": "https://rts.i-car.com/images/pdf/oem-info/honda/position-statements/30193.pdf",
+    "retrieved": "2026-11-02"
+   }
+  },
+  {
+   "id": 28,
+   "make": "Honda",
+   "system": "lane-keeping",
+   "trigger": "",
+   "result": "",
+   "method": "both",
+   "yearFrom": null,
+   "yearTo": null,
+   "excerpt": "FCW/LDW, Multipurpose Camera Aiming Depending on the model, the multipurpose camera unit requires a static and/or dynamic aiming using the i-HDS. Static aiming is done with the vehicle stationary and aimed at a stationary target.",
+   "source": {
+    "title": "30193.pdf",
+    "url": "https://rts.i-car.com/images/pdf/oem-info/honda/position-statements/30193.pdf",
+    "retrieved": "2026-11-02"
+   }
+  },
+  {
+   "id": 30,
+   "make": "Honda",
+   "system": "",
+   "trigger": "",
+   "result": "",
+   "method": "both",
+   "yearFrom": null,
+   "yearTo": null,
+   "excerpt": "Dynamic aiming is done with lane markers on the road while driving. NOTE: • Some later Honda models only require static aiming.",
+   "source": {
+    "title": "30193.pdf",
+    "url": "https://rts.i-car.com/images/pdf/oem-info/honda/position-statements/30193.pdf",
+    "retrieved": "2026-11-02"
+   }
+  },
+  {
+   "id": 31,
+   "make": "Honda",
+   "system": "lane-keeping",
+   "trigger": "",
+   "result": "",
+   "method": "both",
+   "yearFrom": null,
+   "yearTo": null,
+   "excerpt": "The FCW/LDW cameras are aimed two ways, depending on the model. Some require static or dynamic aiming.",
+   "source": {
+    "title": "30193.pdf",
+    "url": "https://rts.i-car.com/images/pdf/oem-info/honda/position-statements/30193.pdf",
+    "retrieved": "2026-11-02"
+   }
+  },
+  {
+   "id": 32,
+   "make": "Honda",
+   "system": "",
+   "trigger": "",
+   "result": "",
+   "method": "both",
+   "yearFrom": null,
+   "yearTo": null,
+   "excerpt": "Some require static or dynamic aiming. Others require strictly dynamic aiming.",
+   "source": {
+    "title": "30193.pdf",
+    "url": "https://rts.i-car.com/images/pdf/oem-info/honda/position-statements/30193.pdf",
+    "retrieved": "2026-11-02"
+   }
+  },
+  {
+   "id": 33,
+   "make": "Honda",
+   "system": "",
+   "trigger": "",
+   "result": "",
+   "method": "both",
+   "yearFrom": 2013,
+   "yearTo": 2013,
+   "excerpt": "Others require strictly dynamic aiming. NOTE: Although the 2013−15 Accord uses static or dynamic aiming, because of differences in the camera software, early production 2013 models can only be aimed using dynamic aiming.",
+   "source": {
+    "title": "30193.pdf",
+    "url": "https://rts.i-car.com/images/pdf/oem-info/honda/position-statements/30193.pdf",
+    "retrieved": "2026-11-02"
+   }
+  },
+  {
+   "id": 34,
+   "make": "Honda",
+   "system": "",
+   "trigger": "",
+   "result": "",
+   "method": "both",
+   "yearFrom": 2013,
+   "yearTo": 2013,
+   "excerpt": "NOTE: Although the 2013−15 Accord uses static or dynamic aiming, because of differences in the camera software, early production 2013 models can only be aimed using dynamic aiming. If you need to do camera aiming on a 2013 Model, before starting the procedure, always connect the i-HDS to make sure static aiming can be done.",
+   "source": {
+    "title": "30193.pdf",
+    "url": "https://rts.i-car.com/images/pdf/oem-info/honda/position-statements/30193.pdf",
+    "retrieved": "2026-11-02"
+   }
+  },
+  {
+   "id": 35,
+   "make": "Honda",
+   "system": "",
+   "trigger": "",
+   "result": "",
+   "method": "static",
+   "yearFrom": 2013,
+   "yearTo": 2013,
+   "excerpt": "If you need to do camera aiming on a 2013 Model, before starting the procedure, always connect the i-HDS to make sure static aiming can be done. Select INTEGRATED DRIVER SUPPORT, ADJUSTMENT, and look for the STATIC CAMERA AIMING option.",
+   "source": {
+    "title": "30193.pdf",
+    "url": "https://rts.i-car.com/images/pdf/oem-info/honda/position-statements/30193.pdf",
+    "retrieved": "2026-11-02"
+   }
+  },
+  {
+   "id": 36,
+   "make": "Honda",
+   "system": "",
+   "trigger": "",
+   "result": "required",
+   "method": "both",
+   "yearFrom": null,
+   "yearTo": null,
+   "excerpt": "Select INTEGRATED DRIVER SUPPORT, ADJUSTMENT, and look for the STATIC CAMERA AIMING option. Camera System HDS or i-HDS Required Static Aiming Dynamic Aiming  Remarks Multipurpose Camera Yes Yes Varies by model.",
+   "source": {
+    "title": "30193.pdf",
+    "url": "https://rts.i-car.com/images/pdf/oem-info/honda/position-statements/30193.pdf",
+    "retrieved": "2026-11-02"
+   }
+  },
+  {
+   "id": 37,
+   "make": "Honda",
+   "system": "",
+   "trigger": "",
+   "result": "required",
+   "method": "both",
+   "yearFrom": 2022,
+   "yearTo": 2023,
+   "excerpt": "Camera System HDS or i-HDS Required Static Aiming Dynamic Aiming  Remarks Multipurpose Camera Yes Yes Varies by model. 2022-23 Civic, 2023 CR-V, and 2023 Pilot allow either static or dynamic aiming to be performed.",
+   "source": {
+    "title": "30193.pdf",
+    "url": "https://rts.i-car.com/images/pdf/oem-info/honda/position-statements/30193.pdf",
+    "retrieved": "2026-11-02"
+   }
+  },
+  {
+   "id": 38,
+   "make": "Honda",
+   "system": "",
+   "trigger": "",
+   "result": "",
+   "method": "",
+   "yearFrom": 2013,
+   "yearTo": 2013,
+   "excerpt": "Yes Optional Optional 2013-15 Accord and Civic Hybrid only. Page 21 of 38 Multi View Camera Aiming and Picture Inspection The four cameras used on the multi view camera system are aimed using a stationary target laid on the floor in the front, rear, and sides of the parked vehicle.",
+   "source": {
+    "title": "30193.pdf",
+    "url": "https://rts.i-car.com/images/pdf/oem-info/honda/position-statements/30193.pdf",
+    "retrieved": "2026-11-02"
+   }
+  },
+  {
+   "id": 39,
+   "make": "Honda",
+   "system": "",
+   "trigger": "",
+   "result": "",
+   "method": "",
+   "yearFrom": null,
+   "yearTo": null,
+   "excerpt": "Page 21 of 38 Multi View Camera Aiming and Picture Inspection The four cameras used on the multi view camera system are aimed using a stationary target laid on the floor in the front, rear, and sides of the parked vehicle. The aiming procedure requires the i-HDS and the audio or audio-navigation display.",
+   "source": {
+    "title": "30193.pdf",
+    "url": "https://rts.i-car.com/images/pdf/oem-info/honda/position-statements/30193.pdf",
+    "retrieved": "2026-11-02"
+   }
+  },
+  {
+   "id": 44,
+   "make": "Honda",
+   "system": "",
+   "trigger": "",
+   "result": "",
+   "method": "",
+   "yearFrom": null,
+   "yearTo": null,
+   "excerpt": "Side camera, right side After any camera aiming, be sure to do the multi view camera picture inspection according to the service information. LaneWatch Camera Aiming The LaneWatch camera is aimed using a stationary target positioned along the right-rear side of the parked vehicle.",
+   "source": {
+    "title": "30193.pdf",
+    "url": "https://rts.i-car.com/images/pdf/oem-info/honda/position-statements/30193.pdf",
+    "retrieved": "2026-11-02"
+   }
+  },
+  {
+   "id": 45,
+   "make": "Honda",
+   "system": "front-radar",
+   "trigger": "",
+   "result": "",
+   "method": "",
+   "yearFrom": null,
+   "yearTo": null,
+   "excerpt": "However, the conventional BSI radar unit aiming inspection procedure is not offered.",
+   "source": {
+    "title": "30193.pdf",
+    "url": "https://rts.i-car.com/images/pdf/oem-info/honda/position-statements/30193.pdf",
+    "retrieved": "2026-11-02"
+   }
+  },
+  {
+   "id": 46,
+   "make": "Honda",
+   "system": "front-radar",
+   "trigger": "",
+   "result": "",
+   "method": "",
+   "yearFrom": null,
+   "yearTo": null,
+   "excerpt": "Page 22 of 38 GENERAL AIMING REQUIREMENTS Although the procedures for radar unit and camera aiming are different, the general aiming requirements are the same.",
+   "source": {
+    "title": "30193.pdf",
+    "url": "https://rts.i-car.com/images/pdf/oem-info/honda/position-statements/30193.pdf",
+    "retrieved": "2026-11-02"
+   }
+  },
+  {
+   "id": 47,
+   "make": "Honda",
+   "system": "front-radar",
+   "trigger": "",
+   "result": "",
+   "method": "",
+   "yearFrom": null,
+   "yearTo": null,
+   "excerpt": "Page 22 of 38 GENERAL AIMING REQUIREMENTS Although the procedures for radar unit and camera aiming are different, the general aiming requirements are the same. Here are the minimum requirements for both the vehicle and the aiming area.",
+   "source": {
+    "title": "30193.pdf",
+    "url": "https://rts.i-car.com/images/pdf/oem-info/honda/position-statements/30193.pdf",
+    "retrieved": "2026-11-02"
+   }
+  },
+  {
+   "id": 51,
+   "make": "Honda",
+   "system": "front-radar",
+   "trigger": "",
+   "result": "",
+   "method": "",
+   "yearFrom": null,
+   "yearTo": null,
+   "excerpt": "LANEWATCH™ CAMERA AIMING BSI Radar Aiming Page 23 of 38 Radar, FCW/LDW Camera, or Multipurpose Camera Aiming Multi View Camera Aiming • There should be no bright objects (sunlight, windows, lights, or reflectors) behind or in front of the target or designs similar to the target pattern.",
+   "source": {
+    "title": "30193.pdf",
+    "url": "https://rts.i-car.com/images/pdf/oem-info/honda/position-statements/30193.pdf",
+    "retrieved": "2026-11-02"
+   }
+  },
+  {
+   "id": 59,
+   "make": "Honda",
+   "system": "",
+   "trigger": "",
+   "result": "",
+   "method": "",
+   "yearFrom": null,
+   "yearTo": null,
+   "excerpt": "Page 31 of 38 14. The box you just completed should match the one in the aiming procedure.",
+   "source": {
+    "title": "30193.pdf",
+    "url": "https://rts.i-car.com/images/pdf/oem-info/honda/position-statements/30193.pdf",
+    "retrieved": "2026-11-02"
+   }
+  },
+  {
+   "id": 60,
+   "make": "Honda",
+   "system": "",
+   "trigger": "",
+   "result": "",
+   "method": "",
+   "yearFrom": null,
+   "yearTo": null,
+   "excerpt": "This mark can be simply made on the tape placed in step 12. Refer to the aiming procedure for additional information.",
+   "source": {
+    "title": "30193.pdf",
+    "url": "https://rts.i-car.com/images/pdf/oem-info/honda/position-statements/30193.pdf",
+    "retrieved": "2026-11-02"
+   }
+  },
+  {
+   "id": 61,
+   "make": "Honda",
+   "system": "",
+   "trigger": "",
+   "result": "",
+   "method": "",
+   "yearFrom": null,
+   "yearTo": null,
+   "excerpt": "Refer to the aiming procedure for additional information. The procedure mentioned can also be used when setting up the LaneWatch camera aiming.",
+   "source": {
+    "title": "30193.pdf",
+    "url": "https://rts.i-car.com/images/pdf/oem-info/honda/position-statements/30193.pdf",
+    "retrieved": "2026-11-02"
+   }
+  },
+  {
+   "id": 62,
+   "make": "Honda",
+   "system": "",
+   "trigger": "",
+   "result": "",
+   "method": "",
+   "yearFrom": null,
+   "yearTo": null,
+   "excerpt": "Instead of in front of the vehicle, use the procedure to set up the reference marks behind the vehicle. Page 32 of 38 TIPS ON MULTI VIEW CAMERA AIMING Side Camera Aiming The service information shows four target sheets in the side camera aiming procedure diagram: one in the front, one in the back, and two on the side.",
+   "source": {
+    "title": "30193.pdf",
+    "url": "https://rts.i-car.com/images/pdf/oem-info/honda/position-statements/30193.pdf",
+    "retrieved": "2026-11-02"
+   }
+  },
+  {
+   "id": 64,
+   "make": "Honda",
+   "system": "",
+   "trigger": "",
+   "result": "",
+   "method": "",
+   "yearFrom": null,
+   "yearTo": null,
+   "excerpt": "Page 33 of 38 When you see the message Please confirm navigation monitor. Is marker in aiming area?",
+   "source": {
+    "title": "30193.pdf",
+    "url": "https://rts.i-car.com/images/pdf/oem-info/honda/position-statements/30193.pdf",
+    "retrieved": "2026-11-02"
+   }
+  },
+  {
+   "id": 65,
+   "make": "Honda",
+   "system": "",
+   "trigger": "",
+   "result": "not-required",
+   "method": "",
+   "yearFrom": null,
+   "yearTo": null,
+   "excerpt": "And the same applies to the side cameras. Lastly, it is not necessary to do all of the multi view camera aiming procedures listed in the service information.",
+   "source": {
+    "title": "30193.pdf",
+    "url": "https://rts.i-car.com/images/pdf/oem-info/honda/position-statements/30193.pdf",
+    "retrieved": "2026-11-02"
+   }
+  },
+  {
+   "id": 66,
+   "make": "Honda",
+   "system": "front-radar",
+   "trigger": "",
+   "result": "",
+   "method": "",
+   "yearFrom": null,
+   "yearTo": null,
+   "excerpt": "Page 35 of 38 TROUBLESHOOTING TIPS Here are some general troubleshooting tips if the radar unit or camera aiming fails.",
+   "source": {
+    "title": "30193.pdf",
+    "url": "https://rts.i-car.com/images/pdf/oem-info/honda/position-statements/30193.pdf",
+    "retrieved": "2026-11-02"
+   }
+  },
+  {
+   "id": 67,
+   "make": "Honda",
+   "system": "front-radar",
+   "trigger": "",
+   "result": "",
+   "method": "",
+   "yearFrom": null,
+   "yearTo": null,
+   "excerpt": "Page 35 of 38 TROUBLESHOOTING TIPS Here are some general troubleshooting tips if the radar unit or camera aiming fails. Before doing any troubleshooting, always make sure you have met the vehicle and aiming area requirements and the targets are set up correctly according to this job aid and the service information.",
+   "source": {
+    "title": "30193.pdf",
+    "url": "https://rts.i-car.com/images/pdf/oem-info/honda/position-statements/30193.pdf",
+    "retrieved": "2026-11-02"
+   }
+  },
+  {
+   "id": 68,
+   "make": "Honda",
+   "system": "front-radar",
+   "trigger": "",
+   "result": "",
+   "method": "",
+   "yearFrom": null,
+   "yearTo": null,
+   "excerpt": "Obstructed Radar View Besides dirt and debris on the radar unit cover, front Honda emblem, or front grille, other factors can obstruct the radar un it view that will affect millimeter wave radar unit aiming.",
+   "source": {
+    "title": "30193.pdf",
+    "url": "https://rts.i-car.com/images/pdf/oem-info/honda/position-statements/30193.pdf",
+    "retrieved": "2026-11-02"
+   }
+  },
+  {
+   "id": 73,
+   "make": "Honda",
+   "system": "front-radar",
+   "trigger": "collision-structural",
+   "result": "",
+   "method": "",
+   "yearFrom": null,
+   "yearTo": null,
+   "excerpt": "Collision Repairs If you have trouble aiming the millimeter wave radar unit on a vehicle that recently had collision repair, check the followin g: • If the radar unit was replaced, you must check the distance from the radar unit to the bracket and adjust as needed using the adjusting bolts.",
+   "source": {
+    "title": "30193.pdf",
+    "url": "https://rts.i-car.com/images/pdf/oem-info/honda/position-statements/30193.pdf",
+    "retrieved": "2026-11-02"
+   }
+  },
+  {
+   "id": 77,
+   "make": "Honda",
+   "system": "front-radar",
+   "trigger": "",
+   "result": "",
+   "method": "dynamic",
+   "yearFrom": null,
+   "yearTo": null,
+   "excerpt": "Page 38 of 38 System Limitations Always remember that certain environmental and roadway conditions can affect normal operation of radar and camera systems during use or when doing dynamic aiming.",
+   "source": {
+    "title": "30193.pdf",
+    "url": "https://rts.i-car.com/images/pdf/oem-info/honda/position-statements/30193.pdf",
+    "retrieved": "2026-11-02"
+   }
+  },
+  {
+   "id": 263,
+   "make": "Lincoln",
+   "system": "",
+   "trigger": "collision-structural",
+   "result": "",
+   "method": "",
+   "yearFrom": null,
+   "yearTo": null,
+   "excerpt": "Any substitution with salvaged, aftermarket or reconditioned components may constitute a breach of lease terms. Lincoln Diagnostic & Calibrations ▪ Adherence to all Lincoln original equipment collision-repair procedures is critical for a complete and safe repair, especially concerning ADAS system functionality.",
+   "source": {
+    "title": "44471.pdf",
+    "url": "https://rts.i-car.com/images/pdf/oem-info/lincoln/statements/44471.pdf",
+    "retrieved": "2026-11-02"
+   }
+  },
+  {
+   "id": 370,
+   "make": "Nissan",
+   "system": "",
+   "trigger": "alignment",
+   "result": "required",
+   "method": "",
+   "yearFrom": null,
+   "yearTo": null,
+   "excerpt": "Components outside new Genuine Nissan Original Equipment Parts may have been exposed to prior collisions, improper storage, or non- approved manufacturing processes, which can compromise system reliability and functionality. After any ADAS component removal, replacement, and even vehicle alignment, the proper calibration procedure must be performed using the Nissan CONSULT diagnostic software and following the Electronic Service Manual (ESM) instructions.",
+   "source": {
+    "title": "Nissan_Pos_ADAS_NPSB26-971_Revised1-1-26.pdf",
+    "url": "https://oem1stop.com/wp-content/uploads/2026/10/Nissan_Pos_ADAS_NPSB26-971_Revised1-1-26.pdf",
+    "retrieved": "2026-11-02"
+   }
+  },
+  {
+   "id": 371,
+   "make": "Nissan",
+   "system": "",
+   "trigger": "alignment",
+   "result": "required",
+   "method": "",
+   "yearFrom": null,
+   "yearTo": null,
+   "excerpt": "After any ADAS component removal, replacement, and even vehicle alignment, the proper calibration procedure must be performed using the Nissan CONSULT diagnostic software and following the Electronic Service Manual (ESM) instructions. Only Nissan-approved targets, calibration equipment, and processes should be used during these procedures.",
+   "source": {
+    "title": "Nissan_Pos_ADAS_NPSB26-971_Revised1-1-26.pdf",
+    "url": "https://oem1stop.com/wp-content/uploads/2026/10/Nissan_Pos_ADAS_NPSB26-971_Revised1-1-26.pdf",
+    "retrieved": "2026-11-02"
+   }
+  },
+  {
+   "id": 373,
+   "make": "Subaru",
+   "system": "forward-camera",
+   "trigger": "windshield",
+   "result": "",
+   "method": "",
+   "yearFrom": null,
+   "yearTo": null,
+   "excerpt": "If Subaru genuine windshield glass is not used, it may affect the ability of the EyeSight system to be properly calibrated.",
+   "source": {
+    "title": "Subaru_Pos_Eyesight_FINAL4-16-20.pdf",
+    "url": "https://oem1stop.com/wp-content/uploads/2026/10/Subaru_Pos_Eyesight_FINAL4-16-20.pdf",
+    "retrieved": "2026-11-02"
+   }
+  },
+  {
+   "id": 374,
+   "make": "Subaru",
+   "system": "",
+   "trigger": "collision-structural",
+   "result": "",
+   "method": "",
+   "yearFrom": null,
+   "yearTo": null,
+   "excerpt": "Always refer to the applicable Subaru Service Manual or Technical Service Bulletin (TSB) for the most up-to-date repair procedures. a subsidiary of Subaru Corporation Some safety and driver assistive systems will require inspections, calibration, and/or aiming after collision or other body repairs.",
+   "source": {
+    "title": "Pre and Post Scan Statement- 08072020",
+    "url": "https://oem1stop.com/wp-content/uploads/2026/10/Subaru_Pos_Pre-and-Post-Scan_Revised8-7-20.pdf",
+    "retrieved": "2026-11-02"
+   }
+  },
+  {
+   "id": 156,
+   "make": "Toyota",
+   "system": "",
+   "trigger": "",
+   "result": "",
+   "method": "",
+   "yearFrom": null,
+   "yearTo": null,
+   "excerpt": "While this new feature has been well received, there has been some confusion about what is included in the search tool. OEM Calibration Requirements Search is designed to provide information on the calibration requirements that are needed for vehicles equipped with advanced driver assistance systems (ADAS).",
+   "source": {
+    "title": "Additional Calibration Requirements: Toyota/Lexus",
+    "url": "https://rts.i-car.com/crn-561.html",
+    "retrieved": "2026-11-02"
+   }
+  },
+  {
+   "id": 158,
+   "make": "Toyota",
+   "system": "",
+   "trigger": "",
+   "result": "required",
+   "method": "",
+   "yearFrom": null,
+   "yearTo": null,
+   "excerpt": "It does not include occupant classification systems (OCS), steering angle sensors, battery disconnects, or other calibrations/initializations required, when not related directly to ADAS. Let’s take a look at what additional items may require calibrations/initializations on Toyota and Lexus vehicles.",
+   "source": {
+    "title": "Additional Calibration Requirements: Toyota/Lexus",
+    "url": "https://rts.i-car.com/crn-561.html",
+    "retrieved": "2026-11-02"
+   }
+  },
+  {
+   "id": 160,
+   "make": "Toyota",
+   "system": "",
+   "trigger": "",
+   "result": "",
+   "method": "",
+   "yearFrom": null,
+   "yearTo": null,
+   "excerpt": "ADAS, Calibration, And Scanning Article Hotspot Additional Calibration Requirements",
+   "source": {
+    "title": "Additional Calibration Requirements: Toyota/Lexus",
+    "url": "https://rts.i-car.com/crn-561.html",
+    "retrieved": "2026-11-02"
+   }
+  }
+ ]
+}

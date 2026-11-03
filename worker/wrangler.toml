@@ -1,0 +1,9 @@
+name = "truecal-icar-relay"
+main = "src/index.js"
+compatibility_date = "2026-09-22"
+
+# No account_id here on purpose - this hasn't been deployed anywhere yet.
+# Once the new FieldLogic.io Cloudflare account exists, running
+# `npx wrangler login` from this folder (TrueCal/worker) logs this project
+# into that account, and `npx wrangler deploy` will just work without
+# needing an account_id added here.

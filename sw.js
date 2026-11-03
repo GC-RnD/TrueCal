@@ -1,5 +1,5 @@
 // TrueCal — app-shell cache so the app installs and starts offline.
-const CACHE_NAME = "truecal-shell-v7";
+const CACHE_NAME = "truecal-shell-v8";
 const APP_SHELL = [
   "./",
   "./index.html",
@@ -16,7 +16,6 @@ const APP_SHELL = [
   "./icons/favicon-32.png",
   "./icons/logo-full.png",
   "./docs/user-guide.html",
-  "./docs/TrueCal-Sources-Roadmap.pdf",
   "./docs/guide-img/02-vehicle.png",
   "./docs/guide-img/03-review-card.png",
   "./docs/guide-img/04-sensors.png",

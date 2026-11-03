@@ -432,13 +432,9 @@ function renderRuling(check) {
         r.origin ? `<dt>Basis</dt><dd class="basis basis--${esc(r.origin)}">${esc(ORIGIN_LABELS[r.origin] || "")}${r.reviewer ? ` (${esc(r.reviewer)})` : ""}</dd>` : "",
         r.verified ? `<dt>Reviewed</dt><dd>${esc(r.verified)}</dd>` : "",
       ].join("");
-      const icarLine = r.icarNote
-        ? `<p class="hint">I-CAR matrix: ${esc(r.icarNote)} ${r.icarUrl ? `<a href="${esc(safeUrl(r.icarUrl))}" target="_blank" rel="noopener">Open I-CAR page ↗</a>` : ""}</p>`
-        : "";
       const unverifiedNote =
         r.result === "unverified"
           ? `<p class="hint">No reviewed source for this vehicle, sensor and repair. This is not a ruling that calibration is unnecessary — ask the shop or the OEM for the procedure.</p>
-             ${icarLine}
              <button type="button" class="btn btn--secondary no-print" data-own="${esc(r.system)}">Add our own record</button>`
           : "";
       return `<article class="ruling ruling--${r.result}">
@@ -458,34 +454,14 @@ function renderRuling(check) {
       <p>${esc(labelOf(TRIGGERS, check.trigger))}${conds.length ? ` · ${esc(conds.join(", "))}` : ""}</p>
       ${check.claimId ? `<p>Claim / RO # ${esc(check.claimId)}</p>` : ""}
     </div>
-    ${icarSummaryHtml(check)}
     ${cards}
     <button type="button" class="btn btn--ghost no-print" id="deleteCheckBtn">Delete this check</button>`;
-}
-
-function icarSummaryHtml(check) {
-  const i = check.icar;
-  if (!i) return "";
-  if (!i.ok) return `<p class="hint">I-CAR lookup was not available: ${esc(i.error)}</p>`;
-  const link = (l) => `<a href="${esc(safeUrl(l.url))}" target="_blank" rel="noopener">${esc(l.title)} ↗</a>`;
-  const help = (i.helpLinks || []).length ? `<br />Other places to look: ${i.helpLinks.map(link).join(" · ")}` : "";
-  if (i.found) {
-    const alts = (i.alternatives || []).length ? `<br />Other I-CAR entries for this model (different equipment): ${i.alternatives.map(link).join(" · ")}` : "";
-    if (i.notice) {
-      return `<div class="banner banner--warn">I-CAR has an entry for ${link({ title: i.vehicle, url: i.url })} but no sensor list. It says: “${esc(i.notice)}”. The manufacturer's own scan tool or service information is the source for this vehicle.${alts}${help}</div>`;
-    }
-    return `<div class="banner">I-CAR matrix entry used: ${link({ title: i.vehicle, url: i.url })}. I-CAR's "No calibration requirements" means the manufacturer's manual does not say, not that none is needed.${alts}${help}</div>`;
-  }
-  const chips = (i.choices || []).length
-    ? `<br />Pick the closest I-CAR model: ${i.choices.map((m) => `<button type="button" class="chip" data-icar-model="${esc(m)}">${esc(m)}</button>`).join("")}`
-    : "";
-  return `<div class="banner banner--warn">${esc(i.reason)}${chips}${help}</div>`;
 }
 
 function summaryText(check) {
   const lines = [`TrueCal — ${vehicleTitle(check)}`, check.vehicle.vin ? `VIN ${check.vehicle.vin}` : "", `Repair: ${labelOf(TRIGGERS, check.trigger)}`, ""];
   (check.rulings || []).forEach((r) => {
-    lines.push(`${labelOf(SENSORS, r.system)}: ${RESULT_LABELS[r.result]}${r.method && r.result === "required" ? ` (${METHOD_LABELS[r.method]})` : ""}${r.origin === "adjuster-added" ? " [added by our team, NOT OEM-verified]" : ""}${r.origin === "icar-lookup" ? " [from I-CAR's matrix]" : ""}`);
+    lines.push(`${labelOf(SENSORS, r.system)}: ${RESULT_LABELS[r.result]}${r.method && r.result === "required" ? ` (${METHOD_LABELS[r.method]})` : ""}${r.origin === "adjuster-added" ? " [added by our team, NOT OEM-verified]" : ""}`);
     if (hasQuote(check) && QUOTE_LABELS[r.quoteStatus]) lines.push(`  Quote: ${QUOTE_LABELS[r.quoteStatus]}`);
     if (r.quote) lines.push(`  "${r.quote}"`);
     lines.push(`  Source: ${r.source ? r.source.title + (r.source.url ? " " + r.source.url : "") : "none found"}`);
@@ -515,7 +491,7 @@ function renderReport(check) {
       <tbody>${(check.rulings || [])
         .map(
           (r) => `<tr><td>${esc(labelOf(SENSORS, r.system))}</td>
-        <td>${esc(RESULT_LABELS[r.result])}${r.method && r.result === "required" ? ` (${esc(METHOD_LABELS[r.method])})` : ""}${r.origin === "adjuster-added" ? " <b>[added by our team, NOT OEM-verified]</b>" : ""}${r.origin === "icar-lookup" ? " <i>[from I-CAR's matrix]</i>" : ""}${r.notes ? `<br /><span class="fine">${esc(r.notes)}</span>` : ""}${r.quote ? `<br /><span class="fine">“${esc(r.quote)}”</span>` : ""}</td>
+        <td>${esc(RESULT_LABELS[r.result])}${r.method && r.result === "required" ? ` (${esc(METHOD_LABELS[r.method])})` : ""}${r.origin === "adjuster-added" ? " <b>[added by our team, NOT OEM-verified]</b>" : ""}${r.notes ? `<br /><span class="fine">${esc(r.notes)}</span>` : ""}${r.quote ? `<br /><span class="fine">“${esc(r.quote)}”</span>` : ""}</td>
         ${quoteOn ? `<td>${r.quoted ? "Quoted" : "Not quoted"}<br /><span class="fine">${esc((QUOTE_LABELS[r.quoteStatus] || "").split(" — ")[0])}</span></td>` : ""}</tr>`
         )
         .join("")}</tbody>
@@ -826,61 +802,6 @@ function exportDecisions() {
   toast(`Exported ${decisions.length} decisions and ${ownRules.length} of our own records.`);
 }
 
-// ---------- I-CAR matrix lookup (needs the TrueCal relay; see relay/README.md) ----------
-
-const relayUrl = () => localStorage.getItem("truecal.relayUrl") || "/api/icar";
-
-function needsIcarLookup(check) {
-  return !check.icar && !!check.vehicle.make && !!check.vehicle.model && (check.rulings || []).some((r) => r.result === "unverified");
-}
-
-/** For sensors with no reviewed rule, asks the relay what I-CAR's matrix lists for this vehicle. Returns true if the check changed. */
-async function enrichFromIcar(check, icarModel = "") {
-  const v = check.vehicle;
-  let response;
-  try {
-    const params = new URLSearchParams({ year: v.year, make: v.make, model: v.model });
-    if (icarModel) params.set("icarModel", icarModel);
-    response = await fetch(`${relayUrl()}?${params}`);
-  } catch (err) {
-    return false; // relay not running: carry on without it
-  }
-  if (response.status === 404) return false; // this host has no relay (for example GitHub Pages)
-  const now = new Date().toISOString();
-  const data = await response.json().catch(() => ({ error: "unreadable answer" }));
-  if (!response.ok || data.error) {
-    check.icar = { checkedAt: now, ok: false, error: data.error || `HTTP ${response.status}` };
-    await saveCheck(check);
-    return true;
-  }
-  check.icar = {
-    checkedAt: now, ok: true, found: data.found, reason: data.reason || "", url: data.source ? data.source.url : "", vehicle: data.vehicle || "",
-    alternatives: data.alternatives || [], helpLinks: data.helpLinks || [], choices: data.choices || [], notice: data.notice || "",
-  };
-  for (const r of check.rulings) {
-    if (r.result !== "unverified" || !data.found) continue;
-    const blocks = data.sensors.filter((s) => s.system === r.system);
-    const hit = blocks.flatMap((b) => b.eventTriggers.filter((e) => e.trigger === check.trigger).map((e) => ({ e, b })))[0];
-    if (hit) {
-      const tools = [hit.b.scanToolRequired === "yes" ? "scan tool required" : "", hit.b.specialToolsRequired === "yes" ? "special tools required" : ""].filter(Boolean).join(", ");
-      Object.assign(r, {
-        result: "required", method: "", origin: "icar-lookup", quote: hit.e.event, source: data.source, confidence: "medium", verified: today(),
-        notes: `I-CAR lists for "${hit.b.title}": ${hit.b.events.join("; ")}.${tools ? ` (${tools})` : ""}`, icarNote: "", quoteStatus: compareWithQuote("required", r.quoted),
-      });
-    } else if (blocks.length) {
-      r.icarUrl = data.source.url;
-      r.icarNote = blocks.every((b) => b.noRequirement)
-        ? "lists no calibration requirement for this sensor on this vehicle. That means none was identified, not that none is needed."
-        : `lists these events for this sensor but not this repair: ${[...new Set(blocks.flatMap((b) => b.events))].join("; ")}.`;
-    } else {
-      r.icarUrl = data.source.url;
-      r.icarNote = "has no entry for this sensor on this vehicle.";
-    }
-  }
-  await saveCheck(check);
-  return true;
-}
-
 // ---------- Routing ----------
 
 const SCREENS = ["home", "new", "ruling", "report", "history", "review"];
@@ -909,14 +830,6 @@ async function route() {
       const shown = currentCheck;
       el("rulingBody").innerHTML = renderRuling(shown);
       el("reportBtn").href = `#report/${shown.id}`;
-      if (needsIcarLookup(shown)) {
-        el("rulingBody").insertAdjacentHTML("afterbegin", '<p class="hint" id="icarStatus">Checking I-CAR’s public matrix for this vehicle…</p>');
-        const changed = await enrichFromIcar(shown);
-        if (currentCheck === shown && !el("screen-ruling").hidden) {
-          if (changed) el("rulingBody").innerHTML = renderRuling(shown);
-          else if (el("icarStatus")) el("icarStatus").remove();
-        }
-      }
     } else {
       el("reportBody").innerHTML = renderReport(currentCheck);
     }
@@ -1028,15 +941,6 @@ function bindEvents() {
     location.hash = "#new";
   });
   el("rulingBody").addEventListener("click", async (event) => {
-    const picked = event.target.closest("[data-icar-model]");
-    if (picked && currentCheck) {
-      const shown = currentCheck;
-      shown.icar = undefined;
-      el("rulingBody").insertAdjacentHTML("afterbegin", '<p class="hint" id="icarStatus">Checking I-CAR’s public matrix…</p>');
-      const changed = await enrichFromIcar(shown, picked.dataset.icarModel);
-      if (currentCheck === shown) el("rulingBody").innerHTML = renderRuling(shown);
-      return;
-    }
     const own = event.target.closest("[data-own]");
     if (own) {
       openOwnDialog(own.dataset.own);

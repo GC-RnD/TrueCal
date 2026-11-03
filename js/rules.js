@@ -59,6 +59,7 @@ const ORIGIN_LABELS = {
   "assistant-wording-check": "Manufacturer's own wording, entered from the document and wording-checked by the TrueCal assistant. Open the source to confirm.",
   "user-reviewed": "Confirmed by a reviewer in this app.",
   "adjuster-added": "Added by your team. NOT verified against a manufacturer source.",
+  "icar-lookup": "Looked up live in I-CAR's public OEM Calibration Requirements matrix for this vehicle. I-CAR says its entries come from manufacturer documents. Open the page to confirm.",
 };
 const METHOD_LABELS = { static: "Static", dynamic: "Dynamic", both: "Static + dynamic", none: "None" };
 const CONFIDENCE_LABELS = { high: "High", medium: "Medium", low: "Low" };

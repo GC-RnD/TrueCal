@@ -132,7 +132,7 @@
     <h3><span class="num">2</span>Say what was done</h3>
     <p>Choose the <b>repair</b> (for example Front bumper R&amp;I, Windshield replacement or Wheel alignment).</p>
     <p>In the sensor list, tick <b>On vehicle</b> for each sensor the car has. Tick <b>On shop quote</b> for each calibration the shop is charging for. The VIN lookup may pre-tick sensors that are standard equipment; confirm them on the car.</p>
-    <p>Under <b>Conditions</b>, tick anything that applies, such as <i>Sensor or bracket disturbed</i>.</p>
+    <p>Under <b>Conditions</b>, tick anything that applies, such as <i>Sensor or bracket disturbed</i>. Enter the <b>model</b> too: the I-CAR lookup needs it.</p>
     <h3><span class="num">3</span>Add evidence (optional)</h3>
     <p>Tap <span class="btn">📷 Add photo</span> to attach pictures, and <span class="btn">Dictate note</span> or type in the Notes box.</p>
     <h3><span class="num">4</span>Get the ruling</h3>
@@ -151,7 +151,7 @@
     <p>Each sensor gets one card. It shows the result, the <b>exact quote</b> from the manufacturer, and a <b>link to the source</b> with the date. Tap the link to read the original.</p>
     <table>
       <tr><th>Result</th><th>Meaning</th></tr>
-      <tr><td><b>● Calibration required</b></td><td>The manufacturer says to calibrate. The method (static, dynamic or both) is shown when the source states it.</td></tr>
+      <tr><td><b>● Calibration required</b></td><td>The manufacturer (or I-CAR's matrix, if marked so) says to calibrate. The method (static, dynamic or both) is shown when the source states it.</td></tr>
       <tr><td><b>○ Not required</b></td><td>The manufacturer says no calibration is needed for this repair, often "unless the sensor or bracket was disturbed".</td></tr>
       <tr><td><b>◐ Self-learning</b></td><td>The system recalibrates itself in normal driving.</td></tr>
       <tr><td><b>? Unverified</b></td><td>No reviewed source covers this vehicle, sensor and repair. <b>This does not mean calibration is unnecessary.</b> Ask the shop or the manufacturer. If you get a requirement from the shop or a dealer, tap <span class="btn">Add our own record</span> to save it with a reference. It is always labelled <b>not OEM-verified</b>, and a manufacturer source overrides it.</td></tr>
@@ -190,8 +190,10 @@
 
 <h2 class="pagebreak">Good to know</h2>
 <ul>
-  <li><b>Where the rules come from.</b> TrueCal uses rules entered from manufacturer documents (Honda and Acura aiming job aids, GM, Nissan, Subaru and Volvo statements). Each ruling shows the exact sentence, a link, and a <b>Basis</b> line saying where it came from. If a sensor has no rule, it stays Unverified.</li>
-  <li><b>Coverage is still incomplete.</b> Honda and Acura rules are the most detailed. "No requirement found" means the manufacturer's manual doesn't say, <b>not</b> that none is needed.</li>
+  <li><b>Where the rules come from.</b> First TrueCal checks the rules entered from manufacturer documents (Honda and Acura aiming job aids, GM, Nissan, Subaru and Volvo statements). If a sensor has none, and the lookup service is running, TrueCal checks <b>I-CAR's public calibration matrix</b> for that exact vehicle. Each ruling shows the exact sentence, a link, and a <b>Basis</b> line saying where it came from.</li>
+  <li><b>The I-CAR lookup needs the TrueCal lookup service.</b> It runs on a computer, not on the plain website, so on the plain website sensors with no rule stay Unverified. Ask whoever runs TrueCal if it is turned on.</li>
+  <li><b>What I-CAR results mean.</b> A listed repair is shown as Required, from I-CAR's matrix. If I-CAR lists nothing, the sensor stays Unverified, and the card shows what I-CAR does list. "No requirement found" means the manufacturer's manual doesn't say, <b>not</b> that none is needed. For some vehicles, such as a Mercedes E-Class, I-CAR only says to use the manufacturer's scan tool.</li>
+  <li><b>Coverage is still incomplete.</b> I-CAR's matrix covers 2016 and newer vehicles and is not complete. Honda and Acura rules are the most detailed. When nothing is found, the app links to I-CAR's page for that make and its ADAS articles.</li>
   <li><b>A rule applies to every model and year of its make</b> unless the document names years or models and you entered them in the review.</li>
   <li><b>Always confirm against current manufacturer service information</b> before approving or denying a calibration. TrueCal is informational.</li>
   <li><b>Works offline</b> for saved rules and past checks. The VIN lookup needs internet.</li>
@@ -200,7 +202,9 @@
 <h2 style="margin-top:0.2in">If something doesn't work</h2>
 <table>
   <tr><th>Problem</th><th>Try this</th></tr>
-  <tr><td>Everything says Unverified</td><td>No rules have been kept yet, or none match that make, sensor and repair. Open <b>Review findings</b> and keep some, and check the make and repair.</td></tr>  <tr><td>VIN scan won't read</td><td>Hold steady with the barcode filling the frame, try <b>Use a photo</b>, or type the VIN. Not every VIN has a barcode (the dashboard plate usually doesn't).</td></tr>
+  <tr><td>Everything says Unverified</td><td>No rules have been kept yet, none match that make, sensor and repair, or the I-CAR lookup service isn't running. Open <b>Review findings</b> and keep some, check the make and repair, and ask whoever runs TrueCal about the lookup service.</td></tr>
+  <tr><td>"I-CAR has no model called…"</td><td>I-CAR names models differently (for example E-Class instead of E-450). Tap the closest model in the list shown.</td></tr>
+  <tr><td>VIN scan won't read</td><td>Hold steady with the barcode filling the frame, try <b>Use a photo</b>, or type the VIN. Not every VIN has a barcode (the dashboard plate usually doesn't).</td></tr>
   <tr><td>Year, make and model didn't fill in</td><td>The lookup needs internet and doesn't know every VIN. Enter them by hand.</td></tr>
   <tr><td>Camera or microphone doesn't start</td><td>Check the browser's permission for TrueCal in your phone's settings.</td></tr>
   <tr><td>App looks out of date</td><td>Menu ☰ → <b>Check for updates</b>.</td></tr>
